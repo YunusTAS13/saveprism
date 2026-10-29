@@ -2,9 +2,13 @@
  * Pure language detection logic. Touches no DOM and no storage APIs, so it can
  * be unit-tested in a node environment.
  */
-export const SUPPORTED_LANGUAGES = ["en", "tr"] as const;
+import { LOCALES } from "./locales";
 
-export type Language = (typeof SUPPORTED_LANGUAGES)[number];
+/** The codes of the language files in `locales/`, English first. */
+export const SUPPORTED_LANGUAGES: readonly string[] = Object.keys(LOCALES);
+
+/** A language code that has a file in `locales/`. */
+export type Language = string;
 
 /** localStorage key that holds the user's explicit language choice. */
 export const STORAGE_KEY = "saveprism.lang";

@@ -1,7 +1,7 @@
 // @vitest-environment node
 import { describe, expect, it } from "vitest";
-import en from "../../locales/en/editor.json";
-import tr from "../../locales/tr/editor.json";
+import enFile from "../../locales/en.json";
+import trFile from "../../locales/tr.json";
 import {
   askAiValueCount,
   buildAskAiText,
@@ -14,6 +14,9 @@ import {
   type AskAiSource,
 } from "./askAi";
 import type { Translate } from "./helpers";
+
+const en = enFile.editor;
+const tr = trFile.editor;
 
 function flatten(obj: Record<string, unknown>, prefix = ""): Record<string, string> {
   const out: Record<string, string> = {};

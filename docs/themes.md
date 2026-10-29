@@ -115,7 +115,7 @@ outside its range refuses the whole file with a short reason.
 3. `theme/index.tsx`: toggle the new class in `applyToDocument` (remove it when another theme is
    chosen).
 4. `shell/SettingsPage.tsx`: add it to `THEMES`, and add `theme.contrast` to
-   `locales/en/common.json` and `locales/tr/common.json`.
+   the `common` part of every `locales/<code>.json` file.
 5. Contrast: keep text at 4.5:1 or more on every surface and row tint it can sit on.
    `shell/colors.test.ts` computes WCAG luminance and contrast for each preset in both themes:
    preset text on the card, container text on its container, and the muted label and main text on

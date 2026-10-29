@@ -1,0 +1,1286 @@
+{
+  "language": {
+    "name": "日本語",
+    "short": "JA",
+    "flag": "<svg xmlns=\"http://www.w3.org/2000/svg\" viewBox=\"0 0 60 60\"><rect width=\"60\" height=\"60\" fill=\"#fff\"/><circle cx=\"30\" cy=\"30\" r=\"15\" fill=\"#BC002D\"/></svg>"
+  },
+  "common": {
+    "empty": {
+      "title": "ここにセーブデータをドロップ",
+      "subtitle": "すべてお使いのPC内にとどまります。"
+    },
+    "footer": {
+      "core": "コア v{{version}}",
+      "coreUnavailable": "コアを利用できません"
+    },
+    "language": {
+      "label": "言語"
+    },
+    "theme": {
+      "toggle": "テーマを変更",
+      "light": "ライト",
+      "dark": "ダーク",
+      "system": "システム",
+      "toLight": "ライトテーマに切り替え",
+      "toDark": "ダークテーマに切り替え"
+    },
+    "common": {
+      "close": "閉じる",
+      "cancel": "キャンセル",
+      "copy": "コピー",
+      "copied": "コピー完了",
+      "loading": "読み込み中…",
+      "opening": "{{name}} を開いています…",
+      "moreInfo": "詳細情報"
+    },
+    "header": {
+      "openFile": "ファイルを開く",
+      "closeFile": "ファイルを閉じる",
+      "closeFileTip": "このファイルを閉じてスタート画面に戻る",
+      "notifications": "通知",
+      "settings": "設定",
+      "engineUnknown": "未対応の形式",
+      "pasteCode": "コードを貼り付け",
+      "pasteCodeTip": "ブラウザゲームからコピーしたセーブコードを開く",
+      "pastedCode": "貼り付けられたコード",
+      "pastedTip": "貼り付けたセーブコードから開きました。「コードをコピー」で変更を反映したコードを取得できます。"
+    },
+    "dialog": {
+      "openTitle": "セーブデータを開く",
+      "saveTitle": "名前を付けて保存",
+      "saveFiles": "セーブデータ",
+      "allFiles": "すべてのファイル",
+      "exportTitle": "JSONをエクスポート",
+      "jsonFiles": "JSON (*.json)",
+      "compareTitle": "比較するセーブデータを選択"
+    },
+    "start": {
+      "dropActive": "離して開く",
+      "openFile": "ファイルを開く",
+      "pasteCode": "コードを貼り付け",
+      "pasteHint": "ブラウザゲームですか？ゲームから取得したセーブコードを貼り付けてください（Ctrl+V）。",
+      "notSure": "セーブデータの場所がわかりませんか？",
+      "whereLink": "セーブデータの場所は？",
+      "slogan": "ファイルはお使いのPC内にとどまります。データは安全です。",
+      "faq": {
+        "title": "よくある質問",
+        "original": {
+          "question": "元のセーブデータは変更されますか？",
+          "answer": "「現在のファイルに上書き」を選んだ場合のみ変更されます。初期設定では「新規ファイルとして保存」になっているため、元のファイルはそのまま残ります。ファイルが置き換えられる前に、SavePrismがバックアップを保持し、「バックアップ」から復元できます。"
+        },
+        "games": {
+          "question": "どのゲームに対応していますか？",
+          "answer": "Unity、Unreal Engine、RPG Maker、Ren'Py、Godot、GameMakerなどで作成されたゲームや、ブラウザゲームのセーブコードに対応しています。全リストはREADMEにあります。読み込み可能なファイルなら、値がすぐに表示されます。"
+        },
+        "notOpen": {
+          "question": "ファイルが開きません — どうすればいいですか？",
+          "answer": "ショートカットやスクリーンショットではなく、セーブデータそのものであることを確認してください。一部のゲームはセーブデータをロックします。SavePrismが状態を表示します。それでも解決しない場合は、「ファイルレポートをコピー」してゲーム名を添えてGitHubでお知らせください。"
+        },
+        "ai": {
+          "question": "AIツールと連携して使うには？",
+          "answer": "リストの「AIに尋ねる」を押して値をコピーし、ChatGPT、Claude、Geminiに貼り付けてください。Claude DesktopなどMCPに対応したAIアプリは直接連携できます: 設定 → AI連携。"
+        },
+        "undo": {
+          "question": "変更を元に戻すには？",
+          "answer": "Ctrl+Zで元に戻し、Ctrl+Yでやり直すか、下部バーの「すべて元に戻す」を押します。保存後は「バックアップ」を開くことで以前のバージョンに戻せます。"
+        }
+      }
+    },
+    "banner": {
+      "readOnly": "このファイルはまだ安全に書き込むことができません。閲覧のみ可能で、保存はできません。",
+      "semantic": "ファイルは少し異なるレイアウトで書き込まれます。内容は変わりません。",
+      "renpySigned": "Ren'Pyセーブデータ: 変更を保存した後、ゲーム側でこのセーブデータを信頼するか尋ねられます。「はい」と答えてください。",
+      "renpyKeySigned": "Ren'Pyセーブデータ: 変更はお手持ちのRen'Pyキーで署名されます。",
+      "renpyPersistentKeySigned": "Ren'Py常駐データ: 変更はお手持ちのRen'Pyキーで署名されます。",
+      "renpyPersistentSigned": "このRen'Py常駐データは署名されています。編集したファイルはゲーム側に破棄されるため、読み取り専用で開いています。",
+      "terrariaLayout": "このTerrariaファイルのレイアウトはこのゲームのバージョンに対応していないため、読み取り専用で開いています。"
+    },
+    "bottom": {
+      "changes_one": "{{count}}件の保留中の変更",
+      "changes_other": "{{count}}件の保留中の変更",
+      "noChanges": "変更なし",
+      "changesTitle": "保留中の変更",
+      "undo": "元に戻す",
+      "redo": "やり直し",
+      "undoTip": "元に戻す (Ctrl+Z)",
+      "redoTip": "やり直し (Ctrl+Y)",
+      "undoAll": "すべて元に戻す",
+      "openJson": "JSONを開く",
+      "openJsonInfo": "ファイル全体をJSONテキストとして表示します。ここで値を変更して適用できます。",
+      "backups": "バックアップ",
+      "backupsTip": "このファイルのバックアップ: 確認して復元",
+      "saveAs": "名前を付けて保存…",
+      "saveOverwrite": "現在のファイルに上書き",
+      "overwriteItem": "現在のファイルに上書き（事前にバックアップを作成）",
+      "saveAsItem": "新規ファイルとして保存…",
+      "saveOptions": "その他の保存オプション",
+      "backupInfo": "ファイルが置き換えられる前に、元のファイルのバックアップが保存されます。",
+      "invalidTip": "保存する前に強調表示された値を修正してください。",
+      "readOnlyTip": "このファイルは読み取り専用です。",
+      "copyCode": "コードをコピー",
+      "copyCodeTip": "編集したセーブコードをコピーしてゲームに貼り付けます",
+      "saveAsFile": "ファイルとして保存…",
+      "copyCodeItem": "セーブコードとしてコピー",
+      "addedTip_one": "{{count}}件の追加項目",
+      "addedTip_other": "{{count}}件の追加項目",
+      "removedTip_one": "{{count}}件の削除項目",
+      "removedTip_other": "{{count}}件の削除項目",
+      "addedTag": "追加",
+      "removedTag": "削除",
+      "compareItem": "別のセーブデータと比較…"
+    },
+    "confirm": {
+      "discardOpen_one": "{{count}}件の変更を破棄して別のファイルを開きますか？",
+      "discardOpen_other": "{{count}}件の変更を破棄して別のファイルを開きますか？",
+      "discardBody": "保存されていない変更は失われます。",
+      "discard": "破棄",
+      "closeTitle": "保存せずに閉じますか？",
+      "closeBody_one": "{{count}}件の変更が失われます。",
+      "closeBody_other": "{{count}}件の変更が失われます。",
+      "closeDiscard": "保存せずに閉じる",
+      "updateTitle": "保存せずにアップデートしますか？",
+      "updateBody_one": "{{count}}件の変更が失われます。アップデート後にSavePrismが再起動します。",
+      "updateBody_other": "{{count}}件の変更が失われます。アップデート後にSavePrismが再起動します。",
+      "updateDiscard": "保存せずにアップデート"
+    },
+    "json": {
+      "title": "JSONエディター",
+      "readOnlyNote": "このファイルは読み取り専用のため、JSONへの変更は適用できません。",
+      "search": "JSON内を検索",
+      "matches_one": "{{count}}件の一致",
+      "matches_other": "{{count}}件の一致",
+      "noMatches": "一致なし",
+      "next": "次の一致",
+      "previous": "前の一致",
+      "failed": "JSONビューを作成できませんでした。",
+      "editNote": "値を変更してから「適用」を押してください。フィールド、リスト項目、<12 bytes> などのプレースホルダーはそのままにしてください。",
+      "exportJson": ".jsonをエクスポート",
+      "exportApplyFirst": "先に編集を適用または元に戻してください。エクスポートは適用済みの値を保存します。",
+      "editorLabel": "JSONテキスト",
+      "apply": "適用",
+      "applying": "適用中…",
+      "dirty": "編集中。「適用」でこれらの値を使用します。",
+      "notApplied": "何も適用されませんでした。",
+      "syntaxAt": "{{line}}行目、{{column}}列: {{problem}}",
+      "confirmTitle": "JSONの変更を適用しますか？",
+      "confirmBody": "JSONテキストの編集内容はまだ適用されていません。",
+      "keepEditing": "編集を続ける",
+      "discard": "破棄",
+      "problem": {
+        "end": "テキストの末尾が早すぎます。",
+        "unexpected": "値ではありません。数値、引用符で囲まれたテキスト、true、false、または null を使用してください。",
+        "expectedKey": "引用符で囲まれたフィールド名が必要です。",
+        "expectedColon": "フィールド名の後に「:」が必要です。",
+        "expectedCommaOrBrace": "「,」または「}」が必要です。",
+        "expectedCommaOrBracket": "「,」または「]」が必要です。",
+        "unclosedString": "テキストの閉じ引用符がありません。",
+        "controlChar": "テキスト内の改行やタブは \\n や \\t として記述してください。",
+        "badEscape": "バックスラッシュの後に未知のエスケープがあります。",
+        "badNumber": "この数値の記述が正しくありません。",
+        "trailing": "JSONの末尾の後に余分なテキストがあります。"
+      }
+    },
+    "backups": {
+      "title": "バックアップ",
+      "description": "上書き保存される前に作成された {{name}} のコピーです（新しい順）。",
+      "retention_one": "各ファイルの最新のバックアップのみ、最大30日間保持されます。",
+      "retention_other": "各ファイルの最新{{count}}件のバックアップが、最大30日間保持されます。",
+      "empty": "このファイルのバックアップはまだありません。上書き保存するたびにバックアップが作成されます。",
+      "failed": "バックアップを読み込めませんでした。",
+      "restore": "復元",
+      "restoring": "復元中…",
+      "confirmTitle": "このバックアップを復元しますか？",
+      "confirmBody": "{{name}} は {{time}} のバックアップで置き換えられます。現在のファイルが事前にバックアップされるため、このリストから元に戻せます。",
+      "confirmLoss_one": "保存されていない{{count}}件の変更は失われます。",
+      "confirmLoss_other": "保存されていない{{count}}件の変更は失われます。"
+    },
+    "compare": {
+      "title": "{{name}} と比較",
+      "description": "もう一方のセーブデータは読み取り専用で開かれます。何も書き込まれません。クリックした行の値にジャンプするだけです。",
+      "failed": "ファイルを比較できませんでした。",
+      "count_one": "{{count}}件の差異",
+      "count_other": "{{count}}件の差異",
+      "capped": "{{count}}件の差異のうち最初の{{shown}}件を表示中",
+      "found_one": "{{count}}件の一致",
+      "found_other": "{{count}}件の一致",
+      "empty": "2つのセーブデータは同じ値です。",
+      "search": "パスと値を検索",
+      "onlyHere": "このファイルのみ",
+      "onlyThere": "相手のファイルのみ",
+      "here": "このファイル",
+      "there": "相手のファイル",
+      "goTo": "エディターでこの値を表示"
+    },
+    "locations": {
+      "title": "セーブデータの場所は？",
+      "description": "SavePrismがお使いのPCをスキャンすることはありません。以下は各ゲームタイプの一般的なセーブ先フォルダーです。",
+      "searchPlaceholder": "エンジンまたはファイル形式で検索（例: Unity, .sav）",
+      "searchLabel": "セーブフォルダーを検索",
+      "clearSearch": "検索をクリア",
+      "count": "{{total}}種中{{shown}}種のゲームタイプ",
+      "all": "すべて",
+      "folders_one": "{{count}}個のフォルダー",
+      "folders_other": "{{count}}個のフォルダー",
+      "insideGame": "ゲームフォルダー内",
+      "registry": "レジストリ",
+      "registryHint": "レジストリエディターでエクスポート",
+      "empty": "検索に一致するゲームタイプはありません。",
+      "emptyHint": "エンジン名や .sav、.rpgsave などの拡張子をお試しください。",
+      "tellUs": "ゲームが一覧にありませんか？",
+      "tellUsBody": "ゲーム名とセーブデータの場所をお知らせください。",
+      "tellUsButton": "GitHubでお知らせください",
+      "tellUsFailed": "Issueページを開けませんでした",
+      "openFolder": "フォルダーを開く",
+      "notFound": "このPC上に見つかりません",
+      "inBrowser": "ブラウザ内に保存",
+      "placeholder": {
+        "gameFolder": "ゲームフォルダー",
+        "game": "ゲーム",
+        "company": "会社名"
+      },
+      "openFailed": "フォルダーを開けませんでした",
+      "failed": "セーブデータの場所を読み込めませんでした。",
+      "group": {
+        "unity": "Unity",
+        "unreal": "Unreal Engine",
+        "rpgmaker-mv": "RPG Maker MV/MZ",
+        "rpgmaker-classic": "RPG Maker XP/VX",
+        "renpy": "Ren'Py",
+        "godot": "Godot",
+        "gamemaker": "GameMaker",
+        "other": "その他"
+      },
+      "engine": {
+        "rpgmaker-mv": "RPG Maker MV / MZ",
+        "rpgmaker-classic": "RPG Maker XP / VX / VX Ace / 2000 / 2003",
+        "wolf-rpg": "Wolf RPG Editor",
+        "unity": "Unity",
+        "unreal": "Unreal Engine",
+        "gamemaker": "GameMaker",
+        "renpy": "Ren'Py",
+        "godot": "Godot",
+        "twine": "Twine / SugarCube",
+        "flash": "Flash",
+        "witcher3": "The Witcher 3",
+        "satisfactory": "Satisfactory",
+        "slime-rancher-2": "Slime Rancher 2",
+        "palworld": "Palworld",
+        "terraria": "Terraria",
+        "neverwinter-nights": "Neverwinter Nights",
+        "kotor": "Knights of the Old Republic",
+        "ags": "Adventure Game Studio",
+        "nscripter": "NScripter / ONScripter",
+        "emuera": "Emuera / eraMaker",
+        "alicesoft": "AliceSoft System 3.x / 4",
+        "construct": "Construct",
+        "artemis": "Artemis Engine",
+        "elden-ring": "Elden Ring",
+        "dark-souls-3": "Dark Souls III",
+        "ets2": "Euro Truck Simulator 2",
+        "ats": "American Truck Simulator",
+        "retroarch": "RetroArch"
+      },
+      "hint": {
+        "rpgmaker-mv": "MVには www フォルダー、MZには js と data フォルダーがあります。セーブデータの拡張子は .rpgsave または .rmmzsave です。",
+        "rpgmaker-classic": "Game.ini の隣に Game.exe があります。セーブデータの拡張子は .rxdata、.rvdata または .rvdata2 です。",
+        "wolf-rpg": "Data/BasicData と一緒に Game.exe があります。セーブデータは Save フォルダー内の .sav ファイルです。",
+        "unity": ".exe の隣に UnityPlayer.dll と <game>_Data フォルダーがあります。",
+        "unreal": "ゲームフォルダーの隣に Engine フォルダーがあります。セーブデータの拡張子は .sav です。",
+        "gamemaker": ".exe の隣に data.win ファイルがあります。",
+        "renpy": "renpy フォルダーと game フォルダーがあります。セーブデータの拡張子は .save です。",
+        "godot": "同名の .pck ファイルと1つの .exe があります。",
+        "twine": "ブラウザで動作します。ゲームの「ディスクに保存」またはエクスポート機能を使用してください。",
+        "flash": ".swf ファイルです。セーブデータはローカル共有オブジェクト（.sol）です。",
+        "witcher3": "Documents\\The Witcher 3\\gamesaves 内の .sav ファイルです。",
+        "satisfactory": "FactoryGame\\Saved\\SaveGames 配下の .sav ファイルです。",
+        "slime-rancher-2": "AppData\\LocalLow\\MonomiPark\\SlimeRancher2 配下の <date>_<game>_<slot>.sav ファイルです。",
+        "palworld": "Pal\\Saved\\SaveGames\\<id> 配下の Level.sav です。",
+        "terraria": "Documents\\My Games\\Terraria 内のキャラクター（.plr）とワールド（.wld）です。",
+        "neverwinter-nights": "Documents またはゲームフォルダー内の .sav フォルダーです。",
+        "kotor": "ゲームフォルダー内のスロットごとの .sav フォルダーです。",
+        "ags": "ゲームの隣にある agssave.000 から agssave.999 です。",
+        "nscripter": "nscript.dat または .nsa ファイルです。セーブデータはゲームフォルダー内の save*.dat です。",
+        "emuera": "Emuera.exe です。セーブデータはゲームフォルダーまたはその sav フォルダー内の .sav ファイルです。",
+        "alicesoft": "System 3.x はゲームフォルダー内に .asd セーブデータを保持します。System 4 は多くの場合 SaveData を使用します。",
+        "construct": "Construct 2/3 ゲームはブラウザに保存します。.c2save/.c3save ファイルはプレーンなJSONです。",
+        "artemis": "セーブデータは .exe の隣の save フォルダーにあります。",
+        "elden-ring": "%APPDATA%\\EldenRing\\<id> 配下の ER0000.sl2 です。",
+        "dark-souls-3": "%APPDATA%\\DarkSoulsIII\\<id> 配下の DS30000.sl2 です。",
+        "ets2": "プロファイルは Documents\\Euro Truck Simulator 2\\profiles にあります。",
+        "ats": "プロファイルは Documents\\American Truck Simulator\\profiles にあります。",
+        "retroarch": "%APPDATA%\\RetroArch 配下のステートセーブ（.state）とバッテリーセーブ（.srm）です。"
+      },
+      "note": {
+        "rpgmaker-mv": "MVは www/save、MZは save を使用します。",
+        "rpgmaker-classic": "セーブデータはゲームフォルダー内、またはその Save フォルダー内にあります。",
+        "wolf-rpg": "セーブデータはゲームフォルダー内の Save フォルダーにあります。",
+        "unity": "PlayerPrefs はWindowsレジストリに保存されます（regeditでエクスポート）。Easy Save ファイルは %USERPROFILE%\\AppData\\LocalLow\\<company>\\<game>\\ 配下にあります。",
+        "unreal": "プロジェクト名はゲームのフォルダー名です。",
+        "gamemaker": "%LOCALAPPDATA% 配下のゲームのデータフォルダーです。",
+        "renpy": "セーブデータはゲームフォルダー内の game/saves にある場合もあります。",
+        "godot": "user:// フォルダーです。",
+        "twine": "ブラウザストレージ: ゲームの「ディスクに保存」/エクスポート機能を使用してください。",
+        "flash": "ローカル共有オブジェクトです。",
+        "witcher3": "Documents フォルダーが OneDrive に移動されている場合があります。",
+        "satisfactory": "Steam/Epic ID 配下のフォルダーに .sav ファイルが入っています。",
+        "slime-rancher-2": "各スロットが1つの .sav ファイルです。slimerancher.cfg と .prf は設定ファイルであり、セーブデータではありません。",
+        "palworld": "Steam ID フォルダー配下にあります。",
+        "terraria": "Players にキャラクター、Worlds にワールドが入っています。Documents フォルダーが OneDrive に移動されている場合があります。",
+        "neverwinter-nights": "Enhanced Edition は Documents にセーブデータを保持します。クラシック版はゲームフォルダー内の saves を使用します。",
+        "kotor": "セーブデータはゲームフォルダー内の .sav ファイルで、スロットごとに1つのフォルダーになっています。",
+        "emuera": "セーブデータはゲームフォルダー内、またはゲームが使用している場合はその sav フォルダー内にあります。",
+        "nscripter": "ゲームフォルダー内の save1.dat ... および global.sav（または gloval.sav）です。",
+        "ags": "セーブスロットはゲームの隣にある agssave.000 から agssave.999 です。",
+        "alicesoft": "System 3.x はゲームフォルダー内にセーブデータを保持します。System 4 ゲームは多くの場合 SaveData を使用します。",
+        "artemis": "セーブデータはゲーム実行ファイルの隣にある save フォルダーにあります。",
+        "construct": "Construct 2/3 セーブデータは通常ブラウザストレージにあります。.c2save/.c3save ファイルはプレーンなJSONであり、内容によって開かれます。",
+        "elden-ring": "Steam ID 配下のフォルダーに ER0000.sl2 が入っています。",
+        "dark-souls-3": "Steam ID 配下のフォルダーに DS30000.sl2 が入っています。",
+        "ets2": "各プロファイルに save/<slot>/game.sii があります。プレーンテキストにするには g_save_format を 2 に設定してください。",
+        "ats": "各プロファイルに save/<slot>/game.sii があります。プレーンテキストにするには g_save_format を 2 に設定してください。",
+        "retroarch": "通常は states と saves フォルダーです。ステートセーブはRZIP圧縮（Save State File Compression）されている場合があります。"
+      }
+    },
+    "password": {
+      "title": "このファイルは暗号化されています",
+      "body": "{{name}} に使用されているパスワードまたはゲームキーを入力してください。1回のみ使用され、保存されることはありません。",
+      "label": "パスワード",
+      "submit": "開く",
+      "pickFolder": "ゲームフォルダーを選択…",
+      "pickFolderTitle": "ゲームがインストールされているフォルダーを選択",
+      "folderEmpty": "そのフォルダーにパスワードは見つかりませんでした。",
+      "wrong": "そのパスワードでファイルを開けませんでした。確認するか、ゲームフォルダーを選択してゲーム内のファイルを検索してください。"
+    },
+    "codeText": {
+      "title": "セーブコード",
+      "body": "ここではクリップボードを使用できませんでした。コードが選択されています: Ctrl+C を押してコピーしてください。",
+      "label": "セーブコード",
+      "selectAll": "すべて選択"
+    },
+    "paste": {
+      "title": "セーブコードを貼り付け",
+      "body": "ゲームから取得したセーブコードを貼り付けてください（例: 「エクスポート」や「テキストへ保存」など）。",
+      "label": "セーブコード",
+      "placeholder": "ここにコードを貼り付け (Ctrl+V)",
+      "note": "コードはこのPC内にとどまります。Ctrl+Enter で開きます。",
+      "open": "開く",
+      "opening": "開いています…",
+      "failed": "このコードを開けませんでした。"
+    },
+    "toast": {
+      "savedTitle": "保存完了 · バックアップ作成済み · 検証済み",
+      "savedNoBackupTitle": "保存完了 · 検証済み",
+      "savedBody": "{{path}}",
+      "showInFolder": "フォルダーで表示",
+      "dismiss": "閉じる",
+      "openFailed": "ファイルを開けませんでした",
+      "saveFailed": "ファイルを保存できませんでした",
+      "verifyFailed": "保存されたファイルの検証に失敗しました",
+      "jsonFailed": "JSONビューを作成できませんでした",
+      "exportedTitle": "JSONをエクスポートしました",
+      "exportFailed": "JSONをエクスポートできませんでした",
+      "closeFailed": "ウィンドウを閉じられませんでした",
+      "discardFailed": "変更を破棄できませんでした",
+      "undoFailed": "変更を元に戻せませんでした",
+      "redoFailed": "変更をやり直せませんでした",
+      "changesFailed": "変更リストを読み込めませんでした",
+      "errorDetail": "{{reason}} {{fix}}",
+      "jsonApplied_one": "{{count}}件の変更を適用しました",
+      "jsonApplied_other": "{{count}}件の変更を適用しました",
+      "jsonNoChanges": "変更された値はありません",
+      "setAllFailed": "値を設定できませんでした",
+      "restoredTitle": "バックアップを復元しました",
+      "restoredBody": "{{path}} を {{time}} のバックアップに戻しました。",
+      "restoreFailed": "バックアップを復元できませんでした",
+      "codeCopied": "コードをコピーしました",
+      "codeCopiedBody": "ゲームのインポートまたは読み込み欄に貼り付けてください。",
+      "copyCodeFailed": "コードをコピーできませんでした",
+      "copiedForAi_one": "AIチャット用に{{count}}件の値をコピーしました",
+      "copiedForAi_other": "AIチャット用に{{count}}件の値をコピーしました",
+      "copiedForAiBody": "ChatGPT、Gemini、または任意のAIチャットに貼り付けて質問してください。その後、ここで値を変更します。",
+      "copyAiFailed": "クリップボードにコピーできませんでした",
+      "setupCopied": "設定をコピーしました。お使いのAIアプリのMCP設定に貼り付けてください。",
+      "copySetupFailed": "設定をコピーできませんでした",
+      "copyReport": "ファイルレポートをコピー",
+      "reportCopied": "レポートをコピーしました",
+      "reportCopiedBody": "ゲーム名を添えて新しいIssueに貼り付けてください。",
+      "reportFailed": "レポートをコピーできませんでした",
+      "addFailed": "項目を追加できませんでした",
+      "removeFailed": "項目を削除できませんでした",
+      "dataFolderFailed": "データフォルダーを読み込めませんでした"
+    },
+    "errors": {
+      "codes": {
+        "SP-APP-001": {
+          "reason": "SavePrismを起動できませんでした",
+          "fix": "SavePrismを再起動してください。問題が解決しない場合は、Issueトラッカーでこのコードを報告してください。"
+        },
+        "SP-APP-002": {
+          "reason": "ファイルが開かれていません",
+          "fix": "最初にセーブデータを開いてください。"
+        },
+        "SP-APP-003": {
+          "reason": "このファイルは読み取り専用のため、保存できません",
+          "fix": "ファイルのコピーを開くか、この形式への対応をお待ちください。"
+        },
+        "SP-APP-004": {
+          "reason": "「{{value}}」はこのフィールドで有効な値ではありません",
+          "reasonPlain": "値がこのフィールドで有効ではありません",
+          "fix": "フィールドの型に合った値を入力してください。"
+        },
+        "SP-APP-005": {
+          "reason": "{{value}} はこのフィールドで許可された範囲外です",
+          "reasonPlain": "数値がこのフィールドで許可された範囲外です",
+          "fix": "フィールドに表示されている範囲内の数値を入力してください。"
+        },
+        "SP-APP-006": {
+          "reason": "同名のファイルが既に存在します",
+          "fix": "別の名前または別のフォルダーを選択してください。"
+        },
+        "SP-APP-007": {
+          "reason": "この値は編集できません",
+          "fix": "コンテナを開き、その中の値を選択してください。"
+        },
+        "SP-APP-008": {
+          "reason": "JSONエクスポートには別の名前が必要です",
+          "fix": "現在開いているセーブデータ以外の、末尾が .json の名前を選択してください。"
+        },
+        "SP-APP-009": {
+          "reason": "SavePrism自身の状態を使用できませんでした",
+          "fix": "SavePrismを再起動してください。"
+        },
+        "SP-APP-010": {
+          "reason": "JSONテキストが有効ではありません",
+          "fix": "強調表示された箇所を修正して再度適用してください。"
+        },
+        "SP-APP-011": {
+          "reason": "JSONテキストで値以外のものが変更されています",
+          "fix": "値のみを変更してください。フィールド名、リスト項目、プレースホルダーはそのままにしてください。"
+        },
+        "SP-APP-012": {
+          "reason": "サードパーティの通知を開けませんでした",
+          "fix": "SavePrismのインストールフォルダー内で確認してください。"
+        },
+        "SP-APP-013": {
+          "reason": "このファイルにはバックアップ「{{name}}」が存在しません",
+          "reasonPlain": "そのバックアップは存在しません",
+          "fix": "バックアップ一覧を再度開いてください。"
+        },
+        "SP-APP-014": {
+          "reason": "そのバックアップはセーブデータとして開けません",
+          "fix": "何も書き込まれませんでした。別のバックアップを選択してください。"
+        },
+        "SP-APP-015": {
+          "reason": "一度に変更する値が多すぎます",
+          "fix": "一度に変更する値を減らしてください。"
+        },
+        "SP-APP-016": {
+          "reason": "セーブコードが空です",
+          "fix": "ゲームから提供されたコード全体を貼り付けてください。"
+        },
+        "SP-APP-017": {
+          "reason": "このセーブデータにはコピーするコードがありません",
+          "fix": "「名前を付けて保存」で編集したファイルを保存してください。"
+        },
+        "SP-APP-018": {
+          "reason": "そのフォルダーにはゲームのデータが含まれていません",
+          "fix": "ゲームのデータフォルダーまたはゲームフォルダーを選択してください。"
+        },
+        "SP-APP-019": {
+          "reason": "このセーブデータにはデータフォルダーから名前を取得するセクションがありません",
+          "fix": "ゲーム名を使用するにはRPG Makerのセーブデータを開いてください。"
+        },
+        "SP-APP-020": {
+          "reason": "「{{value}}」は既に存在します",
+          "reasonPlain": "その項目は既に存在します",
+          "fix": "別の名前を選択するか、既存の値を変更してください。"
+        },
+        "SP-APP-021": {
+          "reason": "ここには何も追加できません",
+          "fix": "JSON、Easy Save 3、SugarCube、RPG Makerのリストに値を追加してください。"
+        },
+        "SP-APP-022": {
+          "reason": "この項目は削除できません",
+          "fix": "代わりに0、空、またはオフに設定してください。"
+        },
+        "SP-APP-023": {
+          "reason": "ファイルを開いた後にディスク上でファイルが変更されました",
+          "fix": "ファイルを再度開くか、「名前を付けて保存」で編集内容を保持してください。"
+        },
+        "SP-APP-024": {
+          "reason": "AIツールがSavePrismで使用できない値を送信しました",
+          "fix": "ツールの引数を確認して再試行してください。"
+        },
+        "SP-APP-025": {
+          "reason": "比較対象のファイルが暗号化されているため、読み込めません",
+          "fix": "代わりに暗号化されていないセーブデータのコピーと比較してください。"
+        },
+        "SP-APP-026": {
+          "reason": "フォルダーを開けませんでした",
+          "fix": "エクスプローラーで手動で開いてください。"
+        },
+        "SP-APP-027": {
+          "reason": "ファイルレポートは通常のファイルに対してのみ作成できます",
+          "fix": "フォルダーやショートカットではなく、セーブデータそのものを選択してください。"
+        },
+        "SP-DET-001": {
+          "reason": "SavePrismはこのファイルにまだ対応していません",
+          "fix": "対応を追加できるよう、Issueにサンプルファイルを添付してください。"
+        },
+        "SP-DET-002": {
+          "reason": "SavePrismはこのファイルを解析できませんでした",
+          "fix": "より小さいコピーまたは暗号化されていないコピーで再試行してください。"
+        },
+        "SP-ES3-001": {
+          "reason": "これはEasy Save 3ファイルではありません",
+          "fix": "ゲームのセーブデータを選択したか確認してください。"
+        },
+        "SP-ES3-002": {
+          "reason": "このEasy Save 3ファイルにはSavePrismが書き込めないデータが含まれています",
+          "fix": "読み取り専用で開くか、Issueトラッカーにサンプルを報告してください。"
+        },
+        "SP-ES3-003": {
+          "reason": "この暗号化されたEasy Save 3ファイルは破損しています",
+          "fix": "バックアップまたはゲームから復元して再試行してください。"
+        },
+        "SP-ES3-004": {
+          "reason": "そのパスワードでファイルを開けませんでした",
+          "fix": "ゲームのEasy Save設定でパスワードを確認し、再試行してください。"
+        },
+        "SP-ES3-005": {
+          "reason": "このファイルは暗号化されており、パスワードが必要です",
+          "fix": "ゲームで使用されているパスワードを入力し、ファイルを再度開いてください。"
+        },
+        "SP-CORE-006": {
+          "reason": "ファイルが大きすぎます",
+          "fix": "より小さいファイルを開いてください。"
+        },
+        "SP-CORE-007": {
+          "reason": "ファイルの展開後データが大きすぎます",
+          "fix": "ファイルが破損している可能性があります。別のコピーをお試しください。"
+        },
+        "SP-CORE-008": {
+          "reason": "ファイルのネストが深すぎます",
+          "fix": "ファイルが破損している可能性があります。別のコピーをお試しください。"
+        },
+        "SP-CORE-009": {
+          "reason": "ファイルに含まれる値が多すぎます",
+          "fix": "ファイルの別のコピーをお試しください。"
+        },
+        "SP-CORE-010": {
+          "reason": "ファイルのレイヤーが多すぎます",
+          "fix": "ファイルの別のコピーをお試しください。"
+        },
+        "SP-CORE-011": {
+          "reason": "その値はファイル内に存在しません",
+          "fix": "パスが変更された可能性があるため、ツリーから再度値を選択してください。"
+        },
+        "SP-CORE-012": {
+          "reason": "変更を適用できませんでした",
+          "fix": "再試行してください。失敗が続く場合は、Issueトラッカーでこのコードを報告してください。"
+        },
+        "SP-CORE-013": {
+          "reason": "この値は読み取り専用です",
+          "fix": "この値は変更できません。"
+        },
+        "SP-IO-001": {
+          "reason": "バックアップを作成できませんでした",
+          "fix": "ディスクの空き容量とバックアップフォルダーのアクセス権限を確認してください。何も書き込まれませんでした。"
+        },
+        "SP-IO-002": {
+          "reason": "一時ファイルを書き込めませんでした",
+          "fix": "ゲームやファイルを使用している他のプログラムを閉じてから再試行してください。"
+        },
+        "SP-IO-003": {
+          "reason": "ファイルを置き換えられませんでした",
+          "fix": "ゲームやファイルを使用している他のプログラムを閉じ、読み取り専用になっていないか確認してから再試行してください。"
+        },
+        "SP-IO-004": {
+          "reason": "保存されたファイルの検証に失敗したため、バックアップを復元しました",
+          "fix": "セーブデータは変更されていません。"
+        },
+        "SP-IO-005": {
+          "reason": "保存されたファイルの検証に失敗し、バックアップを復元できませんでした",
+          "fix": "バックアップフォルダーから手動でファイルを復元し、Issueトラッカーでこのコードを報告してください。"
+        },
+        "SP-IO-006": {
+          "reason": "バックアップフォルダーが見つかりませんでした",
+          "fix": "ユーザープロファイルフォルダーが利用可能か確認してから再試行してください。"
+        },
+        "SP-IO-007": {
+          "reason": "ファイルを読み込めませんでした",
+          "fix": "ファイルが存在し、読み取り可能であることを確認してから再試行してください。"
+        },
+        "SP-RENPY-001": {
+          "reason": "このRen'PyセーブデータはSavePrismで読み込み可能なファイルではありません",
+          "fix": "別のゲームのコピーではなく、ゲーム自身が書き出したセーブデータを開いてください。"
+        },
+        "SP-RENPY-002": {
+          "reason": "このRen'PyセーブデータにはSavePrismが書き込めないデータが含まれています",
+          "fix": "読み取り専用で開くか、Issueトラッカーにサンプルを報告してください。"
+        },
+        "SP-RENPY-003": {
+          "reason": "このRen'Pyセーブデータを書き込めませんでした",
+          "fix": "読み取り専用で開き、ファイルのコピーを保管してください。"
+        },
+        "SP-RENPY-004": {
+          "reason": "Ren'Pyキーファイルを読み込めませんでした",
+          "fix": "security_keys.txt が存在し、署名キー行が含まれていることを確認してから、再度セーブデータを開いてください。"
+        },
+        "SP-APP-030": {
+          "reason": "このテーマファイルは使用できません",
+          "fix": "最大64 KBのSavePrismテーマファイルを選択してください。"
+        }
+      }
+    },
+    "bell": {
+      "title": "今回のセッション",
+      "empty": "まだ何も実行されていません。",
+      "opened": "{{name}} を開きました",
+      "saved": "{{name}} を保存しました",
+      "backup": "バックアップ: {{path}}",
+      "undone": "すべての変更を元に戻しました",
+      "setAll_one": "{{count}}件の値を {{value}} に設定しました",
+      "setAll_other": "{{count}}件の値を {{value}} に設定しました",
+      "clear": "クリア",
+      "openedCode": "貼り付けられたコードを開きました"
+    },
+    "settings": {
+      "title": "設定",
+      "appearance": "外観",
+      "theme": "テーマ",
+      "pattern": "パターン",
+      "patternInfo": "アプリの背景に薄い格子模様を表示します。無地の背景にするにはオフにしてください。",
+      "patternStrength": "パターンの強さ",
+      "textSize": "文字サイズ",
+      "textSizes": {
+        "small": "小",
+        "normal": "標準",
+        "large": "大"
+      },
+      "appColor": "アプリアクセント色",
+      "appColorHint": "背景、ボタン、ハイライトなど、アプリ全体の色合いを変更します。",
+      "appColorPresets": {
+        "blue": "ブルー",
+        "violet": "バイオレット",
+        "teal": "ティール",
+        "green": "グリーン",
+        "amber": "アンバー",
+        "rose": "ローズ"
+      },
+      "appColorSystem": "Windowsアクセント",
+      "appColorMono": "モノクローム",
+      "appColorCustom": "カスタムアプリ色",
+      "colors": "カラー",
+      "changedColor": "変更された値",
+      "accentColor": "アクセント",
+      "errorColor": "エラー",
+      "colorPresets": {
+        "changed": {
+          "violet": "バイオレット",
+          "rose": "ローズ",
+          "indigo": "インディゴ",
+          "amber": "アンバー"
+        },
+        "accent": {
+          "cyan": "シアン",
+          "blue": "ブルー",
+          "green": "グリーン",
+          "amber": "アンバー"
+        },
+        "error": {
+          "red": "レッド",
+          "orange": "オレンジ",
+          "pink": "ピンク",
+          "purple": "ライラック"
+        }
+      },
+      "language": "言語",
+      "saving": "保存設定",
+      "defaultAction": "デフォルトの保存操作",
+      "defaultActionInfo": "メインの「保存」ボタンを押したときの動作を選択します。もう一方の選択肢はメニュー内に残ります。",
+      "saveAsNew": "新規ファイルとして保存",
+      "overwriteOriginal": "元のファイルに上書き",
+      "keepBackups": "保持するバックアップ数",
+      "keepBackupsInfo": "保存するファイルのバックアップを保持する件数（1～50件、最長30日間）です。そのファイルの古いバックアップは次回の保存時に削除されます。最新のバックアップは常に保持されます。",
+      "aiChatTitle": "チャットボット用にコピー",
+      "aiChatTag": "設定不要",
+      "aiChatInfo": "ChatGPT、Claude、Gemini、またはブラウザの任意のAIチャット向けです。",
+      "aiChatStep1": "セーブデータを開く",
+      "aiChatStep1Info": "スタート画面にドロップします。",
+      "aiChatStep2": "リストの「AIに尋ねる」を押す",
+      "aiChatStep2Info": "その値がコピーされます。",
+      "aiChatStep3": "チャットに貼り付ける",
+      "aiChatStep3Info": "質問して、ここで値を変更します。",
+      "mcpStep1": "AIアプリを選択",
+      "mcpStep2": "設定をコピー",
+      "mcpStep2Info": "ワンクリック。",
+      "mcpStep3": "アプリに貼り付ける",
+      "mcpStep3Info": "貼り付けて保存。",
+      "mcpStep4": "再起動して依頼する",
+      "mcpStep4Info": "「ゴールドを9999にして」",
+      "mcpYourApp": "お使いのアプリ:",
+      "mcpClients": {
+        "claudeDesktop": "Claude Desktop",
+        "claudeCode": "Claude Code",
+        "cursor": "Cursor",
+        "vscode": "VS Code",
+        "other": "その他"
+      },
+      "mcpHowTo": {
+        "claudeDesktop": "Claude Desktopの場合: 設定 → Developer → Edit Config、mcpServers に貼り付け、保存して Claude を再起動。",
+        "claudeCode": "ターミナルで実行し、Claude Code を再起動。",
+        "cursor": "Cursorの場合: Customize → MCP、または %USERPROFILE%\\.cursor\\mcp.json に貼り付け。",
+        "vscode": ".vscode/mcp.json（または VS Code ドキュメントに記載されているユーザーMCP設定）に追加。",
+        "other": "アプリのMCP設定に貼り付けて保存し、アプリを再起動。"
+      },
+      "aiPrivacyNote": "SavePrismが勝手にデータを送信することはありません。AIアプリが読み取った値を自身のオンラインモデルに送信する場合があります。",
+      "aiWriteNote": "ファイルを書き込むのは保存とバックアップ復元のときだけで、AIアプリは実行前に確認します。",
+      "copySetup": "設定をコピー",
+      "notificationsSection": "通知",
+      "showNotifications": "通知を表示",
+      "showNotificationsInfo": "今回のセッションのイベントを示すベルアイコンを表示します。",
+      "checkUpdatesAtStart": "起動時にアップデートを確認",
+      "checkUpdatesAtStartInfo": "GitHubに新しいバージョンがあるか確認します。セーブデータが送信されることはありません。",
+      "about": "SavePrismについて",
+      "back": "戻る",
+      "searchPlaceholder": "設定を検索",
+      "searchEmpty": "一致する設定はありません。",
+      "communityThemes": "コミュニティテーマ",
+      "version": "SavePrism {{version}}",
+      "sourceCode": "GitHubのソースコード",
+      "reportProblem": "問題を報告",
+      "folderChanged": "フォルダーを変更しました",
+      "folderFailed": "フォルダーを変更できませんでした",
+      "backupFolderTitle": "バックアップフォルダーを選択",
+      "appFolderTitle": "アプリフォルダーを選択",
+      "openFolderFailed": "フォルダーを開けませんでした",
+      "chooseImage": "画像を選択…",
+      "changeImage": "画像を変更…",
+      "noImage": "画像はまだありません",
+      "dropHint": "クリックまたは画像をドロップ",
+      "dropActive": "離してこの画像を使用",
+      "imageCopied": "画像をアプリフォルダーにコピーしました",
+      "imageCopiedHint": "アプリフォルダーにコピーされます。",
+      "imageFailed": "画像を使用できませんでした",
+      "customColor": "カスタム色",
+      "resetColors": "デフォルトに戻す",
+      "text": "テキスト",
+      "textSizeHint": "SavePrism内のすべての文字を大きく、または小さくします。",
+      "changedHint": "編集済みでまだ保存されていない値です。",
+      "accentHint": "所持金などの数値、リンク、ハイライトです。",
+      "errorHint": "保存できない値です。",
+      "background": "背景",
+      "photo": "写真",
+      "grid": "グリッド",
+      "defaultPattern": "デフォルト",
+      "dots": "ドット",
+      "strength": "濃さ",
+      "photoFit": "写真の配置",
+      "fit": "収める",
+      "fill": "全体",
+      "blur": "ぼかし",
+      "darken": "暗くする",
+      "glass": "カードの不透明度",
+      "preview": "プレビュー",
+      "previewTip": "設定を閉じる前に選択内容を確認できます。色のついた行の文字は、見やすさを維持するために自動で色が切り替わります。",
+      "backupsSection": "バックアップ",
+      "keepBackupsHint": "セーブデータごと。古いものから順に削除されます。",
+      "onlyLatest": "最新のみ",
+      "keepDays": "バックアップ保持期間",
+      "keepDaysHint": "これより古いバックアップは削除されます。",
+      "days": "日",
+      "latestKeptNote": "各セーブデータの最新バックアップは常に保持されるため、いつでも復元できます。",
+      "backupFolder": "バックアップフォルダー",
+      "appFolderSection": "アプリフォルダー",
+      "appFolder": "アプリフォルダー",
+      "appFolderHint": "バックアップ、貼り付けたコード、設定はここに保存されます。",
+      "openFolder": "フォルダーを開く",
+      "change": "変更…",
+      "action": "操作",
+      "shortcutsColumn": "ショートカット",
+      "resetAllShortcuts": "すべてデフォルトに戻す",
+      "resetShortcut": "{{action}} をデフォルトに戻す",
+      "addShortcut": "ショートカットを追加",
+      "removeShortcut": "{{keys}} を削除",
+      "editShortcut": "このショートカットを変更",
+      "shortcutNotSet": "未設定",
+      "shortcutsNote": "Windowsキーを含むショートカットや、Alt+F4、Ctrl+Alt+Del などのシステムキーは Windows によって予約されています。SavePrismに届く前に Windows が処理するため、ここでは使用できません。",
+      "shortcutDialog": {
+        "title": "{{action}} の新しいキーを押してください",
+        "hint": "Enter で保存、Esc でキャンセル。",
+        "waiting": "キーを押してください…",
+        "threeKeys": "最大3キーまで: Ctrl、Shift、Alt のうち最大2つ + 別の1キー。",
+        "needCtrlOrAlt": "Ctrl または Alt を追加するか、ファンクションキー（F1～F12）を使用してください。",
+        "ctrlAlt": "Ctrl+Alt は使用できません: 多くのキーボード配列で文字入力用の AltGr として扱われます。",
+        "system": "{{keys}} は Windows によって予約されています。",
+        "reserved": "Enter と Esc は使用できません。",
+        "unknown": "そのキーは使用できません。",
+        "windows": "Windowsキーは Windows に予約されています: SavePrismに届く前に Win の組み合わせが処理されるため、ここでは登録できません。",
+        "conflict": "{{keys}} は {{action}} で使用されています。Enter を押すとこちらに移動します。"
+      },
+      "mcpTitle": "AIエージェントに接続 (MCP)",
+      "mcpHint": "Claude Desktop、Claude Code、Cursor などのMCPアプリが、セーブデータを開いて編集できます。保存時は常に事前にバックアップが作成されます。",
+      "tabs": {
+        "general": "一般",
+        "appearance": "外観",
+        "backups": "保存とバックアップ",
+        "ai": "AI連携",
+        "shortcuts": "キーボードショートカット",
+        "about": "情報"
+      },
+      "sub": {
+        "general": "言語とテーマ。",
+        "appearance": "文字サイズ、色、背景。",
+        "backups": "保存の動作と保持するバックアップ数。",
+        "ai": "AIを活用する2つの方法。SavePrismが勝手にデータを送信することはありません。",
+        "shortcuts": "ショートカットをクリックして新しいキーを押します。1つの操作につき最大2個まで。",
+        "about": "バージョンとライセンス。"
+      },
+      "themeFile": {
+        "title": "テーマファイル",
+        "filterName": "SavePrismテーマ",
+        "label": "外観を共有",
+        "hint": "エクスポートすると、色、文字サイズ、背景をファイルとして保存します。インポートすると、他の人が作成したファイルを適用します。",
+        "export": "テーマをエクスポート…",
+        "import": "テーマをインポート…",
+        "share": "コミュニティテーマで共有",
+        "exportTitle": "テーマのエクスポート",
+        "importTitle": "テーマのインポート",
+        "exported": "テーマをエクスポートしました",
+        "imported": "テーマ「{{name}}」をインポートしました",
+        "invalid": "テーマファイルが無効です",
+        "exportFailed": "テーマをエクスポートできませんでした",
+        "importFailed": "テーマをインポートできませんでした",
+        "reasons": {
+          "tooBig": "ファイルサイズが64 KBを超えています。",
+          "json": "有効なJSONではありません。",
+          "format": "SavePrismテーマファイルではありません。",
+          "version": "対応していないバージョンです。",
+          "name": "名前がないか、長すぎます。",
+          "colors": "色がプリセットIDまたは #rrggbb 値ではありません。",
+          "appColor": "アプリアクセント色が有効なプリセット、system、monochrome、または #rrggbb 値ではありません。",
+          "textSize": "文字サイズが80～140%の範囲外です。",
+          "background": "背景設定が無効です。"
+        }
+      },
+      "sample": {
+        "name": "名前",
+        "value": "値",
+        "gold": "ゴールド",
+        "level": "レベル",
+        "health": "HP",
+        "heroName": "主人公の名前",
+        "map": "マップ"
+      }
+    },
+    "shortcuts": {
+      "title": "キーボードショートカット",
+      "open": "ファイルを開く",
+      "pasteCode": "コードを貼り付け",
+      "save": "保存",
+      "saveAs": "名前を付けて保存…",
+      "closeFile": "ファイルを閉じる",
+      "undo": "元に戻す",
+      "redo": "やり直し",
+      "find": "最初のリストを検索",
+      "undoAll": "すべての変更を元に戻す",
+      "openSettings": "設定を開く",
+      "whereSaves": "セーブデータの場所は？",
+      "groups": {
+        "file": "ファイル",
+        "editing": "編集",
+        "app": "アプリ"
+      }
+    },
+    "about": {
+      "title": "SavePrismについて",
+      "version": "バージョン",
+      "core": "コア",
+      "license": "ライセンス",
+      "licenseValue": "MITライセンス",
+      "privacy": "ファイルはお使いのPC内にとどまります。バックアップは %LOCALAPPDATA%\\SavePrism\\backups に保管されます。",
+      "notices": "サードパーティの通知",
+      "noticesFailed": "通知を読み込めませんでした",
+      "versionLine": "バージョン {{version}}",
+      "licenseShort": "MIT",
+      "licenseBody": "SavePrism は MIT License のもとで公開されています。全文は以下をご覧ください。",
+      "tagline": "お使いのPCで動作するセーブエディター。アカウント不要、アップロード不要。",
+      "whatsNew": "{{version}} の新機能",
+      "showTour": "ツアーを再表示",
+      "copyright": "© 2026 SavePrism コントリビューター",
+      "noticesSubtitle": "SavePrism は以下のオープンソースパッケージを使用して開発されています。心より感謝申し上げます！",
+      "searchPackages": "パッケージを検索",
+      "searchEmpty": "一致するパッケージはありません。",
+      "noticesCount": "{{total}}個のパッケージ",
+      "noticesCountFiltered": "{{total}}個中{{shown}}個のパッケージ",
+      "licenseUnknown": "不明",
+      "noticeNoText": "通知ファイルにライセンス本文が含まれていません。"
+    },
+    "update": {
+      "ready": "SavePrism {{version}} のインストールの準備が整いました",
+      "update": "アップデート",
+      "check": "アップデートを確認",
+      "checking": "確認中…",
+      "current": "最新バージョンをお使いです。",
+      "available": "{{version}} が利用可能です",
+      "checkFailed": "アップデートを確認できませんでした。",
+      "dialogTitle": "SavePrism {{version}} へのアップデート中",
+      "downloading": "アップデートをダウンロード中…",
+      "installing": "インストール中。SavePrismが自動で再起動します。",
+      "failed": "アップデートをインストールできませんでした。"
+    },
+    "whatsNew": {
+      "title": "{{version}} の新機能",
+      "subtitle": "このバージョンの変更内容は以下のとおりです。",
+      "gotIt": "了解"
+    },
+    "tour": {
+      "step": "{{total}} 中 {{current}} ステップ",
+      "back": "戻る",
+      "next": "次へ",
+      "skip": "スキップ",
+      "done": "完了",
+      "drop": {
+        "title": "セーブデータを開く",
+        "body": "ここにセーブデータをドロップするか、「ファイルを開く」「コードを貼り付け」から開始します。"
+      },
+      "where": {
+        "title": "セーブデータの場所がわかりませんか？",
+        "body": "このリンクから各ゲームタイプの一般的なセーブ先フォルダーを確認できます。"
+      },
+      "language": {
+        "title": "言語",
+        "body": "ここで英語とトルコ語を切り替えます。"
+      },
+      "bell": {
+        "title": "通知",
+        "body": "今回のセッションのイベントがここに表示されます。"
+      },
+      "settings": {
+        "title": "設定",
+        "body": "テーマ、バックアップ、その他のSavePrism設定はここにあります。"
+      }
+    },
+    "crash": {
+      "title": "問題が発生しました",
+      "body": "SavePrismで予期しないエラーが発生しました。保存されていない変更は失われます。",
+      "copy": "レポートをコピー",
+      "reload": "再読み込み",
+      "copied": "レポートをコピーしました。",
+      "copyFailed": "コピーできませんでした。下のテキストを選択して手動でコピーしてください。"
+    }
+  },
+  "editor": {
+    "bool": {
+      "true": "オン",
+      "false": "オフ"
+    },
+    "loading": "値を読み込み中…",
+    "loadFailed": "値を読み込めませんでした。{{message}} {{hint}}",
+    "sections": {
+      "gold": "ゴールド",
+      "characters": "キャラクター",
+      "items": "アイテム",
+      "weapons": "武器",
+      "armors": "防具",
+      "variables": "変数",
+      "switches": "スイッチ",
+      "values": "値",
+      "character": "キャラクター",
+      "story": "ストーリー",
+      "storyVariables": "ストーリー変数"
+    },
+    "info": {
+      "gold": "パーティのゴールドです。入力欄の下に表示されている範囲内に収める必要があります。",
+      "characters": "編集するキャラクターを選択してください。能力値ボーナスはゲームのデータベースにあるキャラクターの能力値に加算されるもので、最終的な値ではありません。",
+      "namesFrom": "{{folder}} からの名前。",
+      "noNames": "ゲームのデータフォルダーが見つからなかったため、名前は番号で表示されます。",
+      "variables": "ゲームの変数です。用途がわかっている場合のみ変更してください。",
+      "switches": "ゲームのスイッチ（trueまたはfalse）です。",
+      "values": "このファイルで見つかった、すべての編集可能な値です。",
+      "moment": "SugarCubeのセーブデータは、プレイしたパッセージごとにモーメントの履歴を保持します。ゲームはここに表示されているモーメントから再開され、編集内容は該当するモーメントに適用されます。他のモーメントの値はそのまま保持されます。",
+      "storyVariables": "ゲーム起動時に読み込まれるストーリーの変数（ストーリー内の $name）の値です。鍵マークが付いた値はここでは変更できません（プレイ中に一部が変更された値や、Map、Set、Date などの特別な値）。それらはJSONエディターで変更してください。"
+    },
+    "fallback": {
+      "item": "アイテム #{{id}}",
+      "weapon": "武器 #{{id}}",
+      "armor": "防具 #{{id}}",
+      "variable": "変数 #{{id}}",
+      "switch": "スイッチ #{{id}}"
+    },
+    "ownName": {
+      "action": "{{name}} に名前を付ける",
+      "rename": "{{name}} の名前を変更",
+      "actionTip": "この項目に独自のカスタム名を付けます。このゲームでのみ保持されます。",
+      "label": "{{name}} の名前"
+    },
+    "actor": {
+      "level": "レベル",
+      "hp": "HP",
+      "mp": "MP",
+      "exp": "EXP",
+      "lv": "Lv {{level}}",
+      "bonusHeading": "ボーナス（クラスの値に加算）",
+      "levelExpHint": "EXPは変更されませんでした: ゲームの Classes.json が見つかりませんでした。"
+    },
+    "field": {
+      "undo": "元に戻す（元は {{value}}）",
+      "increase": "増やす",
+      "decrease": "減らす",
+      "new": "新規",
+      "removeAdded": "削除（追加項目）",
+      "readOnly": "このファイルでは読み取り専用",
+      "readOnlyIndex": "読み取り専用: データベースインデックスがこの値のコピーを保持しているため、変更するとインデックスが破損します"
+    },
+    "search": {
+      "list": "名前、#ID、または値を検索",
+      "values": "値を検索",
+      "empty": "一致する項目はありません。"
+    },
+    "pager": {
+      "previous": "前のページ",
+      "next": "次のページ"
+    },
+    "bulk": {
+      "trigger": "一括設定",
+      "triggerTip": "このリストに表示されているすべての値を同じ値に設定します",
+      "titleNumber": "すべて次の値に設定…",
+      "titleSwitch": "すべてオンまたはオフにする",
+      "scope_one": "すべてのページで、このリストに表示されている{{shown}}個の値を変更します。1回の「元に戻す」ですべて元に戻せます。",
+      "scope_other": "すべてのページで、このリストに表示されている{{shown}}個の値を変更します。1回の「元に戻す」ですべて元に戻せます。",
+      "scopeSearch_one": "すべてのページで、検索に一致する{{shown}}個の値を変更します。1回の「元に戻す」ですべて元に戻せます。",
+      "scopeSearch_other": "すべてのページで、検索に一致する{{shown}}個の値を変更します。1回の「元に戻す」ですべて元に戻せます。",
+      "valueLabel": "新しい値",
+      "apply_one": "{{changed}}個の値を設定",
+      "apply_other": "{{changed}}個の値を設定",
+      "applyIdle": "適用",
+      "nothing": "変更対象がありません",
+      "allOn": "すべてオン",
+      "allOff": "すべてオフ",
+      "turnOn_one": "{{changed}}個のスイッチをオンにする",
+      "turnOn_other": "{{changed}}個のスイッチをオンにする",
+      "turnOff_one": "{{changed}}個のスイッチをオフにする",
+      "turnOff_other": "{{changed}}個のスイッチをオフにする"
+    },
+    "values": {
+      "more": "さらに表示",
+      "items_one": "{{count}}個の項目",
+      "items_other": "{{count}}個の項目",
+      "found_one": "{{shown}}件見つかりました",
+      "found_other": "{{shown}}件見つかりました",
+      "details": "ファイルの詳細",
+      "detailsTip": "ゲームデータではなくファイル自体に関する情報（エンジンのバージョン、セーブの種類など）です。読み取り専用: ゲームがそのままの形で必要とします。"
+    },
+    "problem": {
+      "empty": "値を入力してください。",
+      "notNumber": "数値ではありません。",
+      "notWhole": "小数点のない整数を入力してください。",
+      "aboveMax": "最大 {{max}}",
+      "belowMin": "最小 {{min}}"
+    },
+    "errors": {
+      "unknown": "変更は適用されませんでした。再試行してください。"
+    },
+    "type": {
+      "int": "整数",
+      "float": "小数",
+      "bool": "真偽値（true/false）",
+      "string": "テキスト",
+      "source": "ファイルの種類: {{name}}"
+    },
+    "range": {
+      "between": "{{min}} ～ {{max}}",
+      "atLeast": "{{min}} 以上",
+      "atMost": "{{max}} 以下"
+    },
+    "stat": {
+      "maxHp": "最大HP",
+      "maxMp": "最大MP",
+      "attack": "攻撃力",
+      "defense": "防御力",
+      "magicAttack": "魔法攻撃",
+      "magicDefense": "魔法防御",
+      "agility": "敏捷性",
+      "luck": "運",
+      "strength": "腕力",
+      "dexterity": "器用さ",
+      "intelligence": "知力",
+      "spirit": "精神力"
+    },
+    "empty": {
+      "item": "このセーブデータにはアイテムがありません。",
+      "weapon": "このセーブデータには武器がありません。",
+      "armor": "このセーブデータには防具がありません。",
+      "variable": "このセーブデータには変数がありません。",
+      "switch": "このセーブデータにはスイッチがありません。",
+      "values": "このファイルには値がありません。",
+      "characters": "このセーブデータにはキャラクターがいません。"
+    },
+    "count": {
+      "changed_one": "{{changed}}件変更済み",
+      "changed_other": "{{changed}}件変更済み"
+    },
+    "askAi": {
+      "label": "AIに尋ねる",
+      "tip": "AIチャットに貼り付けるための簡単なメモとともに、これらの値をコピーします",
+      "intro": "SavePrismでゲームのセーブデータを編集しています。",
+      "file": "ファイル: {{name}} ({{format}})",
+      "filePlain": "ファイル: {{name}}",
+      "list": "リスト: {{list}}",
+      "listSearch": "リスト: {{list}}、検索 \"{{query}}\"",
+      "values": "値 ({{count}}):",
+      "valuesFirst": "値 ({{total}}件中最初の{{shown}}件):",
+      "valuesSome": "値 (最初の{{shown}}件、ファイルにはさらに存在します):",
+      "row": "- {{subject}} = {{value}}{{detail}}",
+      "subjectName": "{{name}} #{{id}}",
+      "subjectId": "#{{id}}",
+      "subjectValue": "この値",
+      "ask": "変更すべき値の名前と、それぞれどのような値に変更するかを教えてください。各値は制限範囲内に収めてください。"
+    },
+    "story": {
+      "title": "セーブ",
+      "passage": "パッセージ",
+      "saved": "セーブ日時",
+      "moment": "モーメント",
+      "momentOf": "{{total}} 件中 {{current}}",
+      "unknown": "不明"
+    },
+    "note": {
+      "changed": "プレイ中に変更済み",
+      "changedTip": "この値はプレイ中に一部が変更されたため、リストに表示できません。JSONエディターで変更してください。",
+      "map_one": "Map · {{shown}}件のエントリ",
+      "map_other": "Map · {{shown}}件のエントリ",
+      "set_one": "Set · {{shown}}個の項目",
+      "set_other": "Set · {{shown}}個の項目",
+      "date": "日付 · {{date}}",
+      "code": "特殊な値",
+      "specialTip": "ゲームが独自のコードでこの値を再構築します。JSONエディターで変更してください。",
+      "empty": "空",
+      "emptyTip": "この値は空です（null または空のリスト）。"
+    },
+    "addEntry": {
+      "trigger": "追加",
+      "triggerTip": "このリストに{{label}}を追加",
+      "title": "{{label}}を追加",
+      "label": {
+        "item": "アイテム",
+        "weapon": "武器",
+        "armor": "防具"
+      },
+      "search": "名前または #ID を検索",
+      "noMatch": "ゲームのデータベースに一致するものがありません。",
+      "typedId": "#{{id}} を追加",
+      "clear": "クリア",
+      "id": "データベースID",
+      "idPlaceholder": "例: 12",
+      "noCatalog": "ゲームのデータフォルダーが見つからなかったため、IDを直接入力してください。",
+      "missingFile": "ゲームのデータフォルダーに {{file}} が見つからないため、IDを直接入力してください。",
+      "count": "個数",
+      "submit": "追加"
+    },
+    "addValue": {
+      "action": "値を追加",
+      "title": "値の追加",
+      "hint": "保存時にファイルに書き込まれます。",
+      "key": "名前",
+      "keyPlaceholder": "例: score",
+      "type": "種類",
+      "kind": {
+        "int": "数値",
+        "string": "テキスト",
+        "bool": "オン/オフ"
+      },
+      "value": "値",
+      "submit": "値を追加"
+    },
+    "remove": {
+      "action": "{{name}} を削除",
+      "title": "{{name}} を削除しますか？",
+      "body": "保存時にファイルから削除されます。「元に戻す」で元に戻せます。",
+      "confirm": "削除"
+    },
+    "dataFolder": {
+      "title": "ゲームのデータフォルダーを選択",
+      "none": "ゲームのデータフォルダーが見つかりません",
+      "namesFrom": "ゲームのデータフォルダーからの名前",
+      "choose": "データフォルダーを選択…",
+      "change": "変更…",
+      "picking": "開いています…"
+    },
+    "gwent": {
+      "title": "Gwent コレクション",
+      "info": "このセーブデータに含まれる Gwent カードとそのデッキです。所持枚数のみ変更できます。デッキは読み取り専用です（変更するとデッキリストが再構築されるため）。また、セーブデータに含まれていないカードをここに追加することはできません。",
+      "cards_one": "{{n}} 枚のカード",
+      "cards_other": "{{n}} 枚のカード",
+      "leaders_one": "{{n}} 枚のリーダー",
+      "leaders_other": "{{n}} 枚のリーダー",
+      "cardsOf": "{{total}} 枚中 {{owned}} 枚のカード",
+      "leadersOf": "{{total}} 枚中 {{owned}} 枚のリーダー",
+      "show": "表示",
+      "showAll": "すべて",
+      "showOwned": "所持のみ",
+      "showMissing": "未所持",
+      "factions": "勢力",
+      "allFactions": "すべて",
+      "faction": {
+        "northern": "北方諸国",
+        "nilfgaard": "ニルフガード",
+        "scoiatael": "スコイア＝テル",
+        "monsters": "モンスター",
+        "skellige": "スケリッジ",
+        "neutral": "中立",
+        "other": "その他"
+      },
+      "leader": "リーダー",
+      "missing": "未所持",
+      "copies": "{{name}} の所持枚数",
+      "fallback": "カード {{index}}",
+      "search": "名前または #番号 を検索",
+      "was": "元は {{value}}",
+      "pickFolder": "ゲームフォルダーを選択",
+      "pickFolderTip": "カード名や未所持カード情報はゲーム自体のファイルから取得されます。",
+      "pickTitle": "The Witcher 3 のゲームフォルダーを選択",
+      "pickFailed": "そのフォルダー内に Gwent カードが見つかりませんでした。",
+      "picking": "開いています…",
+      "empty": "一致するカードがありません。",
+      "view": "コレクションまたはデッキ",
+      "collection": "コレクション",
+      "deck": "デッキ {{number}}",
+      "inDeck": "デッキ内に{{n}}枚",
+      "deckEmpty": "このデッキにはカードがありません。",
+      "deckLocked": "このデッキはロックされており、カードがありません。",
+      "locked": "ロック中",
+      "selected": "選択中"
+    },
+    "satisfactory": {
+      "title": "インベントリ",
+      "info": "スタック数のみ変更できます。最大スタックサイズは500です。",
+      "playerInventory": "プレイヤーインベントリ",
+      "playerNInventory": "プレイヤー{{n}}のインベントリ",
+      "pick": "インベントリ",
+      "kinds": "インベントリの種類",
+      "kind": {
+        "player": "プレイヤー",
+        "storage": "ストレージ",
+        "other": "その他"
+      },
+      "empty": "このセーブデータには空でないインベントリがありません。"
+    }
+  },
+  "whatsNew": [
+    "## 0.9.1",
+    "",
+    "4つの新しい言語に対応し、LinuxおよびmacOS向けの修正を行いました。",
+    "",
+    "### 言語",
+    "- SavePrismがスペイン語、ロシア語、日本語、簡体字中国語に対応しました。ヘッダーの言語メニューまたは「設定」から選択できます。",
+    "- ご自身の言語でSavePrismを使いたいですか？言語は1つのファイルです。GitHubの「Add a language」をご覧ください。",
+    "",
+    "### 修正点",
+    "- Linux: 一部のグラフィックドライバーや仮想マシンでウィンドウが白くなっていた問題に対処するため、SavePrismでWebKitGTKレンダラーをオフにしました。",
+    "",
+    "### セーブデータの場所は？",
+    "- macOSやLinuxでも、Steam Protonフォルダー（Steam Deckを含む）をはじめとする一般的なセーブフォルダーが表示されるようになりました。初の外部貢献をしてくれたEfeHasNoLuckに感謝します。"
+  ]
+}

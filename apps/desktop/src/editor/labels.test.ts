@@ -1,10 +1,13 @@
 // @vitest-environment node
 import { describe, expect, it } from "vitest";
 import type { Field, GameView, RpgMakerView, ValueRow } from "@/api/commands";
-import en from "../../locales/en/editor.json";
-import tr from "../../locales/tr/editor.json";
+import enFile from "../../locales/en.json";
+import trFile from "../../locales/tr.json";
 import type { Translate } from "./helpers";
 import { entryLabel, pickLabels, viewLabels } from "./labels";
+
+const en = enFile.editor;
+const tr = trFile.editor;
 
 function translate(bundle: Record<string, unknown>): Translate {
   const look = (key: string): unknown =>

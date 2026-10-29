@@ -2,7 +2,6 @@ import type { ReactNode } from "react";
 import { openUrl } from "@tauri-apps/plugin-opener";
 import { useTranslation } from "react-i18next";
 import changelog from "../../../../CHANGELOG.md?raw";
-import changelogTr from "../../locales/tr/CHANGELOG.md?raw";
 import { Button } from "@/components/ui/button";
 import {
   Dialog,
@@ -12,10 +11,21 @@ import {
   DialogHeader,
   DialogTitle,
 } from "@/components/ui/dialog";
+import { LOCALES } from "@/i18n/locales";
 import { changelogForLanguage } from "./changelog";
 
-/** Release notes per UI language, imported at build time (no network call). */
-const NOTES: Readonly<Record<string, string>> = { en: changelog, tr: changelogTr };
+/**
+ * Release notes per UI language, imported at build time (no network call): English from
+ * `CHANGELOG.md`, the others from the `whatsNew` lines of their language file.
+ */
+const NOTES: Readonly<Record<string, string>> = {
+  ...Object.fromEntries(
+    Object.entries(LOCALES).flatMap(([code, file]) =>
+      file.whatsNew === undefined ? [] : [[code, file.whatsNew.join("\n")]],
+    ),
+  ),
+  en: changelog,
+};
 
 const BOLD = /^\*\*(.+)\*\*$/;
 const LINK = /^\[([^\]]+)\]\(([^)]+)\)$/;

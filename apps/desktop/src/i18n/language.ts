@@ -1,30 +1,18 @@
-/** Display data of the languages the app ships with (no React, no Tauri). */
+/** Display data of the languages the app ships with, read from their files (no React, no Tauri). */
 import type { Language } from "./detect";
-
-/** The language's own name, never translated. */
-export const LANGUAGE_NAMES: Record<Language, string> = {
-  en: "English",
-  tr: "Türkçe",
-};
-
-/** The short code on the header button. */
-export const LANGUAGE_SHORT: Record<Language, string> = {
-  en: "EN",
-  tr: "TR",
-};
-
-/** Which flag belongs to a language (English uses the UK flag). */
-export const LANGUAGE_FLAG: Record<Language, "gb" | "tr"> = {
-  en: "gb",
-  tr: "tr",
-};
+import { LOCALES } from "./locales";
 
 /** The short code for a language. */
 export function languageShortCode(language: Language): string {
-  return LANGUAGE_SHORT[language];
+  return LOCALES[language]?.language.short ?? language.toUpperCase();
 }
 
-/** The language's own name. */
+/** The language's own name, never translated. */
 export function languageName(language: Language): string {
-  return LANGUAGE_NAMES[language];
+  return LOCALES[language]?.language.name ?? language;
+}
+
+/** The language's flag as SVG markup, when its file has one. */
+export function languageFlag(language: Language): string | undefined {
+  return LOCALES[language]?.language.flag;
 }

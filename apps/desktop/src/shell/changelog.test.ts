@@ -57,6 +57,11 @@ describe("changelogForLanguage", () => {
     expect(changelogForLanguage(SOURCES, "tr-TR", "0.1.0")).toEqual(["", "- Türkçe not"]);
   });
 
+  it("uses a language file named with a regional tag", () => {
+    const sources = { ...SOURCES, "zh-CN": "## 0.1.0\n\n- 中文说明\n" };
+    expect(changelogForLanguage(sources, "zh-CN", "0.1.0")).toEqual(["", "- 中文说明"]);
+  });
+
   it("falls back to English without a file for the language", () => {
     expect(changelogForLanguage(SOURCES, "de", "0.1.0")).toContain("- First note");
     expect(changelogForLanguage(SOURCES, "", "0.1.0")).toContain("- First note");

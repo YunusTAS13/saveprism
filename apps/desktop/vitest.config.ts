@@ -10,5 +10,8 @@ export default defineConfig({
   test: {
     environment: "node",
     include: ["src/**/*.test.ts"],
+    // The on-disk module cache keeps old `import.meta.glob` results, so a newly added language
+    // file would go untested.
+    fsModuleCache: false,
   },
 });

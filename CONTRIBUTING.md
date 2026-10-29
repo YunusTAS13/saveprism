@@ -56,21 +56,21 @@ pnpm test
 - Never run content from a save file (no unpickling, no Ruby eval, no BinaryFormatter deserialization). Parse to a tree
   only.
 - Error codes are stable and look like `SP-<AREA>-<NNN>`. Never reuse or renumber one.
-- Everything in the repository is English: code, comments, docs, UI text in `locales/en/`, commit messages.
+- Everything in the repository is English: code, comments, docs, UI text in `locales/en.json`, commit messages.
 
 ## Add a language
 
-English (`en`) is the source; Turkish (`tr`) is the second language. For a new language with the code `<code>`
-(for example `de`, `pt-BR`):
+A language is one file: `apps/desktop/locales/<code>.json` (for example `de.json`, `pt-BR.json`). The app finds the
+file by itself and shows the language in the menu; no code changes. English (`en.json`) is the source.
 
-1. Copy `apps/desktop/locales/en/` to `apps/desktop/locales/<code>/` and translate `common.json` and `editor.json`.
-   Keep every key and every `{{placeholder}}` as it is. Translate `CHANGELOG.md` too (the What's new dialog shows it).
-2. `apps/desktop/src/i18n/detect.ts`: add the code to `SUPPORTED_LANGUAGES`.
-3. `apps/desktop/src/i18n/language.ts`: add the language's own name, its short code and its flag.
-4. `apps/desktop/src/i18n/flags.tsx`: add the flag, if it is not there yet.
-5. Import the new files where the other languages are imported: `src/i18n/index.tsx` (`common.json`),
-   `src/editor/i18n.ts` (`editor.json`) and `src/shell/WhatsNewDialog.tsx` (`CHANGELOG.md`).
-6. Run `pnpm test`: `src/i18n/keys.test.ts` fails on any key that is missing or extra.
+1. Copy `en.json` to `<code>.json`.
+2. `language`: the language's own name (`Deutsch`), the short code on the header button (`DE`) and a square SVG flag
+   (`viewBox="0 0 60 60"`; the app shows it round). Without a flag the short code is shown.
+3. `common` and `editor`: translate every text. Keep every key and every `{{placeholder}}` as it is. Plural keys end in
+   `_one` / `_other`; add the forms your language needs (Russian: `_one`, `_few`, `_many`, `_other`).
+4. `whatsNew` (optional): the What's new notes as lines, in the `CHANGELOG.md` format (`## 0.9.1` headings). Without it
+   the English notes are shown.
+5. Run `pnpm test`: it fails on any missing or extra key, a lost placeholder or a missing plural form.
 
 Check the result in the app (`pnpm dev`, then the language menu in the header): long words in buttons and card
 headers are the usual problem. Attach a screenshot to the pull request.

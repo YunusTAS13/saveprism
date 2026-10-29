@@ -1,0 +1,1286 @@
+{
+  "language": {
+    "name": "Español",
+    "short": "ES",
+    "flag": "<svg xmlns=\"http://www.w3.org/2000/svg\" viewBox=\"0 0 60 60\"><rect width=\"60\" height=\"60\" fill=\"#AA151B\"/><rect y=\"15\" width=\"60\" height=\"30\" fill=\"#F1BF00\"/></svg>"
+  },
+  "common": {
+    "empty": {
+      "title": "Arrastra una partida guardada aquí",
+      "subtitle": "Todo se queda en tu PC."
+    },
+    "footer": {
+      "core": "core v{{version}}",
+      "coreUnavailable": "core no disponible"
+    },
+    "language": {
+      "label": "Idioma"
+    },
+    "theme": {
+      "toggle": "Cambiar tema",
+      "light": "Claro",
+      "dark": "Oscuro",
+      "system": "Sistema",
+      "toLight": "Cambiar a tema claro",
+      "toDark": "Cambiar a tema oscuro"
+    },
+    "common": {
+      "close": "Cerrar",
+      "cancel": "Cancelar",
+      "copy": "Copiar",
+      "copied": "Copiado",
+      "loading": "Cargando…",
+      "opening": "Abriendo {{name}}…",
+      "moreInfo": "Más información"
+    },
+    "header": {
+      "openFile": "Abrir archivo",
+      "closeFile": "Cerrar archivo",
+      "closeFileTip": "Cierra este archivo y vuelve a la pantalla de inicio",
+      "notifications": "Notificaciones",
+      "settings": "Ajustes",
+      "engineUnknown": "Formato desconocido",
+      "pasteCode": "Pegar código",
+      "pasteCodeTip": "Abre un código de guardado copiado de un juego de navegador",
+      "pastedCode": "Código pegado",
+      "pastedTip": "Abierto desde un código de guardado pegado. Copiar código lo devuelve con tus cambios."
+    },
+    "dialog": {
+      "openTitle": "Abrir una partida guardada",
+      "saveTitle": "Guardar como",
+      "saveFiles": "Partidas guardadas",
+      "allFiles": "Todos los archivos",
+      "exportTitle": "Exportar JSON",
+      "jsonFiles": "JSON (*.json)",
+      "compareTitle": "Elige una partida guardada para comparar"
+    },
+    "start": {
+      "dropActive": "Suelta para abrir",
+      "openFile": "Abrir archivo",
+      "pasteCode": "Pegar código",
+      "pasteHint": "¿Juego de navegador? Pega el código de guardado que te dio (Ctrl+V).",
+      "notSure": "¿No sabes dónde está tu partida guardada?",
+      "whereLink": "¿Dónde está mi partida guardada?",
+      "slogan": "Tus archivos se quedan en tu PC. Tus datos están seguros.",
+      "faq": {
+        "title": "Preguntas frecuentes",
+        "original": {
+          "question": "¿Se modifica mi partida guardada original?",
+          "answer": "Solo si eliges Sobrescribir archivo actual. La opción predeterminada es Guardar como archivo nuevo, así que el original se mantiene como estaba. Antes de reemplazar cualquier archivo, SavePrism guarda una copia que puedes recuperar desde Copias de seguridad."
+        },
+        "games": {
+          "question": "¿Qué juegos funcionan?",
+          "answer": "Juegos hechos con Unity, Unreal Engine, RPG Maker, Ren'Py, Godot, GameMaker y más, además de códigos de guardado de juegos de navegador. La lista completa está en el README. Si un archivo se puede leer, sus valores aparecen al instante."
+        },
+        "notOpen": {
+          "question": "Mi archivo no se abre, ¿y ahora qué?",
+          "answer": "Comprueba que sea la partida guardada en sí, no un acceso directo o una captura de pantalla. Algunos juegos bloquean sus partidas guardadas; SavePrism te indica lo que encontró. ¿Sigues con problemas? Copia el informe del archivo y avísanos en GitHub con el nombre del juego."
+        },
+        "ai": {
+          "question": "¿Cómo lo uso con una herramienta de IA?",
+          "answer": "Pulsa Preguntar a la IA en cualquier lista para copiar sus valores y pégalos en ChatGPT, Claude o Gemini. Las aplicaciones de IA compatibles con MCP, como Claude Desktop, pueden conectarse directamente: Ajustes → Conexión de IA."
+        },
+        "undo": {
+          "question": "¿Cómo deshago un cambio?",
+          "answer": "Pulsa Ctrl+Z para deshacer y Ctrl+Y para rehacer, o Deshacer todo en la barra inferior. Después de guardar, abre Copias de seguridad para volver a una versión anterior."
+        }
+      }
+    },
+    "banner": {
+      "readOnly": "Este archivo aún no se puede escribir de forma segura. Puedes verlo, pero no guardar.",
+      "semantic": "El archivo se escribirá con una disposición ligeramente diferente. El contenido se mantiene igual.",
+      "renpySigned": "Partida guardada de Ren'Py: tras guardar los cambios, el juego preguntará si confías en esta partida guardada. Responde Sí.",
+      "renpyKeySigned": "Partida guardada de Ren'Py: los cambios están firmados con tu propia clave de Ren'Py.",
+      "renpyPersistentKeySigned": "Datos persistentes de Ren'Py: los cambios están firmados con tu propia clave de Ren'Py.",
+      "renpyPersistentSigned": "Estos datos persistentes de Ren'Py están firmados. El juego descartaría una copia editada, por lo que se abre en solo lectura.",
+      "terrariaLayout": "No se reconoce la estructura de este archivo de Terraria para esta versión del juego, por lo que se abre en solo lectura."
+    },
+    "bottom": {
+      "changes_one": "{{count}} cambio pendiente",
+      "changes_other": "{{count}} cambios pendientes",
+      "noChanges": "Sin cambios",
+      "changesTitle": "Cambios pendientes",
+      "undo": "Deshacer",
+      "redo": "Rehacer",
+      "undoTip": "Deshacer (Ctrl+Z)",
+      "redoTip": "Rehacer (Ctrl+Y)",
+      "undoAll": "Deshacer todo",
+      "openJson": "Abrir JSON",
+      "openJsonInfo": "Muestra todo el archivo como texto JSON. Puedes cambiar valores allí y aplicarlos.",
+      "backups": "Copias de seguridad",
+      "backupsTip": "Copias de seguridad de este archivo: míralas y restaura una",
+      "saveAs": "Guardar como…",
+      "saveOverwrite": "Sobrescribir archivo actual",
+      "overwriteItem": "Sobrescribir archivo actual (se crea una copia de seguridad antes)",
+      "saveAsItem": "Guardar como archivo nuevo…",
+      "saveOptions": "Más opciones de guardado",
+      "backupInfo": "Se almacena una copia de seguridad del original antes de reemplazar cualquier archivo.",
+      "invalidTip": "Corrige los valores resaltados antes de guardar.",
+      "readOnlyTip": "Este archivo es de solo lectura.",
+      "copyCode": "Copiar código",
+      "copyCodeTip": "Copia el código de guardado editado para pegarlo en tu juego",
+      "saveAsFile": "Guardar como archivo…",
+      "copyCodeItem": "Copiar como código de guardado",
+      "addedTip_one": "{{count}} entrada añadida",
+      "addedTip_other": "{{count}} entradas añadidas",
+      "removedTip_one": "{{count}} entrada eliminada",
+      "removedTip_other": "{{count}} entradas eliminadas",
+      "addedTag": "añadido",
+      "removedTag": "eliminado",
+      "compareItem": "Comparar con otra partida guardada…"
+    },
+    "confirm": {
+      "discardOpen_one": "¿Descartar {{count}} cambio y abrir otro archivo?",
+      "discardOpen_other": "¿Descartar {{count}} cambios y abrir otro archivo?",
+      "discardBody": "Se perderán tus cambios sin guardar.",
+      "discard": "Descartar",
+      "closeTitle": "¿Cerrar sin guardar?",
+      "closeBody_one": "Se perderá tu {{count}} cambio.",
+      "closeBody_other": "Se perderán tus {{count}} cambios.",
+      "closeDiscard": "Cerrar sin guardar",
+      "updateTitle": "¿Actualizar sin guardar?",
+      "updateBody_one": "Se perderá tu {{count}} cambio. SavePrism se reinicia tras la actualización.",
+      "updateBody_other": "Se perderán tus {{count}} cambios. SavePrism se reinicia tras la actualización.",
+      "updateDiscard": "Actualizar sin guardar"
+    },
+    "json": {
+      "title": "Editor JSON",
+      "readOnlyNote": "Este archivo es de solo lectura, por lo que no se pueden aplicar cambios al JSON.",
+      "search": "Buscar en JSON",
+      "matches_one": "{{count}} coincidencia",
+      "matches_other": "{{count}} coincidencias",
+      "noMatches": "Sin coincidencias",
+      "next": "Siguiente coincidencia",
+      "previous": "Coincidencia anterior",
+      "failed": "No se pudo generar la vista JSON.",
+      "editNote": "Cambia los valores y pulsa Aplicar. Los campos, elementos de lista y marcadores como <12 bytes> se quedan como están.",
+      "exportJson": "Exportar .json",
+      "exportApplyFirst": "Aplica o deshace tus cambios primero. Exportar guarda los valores aplicados.",
+      "editorLabel": "Texto JSON",
+      "apply": "Aplicar",
+      "applying": "Aplicando…",
+      "dirty": "Editado. Aplica para usar estos valores.",
+      "notApplied": "No se aplicó nada.",
+      "syntaxAt": "Línea {{line}}, columna {{column}}: {{problem}}",
+      "confirmTitle": "¿Aplicar los cambios del JSON?",
+      "confirmBody": "Tus ediciones en el texto JSON aún no se han aplicado.",
+      "keepEditing": "Seguir editando",
+      "discard": "Descartar",
+      "problem": {
+        "end": "El texto termina demasiado pronto.",
+        "unexpected": "Esto no es un valor. Usa un número, texto entre comillas, true, false o null.",
+        "expectedKey": "Se esperaba un nombre de campo entre comillas.",
+        "expectedColon": "Se esperaba ':' después del nombre de campo.",
+        "expectedCommaOrBrace": "Se esperaba ',' o '}'.",
+        "expectedCommaOrBracket": "Se esperaba ',' o ']'.",
+        "unclosedString": "Este texto no tiene comilla de cierre.",
+        "controlChar": "Escribe los saltos de línea y tabulaciones dentro del texto como \\n y \\t.",
+        "badEscape": "Escape desconocido tras una barra invertida.",
+        "badNumber": "Este número no está bien escrito.",
+        "trailing": "Hay más texto después del final del JSON."
+      }
+    },
+    "backups": {
+      "title": "Copias de seguridad",
+      "description": "Copias de {{name}} creadas antes de sobrescribirlo, las más recientes primero.",
+      "retention_one": "Solo se conserva la última copia de seguridad de cada archivo, hasta 30 días.",
+      "retention_other": "Se conservan las últimas {{count}} copias de seguridad de cada archivo, hasta 30 días.",
+      "empty": "Aún no hay copias de seguridad de este archivo. Se crea una cada vez que lo sobrescribes.",
+      "failed": "No se pudieron leer las copias de seguridad.",
+      "restore": "Restaurar",
+      "restoring": "Restaurando…",
+      "confirmTitle": "¿Restaurar esta copia de seguridad?",
+      "confirmBody": "{{name}} se reemplazará por la copia de seguridad de {{time}}. Primero se crea una copia del archivo actual para que puedas volver a él desde esta lista.",
+      "confirmLoss_one": "Se perderá tu {{count}} cambio sin guardar.",
+      "confirmLoss_other": "Se perderán tus {{count}} cambios sin guardar."
+    },
+    "compare": {
+      "title": "Comparar con {{name}}",
+      "description": "La otra partida guardada se abre en solo lectura. No se escribe nada; hacer clic en una fila solo salta a ese valor aquí.",
+      "failed": "No se pudo comparar el archivo.",
+      "count_one": "{{count}} diferencia",
+      "count_other": "{{count}} diferencias",
+      "capped": "Mostrando las primeras {{shown}} de {{count}} diferencias",
+      "found_one": "{{count}} coincidencia",
+      "found_other": "{{count}} coincidencias",
+      "empty": "Las dos partidas guardadas tienen los mismos valores.",
+      "search": "Buscar rutas y valores",
+      "onlyHere": "solo aquí",
+      "onlyThere": "solo allí",
+      "here": "Este archivo",
+      "there": "Otro archivo",
+      "goTo": "Mostrar este valor en el editor"
+    },
+    "locations": {
+      "title": "¿Dónde está mi partida guardada?",
+      "description": "SavePrism no escanea tu PC. Estas son las carpetas habituales de guardado para cada tipo de juego.",
+      "searchPlaceholder": "Buscar por motor o tipo de archivo, por ejemplo Unity o .sav",
+      "searchLabel": "Buscar carpetas de guardado",
+      "clearSearch": "Borrar búsqueda",
+      "count": "{{shown}} de {{total}} tipos de juego",
+      "all": "Todos",
+      "folders_one": "{{count}} carpeta",
+      "folders_other": "{{count}} carpetas",
+      "insideGame": "Dentro de la carpeta del juego",
+      "registry": "Registro",
+      "registryHint": "Expórtalo con el Editor del Registro",
+      "empty": "Ningún tipo de juego coincide con tu búsqueda.",
+      "emptyHint": "Prueba con el nombre del motor o una extensión de archivo como .sav o .rpgsave.",
+      "tellUs": "¿Tu juego no aparece en la lista?",
+      "tellUsBody": "Dinos el nombre del juego y dónde encontraste su partida guardada.",
+      "tellUsButton": "Dinos en GitHub",
+      "tellUsFailed": "No se pudo abrir la página de incidencias",
+      "openFolder": "Abrir carpeta",
+      "notFound": "No se encontró en este PC",
+      "inBrowser": "Guardado en el navegador",
+      "placeholder": {
+        "gameFolder": "carpeta del juego",
+        "game": "juego",
+        "company": "empresa"
+      },
+      "openFailed": "No se pudo abrir la carpeta",
+      "failed": "No se pudieron leer las ubicaciones de guardado.",
+      "group": {
+        "unity": "Unity",
+        "unreal": "Unreal Engine",
+        "rpgmaker-mv": "RPG Maker MV/MZ",
+        "rpgmaker-classic": "RPG Maker XP/VX",
+        "renpy": "Ren'Py",
+        "godot": "Godot",
+        "gamemaker": "GameMaker",
+        "other": "Otros"
+      },
+      "engine": {
+        "rpgmaker-mv": "RPG Maker MV / MZ",
+        "rpgmaker-classic": "RPG Maker XP / VX / VX Ace / 2000 / 2003",
+        "wolf-rpg": "Wolf RPG Editor",
+        "unity": "Unity",
+        "unreal": "Unreal Engine",
+        "gamemaker": "GameMaker",
+        "renpy": "Ren'Py",
+        "godot": "Godot",
+        "twine": "Twine / SugarCube",
+        "flash": "Flash",
+        "witcher3": "The Witcher 3",
+        "satisfactory": "Satisfactory",
+        "slime-rancher-2": "Slime Rancher 2",
+        "palworld": "Palworld",
+        "terraria": "Terraria",
+        "neverwinter-nights": "Neverwinter Nights",
+        "kotor": "Knights of the Old Republic",
+        "ags": "Adventure Game Studio",
+        "nscripter": "NScripter / ONScripter",
+        "emuera": "Emuera / eraMaker",
+        "alicesoft": "AliceSoft System 3.x / 4",
+        "construct": "Construct",
+        "artemis": "Artemis Engine",
+        "elden-ring": "Elden Ring",
+        "dark-souls-3": "Dark Souls III",
+        "ets2": "Euro Truck Simulator 2",
+        "ats": "American Truck Simulator",
+        "retroarch": "RetroArch"
+      },
+      "hint": {
+        "rpgmaker-mv": "MV tiene una carpeta www, MZ tiene carpetas js y data. Las partidas guardadas terminan en .rpgsave o .rmmzsave.",
+        "rpgmaker-classic": "Game.exe junto a Game.ini. Las partidas guardadas terminan en .rxdata, .rvdata o .rvdata2.",
+        "wolf-rpg": "Game.exe con Data/BasicData. Las partidas guardadas son archivos .sav en la carpeta Save.",
+        "unity": "UnityPlayer.dll y una carpeta <game>_Data junto al .exe.",
+        "unreal": "Una carpeta Engine junto a la carpeta del juego. Las partidas guardadas terminan en .sav.",
+        "gamemaker": "Un archivo data.win junto al .exe.",
+        "renpy": "Carpetas renpy y game. Las partidas guardadas terminan en .save.",
+        "godot": "Un .exe con un archivo .pck con el mismo nombre.",
+        "twine": "Se ejecuta en el navegador. Usa la opción Guardar en disco o exportar del juego.",
+        "flash": "Un archivo .swf. Las partidas guardadas son objetos compartidos locales (.sol).",
+        "witcher3": "Las partidas guardadas terminan en .sav en Documents\\The Witcher 3\\gamesaves.",
+        "satisfactory": "Las partidas guardadas terminan en .sav bajo FactoryGame\\Saved\\SaveGames.",
+        "slime-rancher-2": "Las partidas guardadas son archivos <date>_<game>_<slot>.sav bajo AppData\\LocalLow\\MonomiPark\\SlimeRancher2.",
+        "palworld": "Level.sav bajo Pal\\Saved\\SaveGames\\<id>.",
+        "terraria": "Personajes (.plr) y mundos (.wld) en Documents\\My Games\\Terraria.",
+        "neverwinter-nights": "Las partidas guardadas son carpetas .sav en Documents o en la carpeta del juego.",
+        "kotor": "Las partidas guardadas son carpetas .sav dentro de la carpeta del juego, una por ranura.",
+        "ags": "agssave.000 a agssave.999 junto al juego.",
+        "nscripter": "nscript.dat o un archivo .nsa. Las partidas guardadas son save*.dat en la carpeta del juego.",
+        "emuera": "Emuera.exe. Las partidas guardadas son archivos .sav en la carpeta del juego o en su carpeta sav.",
+        "alicesoft": "System 3.x guarda archivos .asd en la carpeta del juego; System 4 suele usar SaveData.",
+        "construct": "Los juegos de Construct 2/3 guardan en el navegador; un archivo .c2save/.c3save es JSON sin formato.",
+        "artemis": "Las partidas guardadas están en la carpeta save junto al .exe.",
+        "elden-ring": "ER0000.sl2 bajo %APPDATA%\\EldenRing\\<id>.",
+        "dark-souls-3": "DS30000.sl2 bajo %APPDATA%\\DarkSoulsIII\\<id>.",
+        "ets2": "Los perfiles están en Documents\\Euro Truck Simulator 2\\profiles.",
+        "ats": "Los perfiles están en Documents\\American Truck Simulator\\profiles.",
+        "retroarch": "Estados de guardado (.state) y guardados de batería (.srm) bajo %APPDATA%\\RetroArch."
+      },
+      "note": {
+        "rpgmaker-mv": "MV usa www/save; MZ usa save.",
+        "rpgmaker-classic": "La partida guardada puede estar en la carpeta del juego o en su carpeta Save.",
+        "wolf-rpg": "Las partidas guardadas están en la carpeta Save dentro de la carpeta del juego.",
+        "unity": "PlayerPrefs reside en el registro de Windows: expórtalo con regedit. Los archivos de Easy Save están bajo %USERPROFILE%\\AppData\\LocalLow\\<company>\\<game>\\.",
+        "unreal": "El nombre del proyecto es el nombre de la carpeta del juego.",
+        "gamemaker": "La carpeta de datos del juego bajo %LOCALAPPDATA%.",
+        "renpy": "Las partidas guardadas también pueden estar en game/saves dentro de la carpeta del juego.",
+        "godot": "La carpeta user://.",
+        "twine": "Almacenamiento del navegador: usa la opción Guardar en disco / exportar del juego.",
+        "flash": "Objetos compartidos locales.",
+        "witcher3": "La carpeta Documents se puede haber movido a OneDrive.",
+        "satisfactory": "La carpeta bajo tu ID de Steam/Epic contiene los archivos .sav.",
+        "slime-rancher-2": "Cada ranura es un archivo .sav; slimerancher.cfg y .prf son ajustes, no partidas guardadas.",
+        "palworld": "Bajo la carpeta de tu ID de Steam.",
+        "terraria": "Players contiene los personajes; Worlds contiene los mundos. La carpeta Documents se puede haber movido a OneDrive.",
+        "neverwinter-nights": "Enhanced Edition guarda en Documents; el juego clásico usa saves dentro de su carpeta.",
+        "kotor": "Las partidas guardadas son los archivos .sav en la carpeta del juego, una carpeta por ranura.",
+        "emuera": "Las partidas guardadas están en la carpeta del juego, o en su carpeta sav cuando el juego usa una.",
+        "nscripter": "save1.dat ... y global.sav (o gloval.sav) en la carpeta del juego.",
+        "ags": "Las ranuras de guardado son agssave.000 a agssave.999 junto al juego.",
+        "alicesoft": "System 3.x guarda en la carpeta del juego; los juegos de System 4 suelen usar SaveData.",
+        "artemis": "Las partidas guardadas están en la carpeta save junto al ejecutable del juego.",
+        "construct": "Las partidas de Construct 2/3 suelen estar en el almacenamiento del navegador; un archivo .c2save/.c3save es JSON sin formato y se abre por contenido.",
+        "elden-ring": "La carpeta bajo tu ID de Steam contiene ER0000.sl2.",
+        "dark-souls-3": "La carpeta bajo tu ID de Steam contiene DS30000.sl2.",
+        "ets2": "Cada perfil tiene save/<slot>/game.sii; establece g_save_format en 2 para texto sin formato.",
+        "ats": "Cada perfil tiene save/<slot>/game.sii; establece g_save_format en 2 para texto sin formato.",
+        "retroarch": "states y saves son las carpetas habituales; los estados de guardado pueden estar comprimidos con RZIP (Save State File Compression)."
+      }
+    },
+    "password": {
+      "title": "Este archivo está cifrado",
+      "body": "Introduce la contraseña o clave del juego usada para {{name}}. Se usa una vez y nunca se guarda.",
+      "label": "Contraseña",
+      "submit": "Abrir",
+      "pickFolder": "Elegir carpeta del juego…",
+      "pickFolderTitle": "Elige la carpeta donde está instalado el juego",
+      "folderEmpty": "No se encontró ninguna contraseña en esa carpeta.",
+      "wrong": "Esa contraseña no abrió el archivo. Compruébala o elige la carpeta del juego para buscar en sus archivos."
+    },
+    "codeText": {
+      "title": "Tu código de guardado",
+      "body": "No se pudo usar el portapapeles aquí. El código está seleccionado: pulsa Ctrl+C para copiarlo.",
+      "label": "Código de guardado",
+      "selectAll": "Seleccionar todo"
+    },
+    "paste": {
+      "title": "Pegar un código de guardado",
+      "body": "Pega el código de guardado que te dio el juego, por ejemplo desde su opción Exportar o Guardar en texto.",
+      "label": "Código de guardado",
+      "placeholder": "Pega el código aquí (Ctrl+V)",
+      "note": "El código se queda en este PC. Ctrl+Enter lo abre.",
+      "open": "Abrir",
+      "opening": "Abriendo…",
+      "failed": "Este código no se pudo abrir."
+    },
+    "toast": {
+      "savedTitle": "Guardado · copia de seguridad creada · verificado",
+      "savedNoBackupTitle": "Guardado · verificado",
+      "savedBody": "{{path}}",
+      "showInFolder": "Mostrar en carpeta",
+      "dismiss": "Descartar",
+      "openFailed": "No se pudo abrir el archivo",
+      "saveFailed": "No se pudo guardar el archivo",
+      "verifyFailed": "El archivo guardado no pasó la verificación",
+      "jsonFailed": "No se pudo generar la vista JSON",
+      "exportedTitle": "JSON exportado",
+      "exportFailed": "No se pudo exportar el JSON",
+      "closeFailed": "No se pudo cerrar la ventana",
+      "discardFailed": "No se pudieron deshacer los cambios",
+      "undoFailed": "No se pudo deshacer el cambio",
+      "redoFailed": "No se pudo rehacer el cambio",
+      "changesFailed": "No se pudo leer la lista de cambios",
+      "errorDetail": "{{reason}} {{fix}}",
+      "jsonApplied_one": "{{count}} cambio aplicado",
+      "jsonApplied_other": "{{count}} cambios aplicados",
+      "jsonNoChanges": "No se cambió ningún valor",
+      "setAllFailed": "No se pudieron establecer los valores",
+      "restoredTitle": "Copia de seguridad restaurada",
+      "restoredBody": "{{path}} ha vuelto a la copia de seguridad de {{time}}.",
+      "restoreFailed": "No se pudo restaurar la copia de seguridad",
+      "codeCopied": "Código copiado",
+      "codeCopiedBody": "Pégalo en la casilla de importar o cargar de tu juego.",
+      "copyCodeFailed": "No se pudo copiar el código",
+      "copiedForAi_one": "Se copió {{count}} valor para tu chat de IA",
+      "copiedForAi_other": "Se copiaron {{count}} valores para tu chat de IA",
+      "copiedForAiBody": "Pégalo en ChatGPT, Gemini o cualquier chat de IA y haz tu pregunta. Luego cambia los valores aquí.",
+      "copyAiFailed": "No se pudo copiar al portapapeles",
+      "setupCopied": "Configuración copiada. Pégala en los ajustes de MCP de tu app de IA.",
+      "copySetupFailed": "No se pudo copiar la configuración",
+      "copyReport": "Copiar informe del archivo",
+      "reportCopied": "Informe copiado",
+      "reportCopiedBody": "Pégalo en una nueva incidencia con el nombre del juego.",
+      "reportFailed": "No se pudo copiar el informe",
+      "addFailed": "No se pudo añadir la entrada",
+      "removeFailed": "No se pudo eliminar la entrada",
+      "dataFolderFailed": "No se pudo leer la carpeta de datos"
+    },
+    "errors": {
+      "codes": {
+        "SP-APP-001": {
+          "reason": "SavePrism no pudo iniciarse",
+          "fix": "Reinicia SavePrism. Si sigue ocurriendo, informa del código en el rastreador de incidencias."
+        },
+        "SP-APP-002": {
+          "reason": "no hay ningún archivo abierto",
+          "fix": "Abre una partida guardada primero."
+        },
+        "SP-APP-003": {
+          "reason": "este archivo es de solo lectura, por lo que no se puede guardar",
+          "fix": "Abre una copia del archivo o espera a que haya compatibilidad con este formato."
+        },
+        "SP-APP-004": {
+          "reason": "\"{{value}}\" no es válido para este campo",
+          "reasonPlain": "el valor no es válido para este campo",
+          "fix": "Escribe un valor que coincida con el tipo de campo."
+        },
+        "SP-APP-005": {
+          "reason": "{{value}} está fuera del rango permitido para este campo",
+          "reasonPlain": "el número está fuera del rango permitido para este campo",
+          "fix": "Escribe un número dentro del rango mostrado para el campo."
+        },
+        "SP-APP-006": {
+          "reason": "ya existe un archivo con ese nombre",
+          "fix": "Elige otro nombre u otra carpeta."
+        },
+        "SP-APP-007": {
+          "reason": "este valor no se puede editar",
+          "fix": "Abre el contenedor y elige uno de sus valores."
+        },
+        "SP-APP-008": {
+          "reason": "la exportación de JSON necesita un nombre diferente",
+          "fix": "Elige un nombre que termine en .json y que no sea la partida guardada abierta."
+        },
+        "SP-APP-009": {
+          "reason": "SavePrism no pudo usar su propio estado",
+          "fix": "Reinicia SavePrism."
+        },
+        "SP-APP-010": {
+          "reason": "el texto JSON no es válido",
+          "fix": "Corrige el punto resaltado y vuelve a aplicar."
+        },
+        "SP-APP-011": {
+          "reason": "el texto JSON modifica más que los valores",
+          "fix": "Cambia solo los valores; deja intactos los nombres de campo, elementos de lista y marcadores."
+        },
+        "SP-APP-012": {
+          "reason": "no se pudieron abrir los avisos de terceros",
+          "fix": "Léelos en la carpeta de instalación de SavePrism."
+        },
+        "SP-APP-013": {
+          "reason": "no existe la copia de seguridad \"{{name}}\" de este archivo",
+          "reasonPlain": "esa copia de seguridad ya no está allí",
+          "fix": "Abre de nuevo la lista de copias de seguridad."
+        },
+        "SP-APP-014": {
+          "reason": "esa copia de seguridad no se abre como partida guardada",
+          "fix": "No se escribió nada. Elige otra copia de seguridad."
+        },
+        "SP-APP-015": {
+          "reason": "son demasiados valores para un solo cambio",
+          "fix": "Cambia menos valores a la vez."
+        },
+        "SP-APP-016": {
+          "reason": "el código de guardado está vacío",
+          "fix": "Pega todo el código que te dio el juego."
+        },
+        "SP-APP-017": {
+          "reason": "esta partida guardada no tiene ningún código para copiar",
+          "fix": "Usa Guardar como para conservar el archivo editado."
+        },
+        "SP-APP-018": {
+          "reason": "esa carpeta no contiene los datos del juego",
+          "fix": "Elige la carpeta de datos del juego o su carpeta de juego."
+        },
+        "SP-APP-019": {
+          "reason": "esta partida guardada no tiene secciones que tomen nombres de una carpeta de datos",
+          "fix": "Abre una partida guardada de RPG Maker para usar nombres del juego."
+        },
+        "SP-APP-020": {
+          "reason": "\"{{value}}\" ya existe",
+          "reasonPlain": "esa entrada ya existe",
+          "fix": "Elige otro nombre o cambia el valor existente."
+        },
+        "SP-APP-021": {
+          "reason": "no se puede añadir nada aquí",
+          "fix": "Añade valores en una lista de JSON, Easy Save 3, SugarCube o RPG Maker."
+        },
+        "SP-APP-022": {
+          "reason": "esta entrada no se puede eliminar",
+          "fix": "Establécela en 0, vacía o desactivada en su lugar."
+        },
+        "SP-APP-023": {
+          "reason": "el archivo cambió en el disco después de abrirlo",
+          "fix": "Abre el archivo de nuevo o usa Guardar como para mantener tus cambios."
+        },
+        "SP-APP-024": {
+          "reason": "una herramienta de IA envió un valor que SavePrism no puede usar",
+          "fix": "Comprueba los argumentos de la herramienta e inténtalo de nuevo."
+        },
+        "SP-APP-025": {
+          "reason": "el archivo para comparar está cifrado, por lo que no se puede leer",
+          "fix": "Compara con una copia sin cifrar de la partida guardada."
+        },
+        "SP-APP-026": {
+          "reason": "no se pudo abrir la carpeta",
+          "fix": "Ábrela manualmente en el Explorador de archivos."
+        },
+        "SP-APP-027": {
+          "reason": "solo se puede crear un informe de archivo para un archivo normal",
+          "fix": "Elige el archivo de partida guardada en sí, no una carpeta ni un acceso directo."
+        },
+        "SP-DET-001": {
+          "reason": "SavePrism aún no reconoce este archivo",
+          "fix": "Adjunta un archivo de muestra en una incidencia para que podamos añadir compatibilidad."
+        },
+        "SP-DET-002": {
+          "reason": "SavePrism no pudo procesar este archivo",
+          "fix": "Inténtalo de nuevo con una copia más pequeña o sin cifrar."
+        },
+        "SP-ES3-001": {
+          "reason": "este no es un archivo de Easy Save 3",
+          "fix": "Comprueba que hayas elegido la partida guardada del juego."
+        },
+        "SP-ES3-002": {
+          "reason": "este archivo de Easy Save 3 contiene algo que SavePrism no puede escribir",
+          "fix": "Ábrelo en solo lectura o envía una muestra en el rastreador de incidencias."
+        },
+        "SP-ES3-003": {
+          "reason": "este archivo cifrado de Easy Save 3 está dañado",
+          "fix": "Restáuralo desde una copia de seguridad o desde el juego e inténtalo de nuevo."
+        },
+        "SP-ES3-004": {
+          "reason": "esa contraseña no abrió el archivo",
+          "fix": "Comprueba la contraseña en los ajustes de Easy Save del juego e inténtalo de nuevo."
+        },
+        "SP-ES3-005": {
+          "reason": "este archivo está cifrado y necesita su contraseña",
+          "fix": "Introduce la contraseña usada por el juego y abre el archivo de nuevo."
+        },
+        "SP-CORE-006": {
+          "reason": "el archivo es demasiado grande",
+          "fix": "Abre un archivo más pequeño."
+        },
+        "SP-CORE-007": {
+          "reason": "el archivo se descomprime en demasiados datos",
+          "fix": "El archivo puede estar dañado; prueba con otra copia."
+        },
+        "SP-CORE-008": {
+          "reason": "el archivo tiene un nivel de anidamiento demasiado profundo",
+          "fix": "El archivo puede estar dañado; prueba con otra copia."
+        },
+        "SP-CORE-009": {
+          "reason": "el archivo contiene demasiados valores",
+          "fix": "Prueba con otra copia del archivo."
+        },
+        "SP-CORE-010": {
+          "reason": "el archivo tiene demasiadas capas",
+          "fix": "Prueba con otra copia del archivo."
+        },
+        "SP-CORE-011": {
+          "reason": "ese valor ya no está en el archivo",
+          "fix": "Elige el valor de nuevo en el árbol; la ruta puede haber cambiado."
+        },
+        "SP-CORE-012": {
+          "reason": "no se pudo aplicar el cambio",
+          "fix": "Inténtalo de nuevo; si sigue fallando, informa del código en el rastreador de incidencias."
+        },
+        "SP-CORE-013": {
+          "reason": "este valor es de solo lectura",
+          "fix": "Este valor no se puede cambiar."
+        },
+        "SP-IO-001": {
+          "reason": "no se pudo crear la copia de seguridad",
+          "fix": "Comprueba el espacio libre en disco y los permisos de la carpeta de copias de seguridad. No se escribió nada."
+        },
+        "SP-IO-002": {
+          "reason": "no se pudo escribir el archivo temporal",
+          "fix": "Cierra el juego y otros programas que usen el archivo, luego inténtalo de nuevo."
+        },
+        "SP-IO-003": {
+          "reason": "no se pudo reemplazar el archivo",
+          "fix": "Cierra el juego y otros programas que usen el archivo, comprueba que no sea de solo lectura y vuelve a intentarlo."
+        },
+        "SP-IO-004": {
+          "reason": "el archivo guardado no pasó la verificación, por lo que se restauró la copia de seguridad",
+          "fix": "Tu partida guardada no ha cambiado."
+        },
+        "SP-IO-005": {
+          "reason": "el archivo guardado no pasó la verificación y no se pudo restaurar la copia de seguridad",
+          "fix": "Restaura el archivo manualmente desde la carpeta de copias de seguridad e informa del código en el rastreador de incidencias."
+        },
+        "SP-IO-006": {
+          "reason": "no se pudo encontrar la carpeta de copias de seguridad",
+          "fix": "Comprueba que la carpeta de tu perfil de usuario esté disponible e inténtalo de nuevo."
+        },
+        "SP-IO-007": {
+          "reason": "no se pudo leer el archivo",
+          "fix": "Comprueba que el archivo exista y se pueda leer, luego inténtalo de nuevo."
+        },
+        "SP-RENPY-001": {
+          "reason": "esta partida guardada de Ren'Py no es un archivo que SavePrism pueda leer",
+          "fix": "Abre la partida guardada generada por el juego, no una copia de otro juego."
+        },
+        "SP-RENPY-002": {
+          "reason": "esta partida guardada de Ren'Py contiene algo que SavePrism no puede escribir",
+          "fix": "Ábrela en solo lectura o envía una muestra en el rastreador de incidencias."
+        },
+        "SP-RENPY-003": {
+          "reason": "no se pudo escribir esta partida guardada de Ren'Py",
+          "fix": "Ábrela en solo lectura y conserva una copia del archivo."
+        },
+        "SP-RENPY-004": {
+          "reason": "no se pudo leer el archivo de claves de Ren'Py",
+          "fix": "Comprueba que security_keys.txt exista y tenga una línea de clave de firma, luego abre la partida guardada de nuevo."
+        },
+        "SP-APP-030": {
+          "reason": "no se puede usar el archivo de tema",
+          "fix": "Elige un archivo de tema de SavePrism de 64 KB como máximo."
+        }
+      }
+    },
+    "bell": {
+      "title": "Esta sesión",
+      "empty": "Aún no ha ocurrido nada.",
+      "opened": "Se abrió {{name}}",
+      "saved": "Se guardó {{name}}",
+      "backup": "Copia de seguridad: {{path}}",
+      "undone": "Se deshicieron todos los cambios",
+      "setAll_one": "Se estableció {{count}} valor a {{value}}",
+      "setAll_other": "Se establecieron {{count}} valores a {{value}}",
+      "clear": "Limpiar",
+      "openedCode": "Se abrió un código pegado"
+    },
+    "settings": {
+      "title": "Ajustes",
+      "appearance": "Apariencia",
+      "theme": "Tema",
+      "pattern": "Patrón",
+      "patternInfo": "Un entramado sutil detrás de la app. Desactívalo para un fondo liso.",
+      "patternStrength": "Intensidad del patrón",
+      "textSize": "Tamaño del texto",
+      "textSizes": {
+        "small": "Pequeño",
+        "normal": "Normal",
+        "large": "Grande"
+      },
+      "appColor": "Color de la app",
+      "appColorHint": "Tinta toda la app: fondos, botones y resaltados.",
+      "appColorPresets": {
+        "blue": "Azul",
+        "violet": "Violeta",
+        "teal": "Verde azulado",
+        "green": "Verde",
+        "amber": "Ámbar",
+        "rose": "Rosa"
+      },
+      "appColorSystem": "Énfasis de Windows",
+      "appColorMono": "Monocromo",
+      "appColorCustom": "Color personalizado de la app",
+      "colors": "Colores",
+      "changedColor": "Valores cambiados",
+      "accentColor": "Énfasis",
+      "errorColor": "Errores",
+      "colorPresets": {
+        "changed": {
+          "violet": "Violeta",
+          "rose": "Rosa",
+          "indigo": "Índigo",
+          "amber": "Ámbar"
+        },
+        "accent": {
+          "cyan": "Cian",
+          "blue": "Azul",
+          "green": "Verde",
+          "amber": "Ámbar"
+        },
+        "error": {
+          "red": "Rojo",
+          "orange": "Naranja",
+          "pink": "Rosa",
+          "purple": "Lila"
+        }
+      },
+      "language": "Idioma",
+      "saving": "Guardado",
+      "defaultAction": "Acción de guardado predeterminada",
+      "defaultActionInfo": "Elige qué hace el botón principal Guardar. La otra opción permanece en su menú.",
+      "saveAsNew": "Guardar como archivo nuevo",
+      "overwriteOriginal": "Sobrescribir original",
+      "keepBackups": "Copias de seguridad a conservar",
+      "keepBackupsInfo": "Cuántas copias de seguridad del archivo guardado se conservan (1 a 50), hasta 30 días. Las más antiguas de ese archivo se eliminan en el siguiente guardado; la más reciente siempre se conserva.",
+      "aiChatTitle": "Copiar para un chatbot",
+      "aiChatTag": "Sin configuración",
+      "aiChatInfo": "Para ChatGPT, Claude, Gemini o cualquier chat de IA en tu navegador.",
+      "aiChatStep1": "Abre una partida guardada",
+      "aiChatStep1Info": "Suéltala en la pantalla de inicio.",
+      "aiChatStep2": "Pulsa Preguntar a la IA en una lista",
+      "aiChatStep2Info": "Se copian sus valores.",
+      "aiChatStep3": "Pégalo en el chat",
+      "aiChatStep3Info": "Pregunta y luego cambia los valores aquí.",
+      "mcpStep1": "Elige tu app de IA",
+      "mcpStep2": "Copia la configuración",
+      "mcpStep2Info": "Un solo clic.",
+      "mcpStep3": "Pégala en la app",
+      "mcpStep3Info": "Luego guarda.",
+      "mcpStep4": "Reinicia y pregunta",
+      "mcpStep4Info": "\"Dame 9999 de oro.\"",
+      "mcpYourApp": "Tu app:",
+      "mcpClients": {
+        "claudeDesktop": "Claude Desktop",
+        "claudeCode": "Claude Code",
+        "cursor": "Cursor",
+        "vscode": "VS Code",
+        "other": "Otro"
+      },
+      "mcpHowTo": {
+        "claudeDesktop": "En Claude Desktop: Ajustes → Desarrollador → Edit Config, pega en mcpServers, guarda y reinicia Claude.",
+        "claudeCode": "Ejecútalo en una terminal y luego reinicia Claude Code.",
+        "cursor": "En Cursor: Customize → MCP, o pega en %USERPROFILE%\\.cursor\\mcp.json.",
+        "vscode": "Añádelo a .vscode/mcp.json (o a la configuración de MCP de usuario que describe la documentación de VS Code).",
+        "other": "Pégalo en los ajustes de MCP de tu app, guarda y reinicia la app."
+      },
+      "aiPrivacyNote": "SavePrism nunca envía nada por sí mismo; la app de IA puede enviar los valores que lee a su propio modelo en línea.",
+      "aiWriteNote": "Solo guardar y restaurar una copia de seguridad escriben archivos, y las apps de IA te preguntan antes de ejecutarlos.",
+      "copySetup": "Copiar configuración",
+      "notificationsSection": "Notificaciones",
+      "showNotifications": "Mostrar notificaciones",
+      "showNotificationsInfo": "Muestra la campana con los eventos de esta sesión.",
+      "checkUpdatesAtStart": "Buscar actualizaciones al iniciar",
+      "checkUpdatesAtStartInfo": "Consulta en GitHub si hay una versión más nueva. Tus partidas guardadas nunca se envían.",
+      "about": "Acerca de SavePrism",
+      "back": "Atrás",
+      "searchPlaceholder": "Buscar un ajuste",
+      "searchEmpty": "Ningún ajuste coincide.",
+      "communityThemes": "Temas de la comunidad",
+      "version": "SavePrism {{version}}",
+      "sourceCode": "Código fuente en GitHub",
+      "reportProblem": "Informar de un problema",
+      "folderChanged": "Carpeta cambiada",
+      "folderFailed": "No se pudo cambiar la carpeta",
+      "backupFolderTitle": "Elegir la carpeta de copias de seguridad",
+      "appFolderTitle": "Elegir la carpeta de la app",
+      "openFolderFailed": "No se pudo abrir la carpeta",
+      "chooseImage": "Elegir imagen…",
+      "changeImage": "Cambiar imagen…",
+      "noImage": "Sin imagen todavía",
+      "dropHint": "Haz clic o arrastra una imagen",
+      "dropActive": "Suelta para usar esta imagen",
+      "imageCopied": "Imagen copiada a la carpeta de la app",
+      "imageCopiedHint": "Se copia a la carpeta de la app.",
+      "imageFailed": "No se pudo usar la imagen",
+      "customColor": "Color personalizado",
+      "resetColors": "Restablecer valores predeterminados",
+      "text": "Texto",
+      "textSizeHint": "Hace que todo el texto de SavePrism sea más grande o más pequeño.",
+      "changedHint": "Valores que editaste y aún no has guardado.",
+      "accentHint": "Números como oro, enlaces y resaltados.",
+      "errorHint": "Valores que no se pueden guardar.",
+      "background": "Fondo",
+      "photo": "Foto",
+      "grid": "Rejilla",
+      "defaultPattern": "Normal",
+      "dots": "Puntos",
+      "strength": "Intensidad",
+      "photoFit": "Ajuste de foto",
+      "fit": "Ajustar",
+      "fill": "Rellenar",
+      "blur": "Desenfocar",
+      "darken": "Atenuar",
+      "glass": "Opacidad de tarjeta",
+      "preview": "Vista previa",
+      "previewTip": "Muestra tus elecciones antes de cerrar Ajustes. El texto en filas coloreadas cambia por sí solo para seguir siendo legible.",
+      "backupsSection": "Copias de seguridad",
+      "keepBackupsHint": "Para cada partida guardada. Las más antiguas se eliminan primero.",
+      "onlyLatest": "Solo la más reciente",
+      "keepDays": "Conservar copias de seguridad durante",
+      "keepDaysHint": "Las copias de seguridad más antiguas que esto se eliminan.",
+      "days": "días",
+      "latestKeptNote": "La última copia de seguridad de cada partida guardada siempre se conserva, así que siempre puedes volver atrás.",
+      "backupFolder": "Carpeta de copias de seguridad",
+      "appFolderSection": "Carpeta de la app",
+      "appFolder": "Carpeta de la app",
+      "appFolderHint": "Las copias de seguridad, códigos pegados y ajustes se guardan aquí.",
+      "openFolder": "Abrir carpeta",
+      "change": "Cambiar…",
+      "action": "Acción",
+      "shortcutsColumn": "Atajos",
+      "resetAllShortcuts": "Restablecer todos los predeterminados",
+      "resetShortcut": "Restablecer {{action}} al valor predeterminado",
+      "addShortcut": "Añadir un atajo",
+      "removeShortcut": "Eliminar {{keys}}",
+      "editShortcut": "Cambiar este atajo",
+      "shortcutNotSet": "No asignado",
+      "shortcutsNote": "Los atajos con la tecla Windows y las teclas del sistema como Alt+F4 o Ctrl+Alt+Del están reservados por Windows. Windows los procesa antes de que SavePrism los reciba, por lo que no se pueden usar aquí.",
+      "shortcutDialog": {
+        "title": "Pulsa las nuevas teclas para {{action}}",
+        "hint": "Enter guarda, Esc cancela.",
+        "waiting": "Pulsa las teclas…",
+        "threeKeys": "Como máximo 3 teclas: hasta dos entre Ctrl, Shift y Alt más otra tecla.",
+        "needCtrlOrAlt": "Añade Ctrl o Alt, o usa una tecla de función (F1–F12).",
+        "ctrlAlt": "No se puede usar Ctrl+Alt: en muchas distribuciones es AltGr, que escribe caracteres.",
+        "system": "{{keys}} está reservado por Windows.",
+        "reserved": "No se pueden usar Enter ni Esc.",
+        "unknown": "Esa tecla no se puede usar.",
+        "windows": "Windows se reserva la tecla Windows: gestiona las combinaciones con Win antes de que SavePrism las vea, por lo que no se pueden registrar aquí.",
+        "conflict": "{{keys}} ya se usa en {{action}}. Pulsa Enter para moverlo aquí."
+      },
+      "mcpTitle": "Conectar un agente de IA (MCP)",
+      "mcpHint": "Claude Desktop, Claude Code, Cursor y otras apps con MCP pueden abrir y editar partidas guardadas por ti. Al guardar siempre se crea una copia de seguridad primero.",
+      "tabs": {
+        "general": "General",
+        "appearance": "Apariencia",
+        "backups": "Guardado y copias",
+        "ai": "Conexión de IA",
+        "shortcuts": "Atajos de teclado",
+        "about": "Acerca de"
+      },
+      "sub": {
+        "general": "Idioma y tema.",
+        "appearance": "Tamaño del texto, colores y fondo.",
+        "backups": "Qué hace Guardar y cuántas copias de seguridad conserva SavePrism.",
+        "ai": "Dos formas de recibir ayuda de la IA. SavePrism nunca envía nada por sí mismo.",
+        "shortcuts": "Haz clic en un atajo y pulsa las nuevas teclas. Hasta 2 atajos por acción.",
+        "about": "Versión y licencia."
+      },
+      "themeFile": {
+        "title": "Archivo de tema",
+        "filterName": "Tema de SavePrism",
+        "label": "Comparte tu estilo",
+        "hint": "Exportar guarda tus colores, tamaño de texto y fondo en un archivo. Importar aplica un archivo creado por otra persona.",
+        "export": "Exportar tema…",
+        "import": "Importar tema…",
+        "share": "Compártelo en Temas de la comunidad",
+        "exportTitle": "Exportar tema",
+        "importTitle": "Importar tema",
+        "exported": "Tema exportado",
+        "imported": "Tema \"{{name}}\" importado",
+        "invalid": "El archivo de tema no es válido",
+        "exportFailed": "No se pudo exportar el tema",
+        "importFailed": "No se pudo importar el tema",
+        "reasons": {
+          "tooBig": "El archivo supera los 64 KB.",
+          "json": "No es un JSON válido.",
+          "format": "No es un archivo de tema de SavePrism.",
+          "version": "Su versión no es compatible.",
+          "name": "Falta su nombre o es demasiado largo.",
+          "colors": "Uno de sus colores no es un ID predeterminado ni un valor #rrggbb.",
+          "appColor": "Su color de app no es un valor predeterminado, del sistema, monocromo ni #rrggbb válido.",
+          "textSize": "Su tamaño de texto está fuera del 80–140%.",
+          "background": "Sus ajustes de fondo no son válidos."
+        }
+      },
+      "sample": {
+        "name": "Nombre",
+        "value": "Valor",
+        "gold": "Oro",
+        "level": "Nivel",
+        "health": "Salud",
+        "heroName": "Nombre del héroe",
+        "map": "Mapa"
+      }
+    },
+    "shortcuts": {
+      "title": "Atajos de teclado",
+      "open": "Abrir archivo",
+      "pasteCode": "Pegar código",
+      "save": "Guardar",
+      "saveAs": "Guardar como…",
+      "closeFile": "Cerrar archivo",
+      "undo": "Deshacer",
+      "redo": "Rehacer",
+      "find": "Buscar en la primera lista",
+      "undoAll": "Deshacer todos los cambios",
+      "openSettings": "Abrir ajustes",
+      "whereSaves": "¿Dónde está mi partida guardada?",
+      "groups": {
+        "file": "Archivo",
+        "editing": "Edición",
+        "app": "App"
+      }
+    },
+    "about": {
+      "title": "Acerca de SavePrism",
+      "version": "Versión",
+      "core": "Core",
+      "license": "Licencia",
+      "licenseValue": "Licencia MIT",
+      "privacy": "Los archivos se quedan en este PC. Las copias de seguridad se guardan en %LOCALAPPDATA%\\SavePrism\\backups.",
+      "notices": "Avisos de terceros",
+      "noticesFailed": "No se pudieron leer los avisos",
+      "versionLine": "Versión {{version}}",
+      "licenseShort": "MIT",
+      "licenseBody": "SavePrism se publica bajo la Licencia MIT. El texto completo se encuentra abajo.",
+      "tagline": "Un editor de partidas guardadas que se ejecuta en tu PC. Sin cuentas, sin subir nada.",
+      "whatsNew": "Novedades en {{version}}",
+      "showTour": "Mostrar la guía de nuevo",
+      "copyright": "© 2026 Colaboradores de SavePrism",
+      "noticesSubtitle": "SavePrism se ha creado con estos paquetes de código abierto. ¡Gracias!",
+      "searchPackages": "Buscar paquetes",
+      "searchEmpty": "Ningún paquete coincide.",
+      "noticesCount": "{{total}} paquetes",
+      "noticesCountFiltered": "{{shown}} de {{total}} paquetes",
+      "licenseUnknown": "Desconocida",
+      "noticeNoText": "No se incluye ningún texto de licencia en el archivo de avisos."
+    },
+    "update": {
+      "ready": "SavePrism {{version}} está listo para instalar",
+      "update": "Actualizar",
+      "check": "Buscar actualizaciones",
+      "checking": "Buscando…",
+      "current": "Tienes la versión más reciente.",
+      "available": "{{version}} está disponible",
+      "checkFailed": "No se pudieron buscar actualizaciones.",
+      "dialogTitle": "Actualizando a SavePrism {{version}}",
+      "downloading": "Descargando la actualización…",
+      "installing": "Instalando. SavePrism se reiniciará automáticamente.",
+      "failed": "No se pudo instalar la actualización."
+    },
+    "whatsNew": {
+      "title": "Novedades en {{version}}",
+      "subtitle": "Esto es lo que ha cambiado en esta versión.",
+      "gotIt": "Entendido"
+    },
+    "tour": {
+      "step": "Paso {{current}} de {{total}}",
+      "back": "Atrás",
+      "next": "Siguiente",
+      "skip": "Omitir",
+      "done": "Listo",
+      "drop": {
+        "title": "Abrir una partida guardada",
+        "body": "Arrastra una partida guardada aquí o usa Abrir archivo y Pegar código para empezar."
+      },
+      "where": {
+        "title": "¿No sabes dónde está tu partida guardada?",
+        "body": "Este enlace enumera las carpetas de guardado habituales para cada tipo de juego."
+      },
+      "language": {
+        "title": "Idioma",
+        "body": "Cambia entre inglés y turco aquí."
+      },
+      "bell": {
+        "title": "Notificaciones",
+        "body": "Los eventos de esta sesión aparecen aquí."
+      },
+      "settings": {
+        "title": "Ajustes",
+        "body": "El tema, las copias de seguridad y el resto de SavePrism están aquí."
+      }
+    },
+    "crash": {
+      "title": "Algo salió mal",
+      "body": "SavePrism encontró un error inesperado. Los cambios que aún no has guardado se han perdido.",
+      "copy": "Copiar informe",
+      "reload": "Recargar",
+      "copied": "Informe copiado.",
+      "copyFailed": "No se pudo copiar. Selecciona el texto de abajo y cópialo manualmente."
+    }
+  },
+  "editor": {
+    "bool": {
+      "true": "verdadero",
+      "false": "falso"
+    },
+    "loading": "Cargando valores…",
+    "loadFailed": "No se pudieron leer los valores. {{message}} {{hint}}",
+    "sections": {
+      "gold": "Oro",
+      "characters": "Personajes",
+      "items": "Objetos",
+      "weapons": "Armas",
+      "armors": "Armaduras",
+      "variables": "Variables",
+      "switches": "Interruptores",
+      "values": "Valores",
+      "character": "Personaje",
+      "story": "Historia",
+      "storyVariables": "Variables de historia"
+    },
+    "info": {
+      "gold": "El oro del grupo. Debe mantenerse dentro del rango mostrado debajo del campo.",
+      "characters": "Elige un personaje para editarlo. Las bonificaciones de atributos se suman a las estadísticas del personaje en la base de datos del juego; no son los valores finales.",
+      "namesFrom": "Nombres de {{folder}}.",
+      "noNames": "No se encontró ninguna carpeta de datos del juego, por lo que los nombres se muestran como números.",
+      "variables": "Variables del juego. Cámbialas solo si sabes lo que hacen.",
+      "switches": "Interruptores del juego (verdadero o falso).",
+      "values": "Todos los valores editables encontrados en este archivo.",
+      "moment": "Una partida guardada de SugarCube guarda un historial de momentos, uno por cada pasaje jugado. El juego se reanuda en el momento mostrado aquí y tus cambios se aplican a ese momento. Los otros momentos conservan sus propios valores.",
+      "storyVariables": "Las variables de la historia ($nombre en la historia) con los valores que cargará el juego. Un candado indica los valores que no puedes cambiar aquí: valores cambiados por partes durante la partida y valores especiales como Map, Set o Date. Cámbialos en el editor JSON."
+    },
+    "fallback": {
+      "item": "Objeto #{{id}}",
+      "weapon": "Arma #{{id}}",
+      "armor": "Armadura #{{id}}",
+      "variable": "Variable #{{id}}",
+      "switch": "Interruptor #{{id}}"
+    },
+    "ownName": {
+      "action": "Nombrar {{name}}",
+      "rename": "Renombrar {{name}}",
+      "actionTip": "Asigna tu propio nombre a esta entrada. Se guarda solo para este juego.",
+      "label": "Nombre para {{name}}"
+    },
+    "actor": {
+      "level": "Nivel",
+      "hp": "HP",
+      "mp": "MP",
+      "exp": "EXP",
+      "lv": "Nv. {{level}}",
+      "bonusHeading": "Bonificación (añadida al valor de la clase)",
+      "levelExpHint": "La EXP no se modificó: no se encontró el archivo Classes.json del juego."
+    },
+    "field": {
+      "undo": "Deshacer (era {{value}})",
+      "increase": "Aumentar",
+      "decrease": "Reducir",
+      "new": "nuevo",
+      "removeAdded": "Eliminar (añadido)",
+      "readOnly": "solo lectura en este archivo",
+      "readOnlyIndex": "solo lectura: el índice de la base de datos conserva una copia de este valor, por lo que cambiarlo dañaría el índice"
+    },
+    "search": {
+      "list": "Buscar nombre, #id o valor",
+      "values": "Buscar valores",
+      "empty": "Nada coincide con tu búsqueda."
+    },
+    "pager": {
+      "previous": "Página anterior",
+      "next": "Página siguiente"
+    },
+    "bulk": {
+      "trigger": "Establecer todo",
+      "triggerTip": "Establece cada valor que muestra esta lista al mismo valor",
+      "titleNumber": "Establecer todo en…",
+      "titleSwitch": "Activar o desactivar todo",
+      "scope_one": "Cambia el valor {{shown}} que muestra esta lista, en cada página. Un Deshacer lo revierte.",
+      "scope_other": "Cambia los {{shown}} valores que muestra esta lista, en cada página. Un Deshacer lo revierte todo.",
+      "scopeSearch_one": "Cambia el valor {{shown}} que coincide con la búsqueda, en cada página. Un Deshacer lo revierte.",
+      "scopeSearch_other": "Cambia los {{shown}} valores que coinciden con la búsqueda, en cada página. Un Deshacer lo revierte todo.",
+      "valueLabel": "Nuevo valor",
+      "apply_one": "Establecer {{changed}} valor",
+      "apply_other": "Establecer {{changed}} valores",
+      "applyIdle": "Aplicar",
+      "nothing": "Nada que cambiar",
+      "allOn": "Todo activado",
+      "allOff": "Todo desactivado",
+      "turnOn_one": "Activa {{changed}} interruptor",
+      "turnOn_other": "Activa {{changed}} interruptores",
+      "turnOff_one": "Desactiva {{changed}} interruptor",
+      "turnOff_other": "Desactiva {{changed}} interruptores"
+    },
+    "values": {
+      "more": "Mostrar más",
+      "items_one": "{{count}} elemento",
+      "items_other": "{{count}} elementos",
+      "found_one": "{{shown}} encontrado",
+      "found_other": "{{shown}} encontrados",
+      "details": "Detalles del archivo",
+      "detailsTip": "Información que describe el archivo y no el juego (versión del motor, tipo de guardado). Solo lectura: el juego la necesita tal como está."
+    },
+    "problem": {
+      "empty": "Introduce un valor.",
+      "notNumber": "Eso no es un número.",
+      "notWhole": "Usa un número entero, sin decimales.",
+      "aboveMax": "Máx. {{max}}",
+      "belowMin": "Mín. {{min}}"
+    },
+    "errors": {
+      "unknown": "No se aplicó el cambio. Inténtalo de nuevo."
+    },
+    "type": {
+      "int": "Entero",
+      "float": "Número decimal",
+      "bool": "Verdadero/falso",
+      "string": "Texto",
+      "source": "Tipo de archivo: {{name}}"
+    },
+    "range": {
+      "between": "{{min}} a {{max}}",
+      "atLeast": "{{min}} o más",
+      "atMost": "{{max}} o menos"
+    },
+    "stat": {
+      "maxHp": "HP máx.",
+      "maxMp": "MP máx.",
+      "attack": "Ataque",
+      "defense": "Defensa",
+      "magicAttack": "Atq. mágico",
+      "magicDefense": "Def. mágica",
+      "agility": "Agilidad",
+      "luck": "Suerte",
+      "strength": "Fuerza",
+      "dexterity": "Destreza",
+      "intelligence": "Inteligencia",
+      "spirit": "Espíritu"
+    },
+    "empty": {
+      "item": "No hay objetos en esta partida guardada.",
+      "weapon": "No hay armas en esta partida guardada.",
+      "armor": "No hay armaduras en esta partida guardada.",
+      "variable": "No hay variables en esta partida guardada.",
+      "switch": "No hay interruptores en esta partida guardada.",
+      "values": "No hay valores en este archivo.",
+      "characters": "No hay personajes en esta partida guardada."
+    },
+    "count": {
+      "changed_one": "{{changed}} cambiado",
+      "changed_other": "{{changed}} cambiados"
+    },
+    "askAi": {
+      "label": "Preguntar a la IA",
+      "tip": "Copia estos valores con una nota breve para pegar en un chat de IA",
+      "intro": "Estoy editando una partida guardada con SavePrism.",
+      "file": "Archivo: {{name}} ({{format}})",
+      "filePlain": "Archivo: {{name}}",
+      "list": "Lista: {{list}}",
+      "listSearch": "Lista: {{list}}, búsqueda \"{{query}}\"",
+      "values": "Valores ({{count}}):",
+      "valuesFirst": "Valores (primeros {{shown}} de {{total}}):",
+      "valuesSome": "Valores (primeros {{shown}}; el archivo tiene más):",
+      "row": "- {{subject}} = {{value}}{{detail}}",
+      "subjectName": "{{name}} #{{id}}",
+      "subjectId": "#{{id}}",
+      "subjectValue": "este valor",
+      "ask": "Dime qué valores cambiar y a cuáles, por nombre. Mantén cada valor dentro de sus límites."
+    },
+    "story": {
+      "title": "Partida guardada",
+      "passage": "Pasaje",
+      "saved": "Guardado",
+      "moment": "Momento",
+      "momentOf": "{{current}} de {{total}}",
+      "unknown": "Desconocido"
+    },
+    "note": {
+      "changed": "cambiado durante la partida",
+      "changedTip": "Este valor se cambió por partes durante la partida, por lo que la lista no puede mostrarlo. Cámbialo en el editor JSON.",
+      "map_one": "Map · {{shown}} entrada",
+      "map_other": "Map · {{shown}} entradas",
+      "set_one": "Set · {{shown}} elemento",
+      "set_other": "Set · {{shown}} elementos",
+      "date": "Fecha · {{date}}",
+      "code": "valor especial",
+      "specialTip": "El juego reconstruye este valor con su propio código. Cámbialo en el editor JSON.",
+      "empty": "vacío",
+      "emptyTip": "Este valor está vacío (null o una lista vacía)."
+    },
+    "addEntry": {
+      "trigger": "Añadir",
+      "triggerTip": "Añadir {{label}} a esta lista",
+      "title": "Añadir {{label}}",
+      "label": {
+        "item": "objeto",
+        "weapon": "arma",
+        "armor": "armadura"
+      },
+      "search": "Buscar nombre o #id",
+      "noMatch": "Sin coincidencias en la base de datos del juego.",
+      "typedId": "Añadir #{{id}}",
+      "clear": "Borrar",
+      "id": "ID de la base de datos",
+      "idPlaceholder": "Por ejemplo 12",
+      "noCatalog": "No se encontró ninguna carpeta de datos del juego, así que escribe el ID.",
+      "missingFile": "Falta {{file}} en la carpeta de datos del juego, así que escribe el ID.",
+      "count": "Cantidad",
+      "submit": "Añadir"
+    },
+    "addValue": {
+      "action": "Añadir valor",
+      "title": "Añadir un valor",
+      "hint": "Se escribirá en el archivo al guardar.",
+      "key": "Nombre",
+      "keyPlaceholder": "Por ejemplo puntuación",
+      "type": "Tipo",
+      "kind": {
+        "int": "Número",
+        "string": "Texto",
+        "bool": "Activado/desactivado"
+      },
+      "value": "Valor",
+      "submit": "Añadir valor"
+    },
+    "remove": {
+      "action": "Eliminar {{name}}",
+      "title": "¿Eliminar {{name}}?",
+      "body": "Se quitará del archivo al guardar. Deshacer lo recupera.",
+      "confirm": "Eliminar"
+    },
+    "dataFolder": {
+      "title": "Elegir la carpeta de datos del juego",
+      "none": "No se encontró la carpeta de datos del juego",
+      "namesFrom": "Nombres desde la carpeta de datos del juego",
+      "choose": "Elegir carpeta de datos…",
+      "change": "Cambiar…",
+      "picking": "Abriendo…"
+    },
+    "gwent": {
+      "title": "Colección de Gwent",
+      "info": "Las cartas de Gwent que contiene esta partida guardada y sus barajas. Solo se puede cambiar el número de copias en propiedad. Las barajas son de solo lectura (cambiarlas reescribiría las listas de la baraja), y una carta que la partida guardada no contenga no se puede añadir aquí.",
+      "cards_one": "{{n}} carta",
+      "cards_other": "{{n}} cartas",
+      "leaders_one": "{{n}} líder",
+      "leaders_other": "{{n}} líderes",
+      "cardsOf": "{{owned}} de {{total}} cartas",
+      "leadersOf": "{{owned}} de {{total}} líderes",
+      "show": "Mostrar",
+      "showAll": "Todas",
+      "showOwned": "En propiedad",
+      "showMissing": "Faltantes",
+      "factions": "Facción",
+      "allFactions": "Todas",
+      "faction": {
+        "northern": "Reinos del Norte",
+        "nilfgaard": "Nilfgaard",
+        "scoiatael": "Scoia'tael",
+        "monsters": "Monstruos",
+        "skellige": "Skellige",
+        "neutral": "Neutral",
+        "other": "Otro"
+      },
+      "leader": "Líder",
+      "missing": "No en propiedad",
+      "copies": "Copias de {{name}}",
+      "fallback": "Carta {{index}}",
+      "search": "Buscar nombre o #índice",
+      "was": "era {{value}}",
+      "pickFolder": "Elegir la carpeta del juego",
+      "pickFolderTip": "Los nombres de las cartas y las cartas faltantes provienen de los propios archivos del juego.",
+      "pickTitle": "Elegir la carpeta del juego The Witcher 3",
+      "pickFailed": "No se encontraron cartas de Gwent en esa carpeta.",
+      "picking": "Abriendo…",
+      "empty": "Ninguna carta coincide.",
+      "view": "Colección o baraja",
+      "collection": "Colección",
+      "deck": "Baraja {{number}}",
+      "inDeck": "{{n}} en la baraja",
+      "deckEmpty": "Esta baraja no contiene cartas.",
+      "deckLocked": "Esta baraja está bloqueada y no contiene cartas.",
+      "locked": "Bloqueada",
+      "selected": "Seleccionada"
+    },
+    "satisfactory": {
+      "title": "Inventarios",
+      "info": "Solo se pueden cambiar las cantidades de las pilas. 500 es el tamaño máximo de pila.",
+      "playerInventory": "Inventario del jugador",
+      "playerNInventory": "Inventario del jugador {{n}}",
+      "pick": "Inventario",
+      "kinds": "Tipo de inventario",
+      "kind": {
+        "player": "Jugador",
+        "storage": "Almacenamiento",
+        "other": "Otro"
+      },
+      "empty": "Esta partida guardada no tiene inventarios con contenido."
+    }
+  },
+  "whatsNew": [
+    "## 0.9.1",
+    "",
+    "Cuatro idiomas nuevos y correcciones para Linux y macOS.",
+    "",
+    "### Idiomas",
+    "- SavePrism ahora habla español, ruso, japonés y chino simplificado: elige uno en el menú de idiomas de la cabecera o en Configuración.",
+    "- ¿Quieres SavePrism en tu idioma? Un idioma es un solo archivo: consulta \"Add a language\" en GitHub.",
+    "",
+    "### Correcciones",
+    "- Linux: SavePrism desactiva el renderizador WebKitGTK que dejaba la ventana en blanco con algunos controladores gráficos y en máquinas virtuales.",
+    "",
+    "### ¿Dónde está mi partida guardada?",
+    "- Las carpetas de guardado habituales también se muestran en macOS y Linux, incluidas las carpetas de Steam Proton (también en Steam Deck). Gracias a EfeHasNoLuck por la primera contribución externa."
+  ]
+}

@@ -1,9 +1,12 @@
 // @vitest-environment node
 import { describe, expect, it } from "vitest";
 import { ErrorCodes, type FileReport } from "@/api/commands";
-import en from "../../locales/en/common.json";
-import tr from "../../locales/tr/common.json";
+import enFile from "../../locales/en.json";
+import trFile from "../../locales/tr.json";
 import { buildFileReport, GAME_LINE, REPORT_TITLE } from "./fileReport";
+
+const en = enFile.common;
+const tr = trFile.common;
 
 const SAMPLE: FileReport = {
   extension: "sav",

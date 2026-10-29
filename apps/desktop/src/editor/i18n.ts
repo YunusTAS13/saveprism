@@ -1,6 +1,5 @@
 import i18next from "i18next";
-import en from "../../locales/en/editor.json";
-import tr from "../../locales/tr/editor.json";
+import { LOCALES } from "@/i18n/locales";
 
 export const NS = "editor";
 
@@ -13,6 +12,7 @@ let registered = false;
 export function registerEditorBundles(): void {
   if (registered || !i18next.isInitialized) return;
   registered = true;
-  i18next.addResourceBundle("en", NS, en, true, true);
-  i18next.addResourceBundle("tr", NS, tr, true, true);
+  for (const [code, file] of Object.entries(LOCALES)) {
+    i18next.addResourceBundle(code, NS, file.editor, true, true);
+  }
 }

@@ -1,14 +1,6 @@
 // @vitest-environment node
 import { describe, expect, it } from "vitest";
-import enCommon from "../../locales/en/common.json";
-import enEditor from "../../locales/en/editor.json";
-import trCommon from "../../locales/tr/common.json";
-import trEditor from "../../locales/tr/editor.json";
-
-const LOCALES = {
-  en: { common: enCommon, editor: enEditor },
-  tr: { common: trCommon, editor: trEditor },
-} as const;
+import { LOCALES } from "./locales";
 
 type Bundle = Record<string, unknown>;
 
@@ -70,10 +62,8 @@ describe("literal translation keys", () => {
       for (const match of source.matchAll(LITERAL_CALL)) {
         const key = match[1];
         if (key === undefined || !/^[A-Za-z][A-Za-z0-9_.-]*$/.test(key)) continue;
-        for (const language of ["en", "tr"] as const) {
-          const bundles = namespaces.map(
-            (namespace) => LOCALES[language][namespace as "common" | "editor"] as Bundle,
-          );
+        for (const [language, file] of Object.entries(LOCALES)) {
+          const bundles = namespaces.map((namespace) => file[namespace as "common" | "editor"]);
           if (!bundles.some((bundle) => hasKey(bundle, key))) {
             missing.push(`${path}: ${language} ${key}`);
           }

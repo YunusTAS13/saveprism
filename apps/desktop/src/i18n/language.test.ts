@@ -1,14 +1,14 @@
 // @vitest-environment node
 import { describe, expect, it } from "vitest";
 import { SUPPORTED_LANGUAGES } from "./detect";
-import { LANGUAGE_FLAG, languageName, languageShortCode } from "./language";
+import { languageFlag, languageName, languageShortCode } from "./language";
 
 describe("language menu data", () => {
   it("has a short code, an own name and a flag for every shipped language", () => {
     for (const language of SUPPORTED_LANGUAGES) {
-      expect(languageShortCode(language)).toMatch(/^[A-Z]{2}$/);
+      expect(languageShortCode(language)).toMatch(/^[A-Z]{2,3}$/);
       expect(languageName(language).trim()).not.toBe("");
-      expect(["gb", "tr"]).toContain(LANGUAGE_FLAG[language]);
+      expect(languageFlag(language)).toMatch(/^<svg/);
     }
   });
 
@@ -17,7 +17,9 @@ describe("language menu data", () => {
     expect(languageName("tr")).toBe("Türkçe");
   });
 
-  it("uses the UK flag for English and the Turkish flag for Turkish", () => {
-    expect(LANGUAGE_FLAG).toEqual({ en: "gb", tr: "tr" });
+  it("falls back to the code for a language without a file", () => {
+    expect(languageName("xx")).toBe("xx");
+    expect(languageShortCode("xx")).toBe("XX");
+    expect(languageFlag("xx")).toBeUndefined();
   });
 });

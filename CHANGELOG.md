@@ -4,7 +4,11 @@ Player-facing notes for each release. The app shows the section of the running v
 
 ## 0.9.1
 
-A small update for Linux and macOS.
+Four new languages, and fixes for Linux and macOS.
+
+### Languages
+- SavePrism now speaks Spanish, Russian, Japanese and Simplified Chinese: pick one in the language menu in the header or in Settings.
+- Want SavePrism in your language? A language is a single file: see "Add a language" on GitHub.
 
 ### Fixes
 - Linux: SavePrism turns off the WebKitGTK renderer that left the window white with some graphics drivers and in virtual machines.

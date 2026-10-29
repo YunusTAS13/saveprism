@@ -1,7 +1,7 @@
 // @vitest-environment node
 import { describe, expect, it } from "vitest";
-import en from "../../locales/en/common.json";
-import tr from "../../locales/tr/common.json";
+import enFile from "../../locales/en.json";
+import trFile from "../../locales/tr.json";
 import {
   buildCrashReport,
   CRASH_REPORT_TITLE,
@@ -9,6 +9,9 @@ import {
   describeError,
   stripPaths,
 } from "./crashReport";
+
+const en = enFile.common;
+const tr = trFile.common;
 
 describe("stripPaths: Windows paths", () => {
   it("removes a drive path with backslashes or forward slashes", () => {

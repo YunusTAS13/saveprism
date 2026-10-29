@@ -15,8 +15,6 @@ import {
   DropdownMenuSeparator,
   DropdownMenuTrigger,
 } from "@/components/ui/dropdown-menu";
-import en from "../../locales/en/common.json";
-import tr from "../../locales/tr/common.json";
 import {
   detectLanguage,
   isLanguage,
@@ -26,14 +24,14 @@ import {
 } from "./detect";
 import { LanguageFlag } from "./flags";
 import { languageName, languageShortCode } from "./language";
+import { LOCALES } from "./locales";
 
 export { SUPPORTED_LANGUAGES };
 export type { Language };
 
-const resources = {
-  en: { common: en },
-  tr: { common: tr },
-} as const;
+const resources = Object.fromEntries(
+  Object.entries(LOCALES).map(([code, file]) => [code, { common: file.common }]),
+);
 
 function readStoredLanguage(): string | null {
   try {

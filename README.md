@@ -256,7 +256,7 @@ flowchart LR
 - Light, dark or the Windows setting; an app color (six presets, your Windows accent, monochrome or any color); text size
   from 80 to 140 %; your own colors for changed values, the accent and errors.
 - A background pattern, or your own photo behind frosted glass (blur, fade and card opacity).
-- Keyboard shortcuts you can change; English and Turkish.
+- Keyboard shortcuts you can change; English, Turkish, Spanish, Russian, Japanese and Simplified Chinese.
 - **Theme files:** export your look, share it in
   [Community themes](https://github.com/huseyincancalti/saveprism/discussions/categories/community-themes), import
   someone else's. A theme file is data only and is checked before anything changes.
@@ -405,8 +405,8 @@ saveprism keys try <save> --candidates <list.txt>          # find the password o
   color, text size or background, and share it in
   [Community themes](https://github.com/huseyincancalti/saveprism/discussions/categories/community-themes). The file
   format and how the colors work: [docs/themes.md](docs/themes.md).
-- **A language** is two JSON files and a changelog under `apps/desktop/locales/<code>/`, plus a few lines in
-  `apps/desktop/src/i18n/`. A test fails on any missing key, so you cannot miss one. Steps:
+- **A language** is one file, `apps/desktop/locales/<code>.json`: add it and the app lists the language by itself. A
+  test fails on any missing key or lost placeholder, so you cannot miss one. Steps:
   [CONTRIBUTING.md](CONTRIBUTING.md#add-a-language). Not a coder? Open an
   [Add a language](https://github.com/huseyincancalti/saveprism/issues/new?template=add_language.yml) request.
 
@@ -418,12 +418,12 @@ apps/desktop/                 the Windows app (Tauri 2)
 ├── src/                      React + TypeScript UI
 │   ├── editor/               the save views: sections, lists, values, JSON, compare
 │   ├── shell/                start screen, header, Settings, dialogs, appearance, shortcuts
-│   ├── i18n/                 language detection, names and flags
+│   ├── i18n/                 loads the language files, language menu
 │   └── theme/                light, dark and system theme
 ├── src-tauri/src/
 │   ├── session/              open, edit, save, backups, key finder, save locations
 │   └── mcp/                  the MCP server (saveprism-desktop.exe mcp)
-└── locales/<code>/           UI text: common.json, editor.json, CHANGELOG.md
+└── locales/<code>.json       one file per language: name, flag, UI text, What's new
 crates/
 ├── saveprism-core/           value tree, format detection, round-trip guard, limits, backup + atomic write
 ├── saveprism-codecs/         one module per format (rpgmaker, es3, gvas, renpy, godot, ...)

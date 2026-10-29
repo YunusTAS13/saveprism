@@ -69,6 +69,7 @@ import {
 import { Stepper } from "@/components/ui/stepper";
 import { Switch } from "@/components/ui/switch";
 import { SUPPORTED_LANGUAGES, type Language } from "@/i18n";
+import { isLanguage } from "@/i18n/detect";
 import { LanguageFlag } from "@/i18n/flags";
 import { languageName } from "@/i18n/language";
 import { useTheme, type ThemePreference } from "@/theme";
@@ -282,7 +283,7 @@ export function SettingsPage({
   const { notify } = useNotify();
   const { settings, update } = useSettings();
   const { preference, setPreference } = useTheme();
-  const language: Language = i18n.resolvedLanguage === "tr" ? "tr" : "en";
+  const language: Language = isLanguage(i18n.resolvedLanguage) ? i18n.resolvedLanguage : "en";
 
   const [tab, setTab] = useState<SettingsTab>("general");
   const [query, setQuery] = useState("");
@@ -798,7 +799,7 @@ export function SettingsPage({
                         <DropdownMenuRadioGroup
                           value={language}
                           onValueChange={(value) => {
-                            if (value === "en" || value === "tr") {
+                            if (isLanguage(value)) {
                               void i18n.changeLanguage(value);
                             }
                           }}
@@ -1976,7 +1977,12 @@ function PatternTiles({
                 </span>
               ) : null}
             </span>
-            <span className={selected ? "font-medium text-foreground" : ""}>{tile.label}</span>
+            <span
+              title={tile.label}
+              className={`max-w-full truncate ${selected ? "font-medium text-foreground" : ""}`}
+            >
+              {tile.label}
+            </span>
           </button>
         );
       })}
@@ -1996,21 +2002,26 @@ function MiniSlider({
   onChange: (value: number) => void;
 }) {
   return (
-    <div data-setting={id} className="mt-2.5 flex items-center gap-2.5 text-xs">
-      <span className="w-14 shrink-0 text-foreground-variant">{label}</span>
-      <input
-        type="range"
-        min={0}
-        max={100}
-        step={5}
-        value={value}
-        onChange={(event) => onChange(Number(event.target.value))}
-        aria-label={label}
-        className="min-w-0 flex-1 accent-primary"
-      />
-      <span className="w-8 text-right font-mono text-[0.6875rem] text-foreground-variant">
-        {value}%
-      </span>
+    // In a narrow card the label goes above the slider, so a long translation never squeezes it.
+    <div data-setting={id} className="@container mt-2.5 text-xs">
+      <div className="flex flex-wrap items-center gap-x-2.5 gap-y-1">
+        <span className="w-full leading-tight text-foreground-variant @[15rem]:w-24 @[15rem]:shrink-0">
+          {label}
+        </span>
+        <input
+          type="range"
+          min={0}
+          max={100}
+          step={5}
+          value={value}
+          onChange={(event) => onChange(Number(event.target.value))}
+          aria-label={label}
+          className="min-w-0 flex-1 accent-primary"
+        />
+        <span className="w-8 text-right font-mono text-[0.6875rem] text-foreground-variant">
+          {value}%
+        </span>
+      </div>
     </div>
   );
 }
@@ -2091,24 +2102,24 @@ function PreviewCard({ photo }: { photo: BackgroundImageData | null }) {
         </div>
         <div className="absolute top-6 right-2.5 left-2.5 overflow-hidden rounded border border-border bg-card text-[0.6875rem]">
           <div className="flex h-5 items-center bg-table-head px-2 text-[0.5625rem] font-semibold tracking-wide text-muted-foreground uppercase">
-            <span className="flex-1">Name</span>
-            <span>Value</span>
+            <span className="flex-1">{t("settings.sample.name")}</span>
+            <span>{t("settings.sample.value")}</span>
           </div>
-          <PreviewRow label="Gold" value="9,999" color={accent.main} />
+          <PreviewRow label={t("settings.sample.gold")} value="9,999" color={accent.main} />
           <PreviewRow
-            label="Level"
+            label={t("settings.sample.level")}
             value="99"
             background={`color-mix(in srgb, ${changedFill} ${dark ? 20 : 9}%, transparent)`}
             color={changed.main}
           />
           <PreviewRow
-            label="Health"
+            label={t("settings.sample.health")}
             value="-5"
             background={`color-mix(in srgb, ${errorFill} ${dark ? 30 : 8}%, transparent)`}
             color={error.main}
           />
-          <PreviewRow label="Hero name" value='"Aria"' />
-          <PreviewRow label="Map" value="Forest_02" />
+          <PreviewRow label={t("settings.sample.heroName")} value='"Aria"' />
+          <PreviewRow label={t("settings.sample.map")} value="Forest_02" />
         </div>
       </div>
       <div className="mt-2.5 flex flex-wrap gap-x-3 gap-y-1.5 text-[0.71875rem] text-foreground-variant">

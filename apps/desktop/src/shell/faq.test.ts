@@ -1,8 +1,11 @@
 // @vitest-environment node
 import { describe, expect, it } from "vitest";
-import en from "../../locales/en/common.json";
-import tr from "../../locales/tr/common.json";
+import enFile from "../../locales/en.json";
+import trFile from "../../locales/tr.json";
 import { FAQ_ITEMS } from "./faq";
+
+const en = enFile.common;
+const tr = trFile.common;
 
 function read(source: Record<string, unknown>, key: string): unknown {
   return key.split(".").reduce<unknown>((value, part) => {

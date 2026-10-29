@@ -1,0 +1,1286 @@
+{
+  "language": {
+    "name": "简体中文",
+    "short": "ZH",
+    "flag": "<svg xmlns=\"http://www.w3.org/2000/svg\" viewBox=\"0 0 60 60\"><rect width=\"60\" height=\"60\" fill=\"#EE1C25\"/><polygon points=\"20,13.5 22.13,20.06 29.04,20.06 23.45,24.12 25.58,30.69 20,26.63 14.42,30.69 16.55,24.12 10.96,20.06 17.87,20.06\" fill=\"#FFDE00\"/><polygon points=\"30.65,13.17 31.79,11.14 30.21,9.43 32.49,9.89 33.63,7.86 33.9,10.17 36.18,10.63 34.07,11.6 34.34,13.91 32.76,12.2\" fill=\"#FFDE00\"/><polygon points=\"34.92,18.86 36.85,17.57 36.23,15.33 38.05,16.78 39.99,15.49 39.18,17.67 41,19.12 38.68,19.02 37.86,21.2 37.24,18.96\" fill=\"#FFDE00\"/><polygon points=\"34.88,26.31 37.19,26.08 37.69,23.81 38.62,25.95 40.94,25.73 39.19,27.27 40.12,29.4 38.12,28.22 36.37,29.76 36.88,27.49\" fill=\"#FFDE00\"/><polygon points=\"30.56,31.93 32.71,32.81 34.21,31.04 34.04,33.36 36.19,34.24 33.93,34.79 33.76,37.11 32.54,35.13 30.28,35.68 31.78,33.91\" fill=\"#FFDE00\"/></svg>"
+  },
+  "common": {
+    "empty": {
+      "title": "将存档文件拖放到此处",
+      "subtitle": "所有数据仅保留在您的电脑上。"
+    },
+    "footer": {
+      "core": "核心 v{{version}}",
+      "coreUnavailable": "核心不可用"
+    },
+    "language": {
+      "label": "语言"
+    },
+    "theme": {
+      "toggle": "更改主题",
+      "light": "浅色",
+      "dark": "深色",
+      "system": "跟随系统",
+      "toLight": "切换为浅色主题",
+      "toDark": "切换为深色主题"
+    },
+    "common": {
+      "close": "关闭",
+      "cancel": "取消",
+      "copy": "复制",
+      "copied": "已复制",
+      "loading": "正在加载…",
+      "opening": "正在打开 {{name}}…",
+      "moreInfo": "更多信息"
+    },
+    "header": {
+      "openFile": "打开文件",
+      "closeFile": "关闭文件",
+      "closeFileTip": "关闭当前文件并返回起始界面",
+      "notifications": "通知",
+      "settings": "设置",
+      "engineUnknown": "未知格式",
+      "pasteCode": "粘贴代码",
+      "pasteCodeTip": "打开从网页游戏中复制的存档代码",
+      "pastedCode": "已粘贴代码",
+      "pastedTip": "从粘贴的存档代码中打开。复制代码将包含您的更改。"
+    },
+    "dialog": {
+      "openTitle": "打开存档文件",
+      "saveTitle": "另存为",
+      "saveFiles": "存档文件",
+      "allFiles": "所有文件",
+      "exportTitle": "导出 JSON",
+      "jsonFiles": "JSON (*.json)",
+      "compareTitle": "选择要对比的存档"
+    },
+    "start": {
+      "dropActive": "松开以打开",
+      "openFile": "打开文件",
+      "pasteCode": "粘贴代码",
+      "pasteHint": "网页游戏？粘贴其提供的存档代码 (Ctrl+V)。",
+      "notSure": "不确定存档在哪里？",
+      "whereLink": "我的存档在哪里？",
+      "slogan": "文件保留在您的电脑上，数据安全无忧。",
+      "faq": {
+        "title": "常见问题",
+        "original": {
+          "question": "我的原始存档会被修改吗？",
+          "answer": "仅当您选择“覆盖当前文件”时才会修改。默认操作为“另存为新文件”，因此原始文件保持不变。在替换任何文件之前，SavePrism 都会保留一份副本，您可以从“备份”中恢复。"
+        },
+        "games": {
+          "question": "支持哪些游戏？",
+          "answer": "支持使用 Unity、Unreal Engine、RPG Maker、Ren'Py、Godot、GameMaker 等引擎制作的游戏，以及网页游戏的存档代码。完整列表见 README。只要文件可读，其数值就会立即显示。"
+        },
+        "notOpen": {
+          "question": "无法打开我的文件——该怎么办？",
+          "answer": "请检查它是否是存档本身，而不是快捷方式或截图。有些游戏会锁定其存档；SavePrism 会显示检测到的信息。仍有问题？复制文件报告并在 GitHub 上附带游戏名称向我们反馈。"
+        },
+        "ai": {
+          "question": "如何搭配 AI 工具使用？",
+          "answer": "在任意列表上点击“询问 AI”以复制其数值，然后粘贴到 ChatGPT、Claude 或 Gemini 中。支持 MCP 的 AI 应用（例如 Claude Desktop）可以直接连接：设置 → AI 连接。"
+        },
+        "undo": {
+          "question": "如何撤销更改？",
+          "answer": "按 Ctrl+Z 撤销，Ctrl+Y 重做，或在底部栏点击“全部撤销”。保存后，打开“备份”即可恢复到早前版本。"
+        }
+      }
+    },
+    "banner": {
+      "readOnly": "此文件目前无法安全写入。您可以查看，但不能保存。",
+      "semantic": "写入文件时的排版结构可能会略有不同，但内容保持不变。",
+      "renpySigned": "Ren'Py 存档：保存更改后，游戏会询问是否信任此存档，请选择“是”。",
+      "renpyKeySigned": "Ren'Py 存档：更改已使用您自己的 Ren'Py 密钥签名。",
+      "renpyPersistentKeySigned": "Ren'Py 持久数据：更改已使用您自己的 Ren'Py 密钥签名。",
+      "renpyPersistentSigned": "此 Ren'Py 持久数据已签名。游戏会丢弃修改后的副本，因此以只读方式打开。",
+      "terrariaLayout": "无法识别此游戏版本下的 Terraria 文件布局，因此以只读方式打开。"
+    },
+    "bottom": {
+      "changes_one": "{{count}} 处未保存更改",
+      "changes_other": "{{count}} 处未保存更改",
+      "noChanges": "无更改",
+      "changesTitle": "未保存更改",
+      "undo": "撤销",
+      "redo": "重做",
+      "undoTip": "撤销 (Ctrl+Z)",
+      "redoTip": "重做 (Ctrl+Y)",
+      "undoAll": "全部撤销",
+      "openJson": "打开 JSON",
+      "openJsonInfo": "以 JSON 文本显示整个文件。您可以在此处修改数值并应用。",
+      "backups": "备份",
+      "backupsTip": "此文件的备份：查看并恢复",
+      "saveAs": "另存为…",
+      "saveOverwrite": "覆盖当前文件",
+      "overwriteItem": "覆盖当前文件（将先创建备份）",
+      "saveAsItem": "另存为新文件…",
+      "saveOptions": "更多保存选项",
+      "backupInfo": "在替换任何文件前，都会先保存原始文件的备份副本。",
+      "invalidTip": "保存前请先修正高亮显示的数值。",
+      "readOnlyTip": "此文件为只读。",
+      "copyCode": "复制代码",
+      "copyCodeTip": "复制修改后的存档代码以粘贴到游戏中",
+      "saveAsFile": "另存为文件…",
+      "copyCodeItem": "复制为存档代码",
+      "addedTip_one": "新增 {{count}} 项",
+      "addedTip_other": "新增 {{count}} 项",
+      "removedTip_one": "移除 {{count}} 项",
+      "removedTip_other": "移除 {{count}} 项",
+      "addedTag": "新增",
+      "removedTag": "移除",
+      "compareItem": "与另一个存档对比…"
+    },
+    "confirm": {
+      "discardOpen_one": "放弃 {{count}} 处更改并打开另一个文件？",
+      "discardOpen_other": "放弃 {{count}} 处更改并打开另一个文件？",
+      "discardBody": "未保存的更改将会丢失。",
+      "discard": "放弃更改",
+      "closeTitle": "不保存即关闭？",
+      "closeBody_one": "您的 {{count}} 处更改将会丢失。",
+      "closeBody_other": "您的 {{count}} 处更改将会丢失。",
+      "closeDiscard": "不保存并关闭",
+      "updateTitle": "不保存即更新？",
+      "updateBody_one": "您的 {{count}} 处更改将会丢失。SavePrism 将在更新后重启。",
+      "updateBody_other": "您的 {{count}} 处更改将会丢失。SavePrism 将在更新后重启。",
+      "updateDiscard": "不保存并更新"
+    },
+    "json": {
+      "title": "JSON 编辑器",
+      "readOnlyNote": "此文件为只读，无法应用对 JSON 的更改。",
+      "search": "在 JSON 中搜索",
+      "matches_one": "{{count}} 个匹配项",
+      "matches_other": "{{count}} 个匹配项",
+      "noMatches": "无匹配项",
+      "next": "下一个匹配项",
+      "previous": "上一个匹配项",
+      "failed": "无法创建 JSON 视图。",
+      "editNote": "修改数值后点击“应用”。字段、列表项以及如 <12 bytes> 的占位符需保持原样。",
+      "exportJson": "导出 .json",
+      "exportApplyFirst": "请先应用或撤销您的编辑。导出操作将保存已应用的数值。",
+      "editorLabel": "JSON 文本",
+      "apply": "应用",
+      "applying": "正在应用…",
+      "dirty": "已修改。点击应用以使用这些数值。",
+      "notApplied": "未应用任何更改。",
+      "syntaxAt": "第 {{line}} 行，第 {{column}} 列：{{problem}}",
+      "confirmTitle": "是否应用您的 JSON 更改？",
+      "confirmBody": "您在 JSON 文本中的编辑尚未应用。",
+      "keepEditing": "继续编辑",
+      "discard": "放弃更改",
+      "problem": {
+        "end": "文本过早结束。",
+        "unexpected": "这不是有效的数值。请使用数字、带引号的文本、true、false 或 null。",
+        "expectedKey": "需要带引号的字段名称。",
+        "expectedColon": "字段名后需要 ':'。",
+        "expectedCommaOrBrace": "需要 ',' 或 '}'。",
+        "expectedCommaOrBracket": "需要 ',' 或 ']'。",
+        "unclosedString": "此文本缺少闭合引号。",
+        "controlChar": "文本内的换行和制表符请写作 \\n 和 \\t。",
+        "badEscape": "反斜杠后存在未知的转义字符。",
+        "badNumber": "此数字格式不正确。",
+        "trailing": "JSON 结尾之后有多余文本。"
+      }
+    },
+    "backups": {
+      "title": "备份",
+      "description": "{{name}} 在被覆盖前保存的副本，按时间从新到旧排列。",
+      "retention_one": "每个文件仅保留最后一份备份，最长保留 30 天。",
+      "retention_other": "每个文件最多保留最近 {{count}} 份备份，最长保留 30 天。",
+      "empty": "此文件暂无备份。每次覆盖保存时都会创建备份。",
+      "failed": "无法读取备份。",
+      "restore": "恢复",
+      "restoring": "正在恢复…",
+      "confirmTitle": "恢复此备份？",
+      "confirmBody": "{{name}} 将被替换为来自 {{time}} 的备份。当前文件会先进行备份，以便您日后从此列表中恢复。",
+      "confirmLoss_one": "您未保存的 {{count}} 处更改将会丢失。",
+      "confirmLoss_other": "您未保存的 {{count}} 处更改将会丢失。"
+    },
+    "compare": {
+      "title": "与 {{name}} 对比",
+      "description": "另一个存档以只读方式打开。不会写入任何内容；点击行只会跳转到此处对应的数值。",
+      "failed": "无法对比文件。",
+      "count_one": "{{count}} 处差异",
+      "count_other": "{{count}} 处差异",
+      "capped": "显示全部 {{count}} 处差异中的前 {{shown}} 处",
+      "found_one": "{{count}} 个匹配项",
+      "found_other": "{{count}} 个匹配项",
+      "empty": "两个存档的数值完全相同。",
+      "search": "搜索路径和数值",
+      "onlyHere": "仅在此处存在",
+      "onlyThere": "仅在对方存在",
+      "here": "当前文件",
+      "there": "另一个文件",
+      "goTo": "在编辑器中定位此数值"
+    },
+    "locations": {
+      "title": "我的存档在哪里？",
+      "description": "SavePrism 不会扫描您的电脑。以下是各类游戏的常见存档目录。",
+      "searchPlaceholder": "按引擎或文件类型搜索，例如 Unity 或 .sav",
+      "searchLabel": "搜索存档文件夹",
+      "clearSearch": "清除搜索",
+      "count": "{{shown}} / {{total}} 种游戏类型",
+      "all": "全部",
+      "folders_one": "{{count}} 个文件夹",
+      "folders_other": "{{count}} 个文件夹",
+      "insideGame": "位于游戏文件夹内",
+      "registry": "注册表",
+      "registryHint": "使用注册表编辑器导出",
+      "empty": "未找到匹配的游戏类型。",
+      "emptyHint": "尝试输入引擎名称或文件后缀，如 .sav 或 .rpgsave。",
+      "tellUs": "列表中没有您的游戏？",
+      "tellUsBody": "请告诉我们游戏名称以及您找到存档的位置。",
+      "tellUsButton": "在 GitHub 上反馈",
+      "tellUsFailed": "无法打开 issue 页面",
+      "openFolder": "打开文件夹",
+      "notFound": "在此电脑上未找到",
+      "inBrowser": "保存在浏览器中",
+      "placeholder": {
+        "gameFolder": "游戏文件夹",
+        "game": "游戏名",
+        "company": "公司名"
+      },
+      "openFailed": "无法打开该文件夹",
+      "failed": "无法读取存档位置。",
+      "group": {
+        "unity": "Unity",
+        "unreal": "Unreal Engine",
+        "rpgmaker-mv": "RPG Maker MV/MZ",
+        "rpgmaker-classic": "RPG Maker XP/VX",
+        "renpy": "Ren'Py",
+        "godot": "Godot",
+        "gamemaker": "GameMaker",
+        "other": "其他"
+      },
+      "engine": {
+        "rpgmaker-mv": "RPG Maker MV / MZ",
+        "rpgmaker-classic": "RPG Maker XP / VX / VX Ace / 2000 / 2003",
+        "wolf-rpg": "Wolf RPG Editor",
+        "unity": "Unity",
+        "unreal": "Unreal Engine",
+        "gamemaker": "GameMaker",
+        "renpy": "Ren'Py",
+        "godot": "Godot",
+        "twine": "Twine / SugarCube",
+        "flash": "Flash",
+        "witcher3": "The Witcher 3",
+        "satisfactory": "Satisfactory",
+        "slime-rancher-2": "Slime Rancher 2",
+        "palworld": "Palworld",
+        "terraria": "Terraria",
+        "neverwinter-nights": "Neverwinter Nights",
+        "kotor": "Knights of the Old Republic",
+        "ags": "Adventure Game Studio",
+        "nscripter": "NScripter / ONScripter",
+        "emuera": "Emuera / eraMaker",
+        "alicesoft": "AliceSoft System 3.x / 4",
+        "construct": "Construct",
+        "artemis": "Artemis Engine",
+        "elden-ring": "Elden Ring",
+        "dark-souls-3": "Dark Souls III",
+        "ets2": "Euro Truck Simulator 2",
+        "ats": "American Truck Simulator",
+        "retroarch": "RetroArch"
+      },
+      "hint": {
+        "rpgmaker-mv": "MV 具有 www 文件夹，MZ 具有 js 和 data 文件夹。存档后缀为 .rpgsave 或 .rmmzsave。",
+        "rpgmaker-classic": "Game.exe 旁边有 Game.ini。存档后缀为 .rxdata、.rvdata 或 .rvdata2。",
+        "wolf-rpg": "Game.exe 伴有 Data/BasicData。存档是 Save 文件夹中的 .sav 文件。",
+        "unity": ".exe 旁边有 UnityPlayer.dll 和 <game>_Data 文件夹。",
+        "unreal": "游戏文件夹旁边有 Engine 文件夹。存档后缀为 .sav。",
+        "gamemaker": ".exe 旁边有 data.win 文件。",
+        "renpy": "包含 renpy 和 game 文件夹。存档后缀为 .save。",
+        "godot": "一个 .exe 伴随同名的 .pck 文件。",
+        "twine": "在浏览器中运行。使用游戏的“保存到磁盘”或导出选项。",
+        "flash": ".swf 文件。存档为本地共享对象 (.sol)。",
+        "witcher3": "存档后缀为 .sav，位于 Documents\\The Witcher 3\\gamesaves。",
+        "satisfactory": "存档后缀为 .sav，位于 FactoryGame\\Saved\\SaveGames。",
+        "slime-rancher-2": "存档为 <date>_<game>_<slot>.sav 文件，位于 AppData\\LocalLow\\MonomiPark\\SlimeRancher2。",
+        "palworld": "位于 Pal\\Saved\\SaveGames\\<id> 下的 Level.sav。",
+        "terraria": "角色 (.plr) 和世界 (.wld) 位于 Documents\\My Games\\Terraria。",
+        "neverwinter-nights": "存档为 Documents 或游戏文件夹中的 .sav 文件夹。",
+        "kotor": "存档为游戏文件夹内的 .sav 文件夹，每个槽位对应一个。",
+        "ags": "游戏旁边的 agssave.000 至 agssave.999。",
+        "nscripter": "nscript.dat 或 .nsa 文件。存档为游戏文件夹中的 save*.dat。",
+        "emuera": "Emuera.exe。存档为游戏文件夹或其 sav 文件夹中的 .sav 文件。",
+        "alicesoft": "System 3.x 将 .asd 存档保存在游戏文件夹中；System 4 通常使用 SaveData。",
+        "construct": "Construct 2/3 游戏保存在浏览器中；.c2save/.c3save 文件为纯 JSON。",
+        "artemis": "存档位于 .exe 旁边的 save 文件夹中。",
+        "elden-ring": "%APPDATA%\\EldenRing\\<id> 下的 ER0000.sl2。",
+        "dark-souls-3": "%APPDATA%\\DarkSoulsIII\\<id> 下的 DS30000.sl2。",
+        "ets2": "配置文件位于 Documents\\Euro Truck Simulator 2\\profiles。",
+        "ats": "配置文件位于 Documents\\American Truck Simulator\\profiles。",
+        "retroarch": "%APPDATA%\\RetroArch 下的即时存档 (.state) 和电池存档 (.srm)。"
+      },
+      "note": {
+        "rpgmaker-mv": "MV 使用 www/save；MZ 使用 save。",
+        "rpgmaker-classic": "存档可能在游戏文件夹中或在其 Save 文件夹中。",
+        "wolf-rpg": "存档位于游戏文件夹内的 Save 文件夹中。",
+        "unity": "PlayerPrefs 位于 Windows 注册表中：使用 regedit 导出。Easy Save 文件位于 %USERPROFILE%\\AppData\\LocalLow\\<company>\\<game>\\。",
+        "unreal": "项目名称即游戏文件夹名称。",
+        "gamemaker": "位于 %LOCALAPPDATA% 下的游戏数据文件夹。",
+        "renpy": "存档也可能位于游戏文件夹内的 game/saves 中。",
+        "godot": "user:// 文件夹。",
+        "twine": "浏览器存储：使用游戏的“保存到磁盘”/ 导出选项。",
+        "flash": "本地共享对象。",
+        "witcher3": "Documents 文件夹可能已移动到 OneDrive。",
+        "satisfactory": "Steam/Epic ID 下的文件夹包含 .sav 文件。",
+        "slime-rancher-2": "每个槽位对应一个 .sav 文件；slimerancher.cfg 和 .prf 为设置文件，不是存档。",
+        "palworld": "位于 Steam ID 文件夹下。",
+        "terraria": "Players 存放角色；Worlds 存放世界。Documents 文件夹可能已移动到 OneDrive。",
+        "neverwinter-nights": "Enhanced Edition 将存档保存在 Documents 中；经典版使用游戏文件夹内的 saves。",
+        "kotor": "存档为游戏文件夹中的 .sav 文件，每个槽位对应一个文件夹。",
+        "emuera": "存档在游戏文件夹中，或者当游戏使用 sav 文件夹时保存在其中。",
+        "nscripter": "游戏文件夹中的 save1.dat ... 以及 global.sav（或 gloval.sav）。",
+        "ags": "存档槽位是游戏旁边的 agssave.000 至 agssave.999。",
+        "alicesoft": "System 3.x 将存档保存在游戏文件夹中；System 4 游戏通常使用 SaveData。",
+        "artemis": "存档位于游戏可执行文件旁边的 save 文件夹中。",
+        "construct": "Construct 2/3 存档通常在浏览器存储中；.c2save/.c3save 文件为纯 JSON，根据内容打开。",
+        "elden-ring": "Steam ID 下的文件夹包含 ER0000.sl2。",
+        "dark-souls-3": "Steam ID 下的文件夹包含 DS30000.sl2。",
+        "ets2": "每个配置文件都有 save/<slot>/game.sii；将 g_save_format 设为 2 可获得纯文本。",
+        "ats": "每个配置文件都有 save/<slot>/game.sii；将 g_save_format 设为 2 可获得纯文本。",
+        "retroarch": "states 和 saves 是常用文件夹；即时存档可能使用 RZIP 压缩 (Save State File Compression)。"
+      }
+    },
+    "password": {
+      "title": "此文件已加密",
+      "body": "输入用于 {{name}} 的密码或游戏密钥。该密钥仅使用一次，绝不储存。",
+      "label": "密码",
+      "submit": "打开",
+      "pickFolder": "选择游戏文件夹…",
+      "pickFolderTitle": "选择游戏的安装文件夹",
+      "folderEmpty": "在该文件夹中未找到密码。",
+      "wrong": "该密码无法打开文件。请检查密码，或选择游戏文件夹以搜索其自身文件。"
+    },
+    "codeText": {
+      "title": "您的存档代码",
+      "body": "此处无法使用剪贴板。代码已被选中：按 Ctrl+C 进行复制。",
+      "label": "存档代码",
+      "selectAll": "全选"
+    },
+    "paste": {
+      "title": "粘贴存档代码",
+      "body": "粘贴游戏提供的存档代码，例如从其“导出”或“保存为文本”选项中获取的代码。",
+      "label": "存档代码",
+      "placeholder": "在此处粘贴代码 (Ctrl+V)",
+      "note": "代码仅保留在此电脑上。按 Ctrl+Enter 打开。",
+      "open": "打开",
+      "opening": "正在打开…",
+      "failed": "无法打开此代码。"
+    },
+    "toast": {
+      "savedTitle": "已保存 · 已创建备份 · 已验证",
+      "savedNoBackupTitle": "已保存 · 已验证",
+      "savedBody": "{{path}}",
+      "showInFolder": "在文件夹中显示",
+      "dismiss": "关闭",
+      "openFailed": "无法打开文件",
+      "saveFailed": "无法保存文件",
+      "verifyFailed": "保存的文件验证未通过",
+      "jsonFailed": "无法创建 JSON 视图",
+      "exportedTitle": "已导出 JSON",
+      "exportFailed": "无法导出 JSON",
+      "closeFailed": "无法关闭窗口",
+      "discardFailed": "无法放弃更改",
+      "undoFailed": "无法撤销更改",
+      "redoFailed": "无法重做更改",
+      "changesFailed": "无法读取更改列表",
+      "errorDetail": "{{reason}} {{fix}}",
+      "jsonApplied_one": "已应用 {{count}} 处更改",
+      "jsonApplied_other": "已应用 {{count}} 处更改",
+      "jsonNoChanges": "未更改任何数值",
+      "setAllFailed": "无法设置数值",
+      "restoredTitle": "备份已恢复",
+      "restoredBody": "{{path}} 已恢复至来自 {{time}} 的备份。",
+      "restoreFailed": "无法恢复备份",
+      "codeCopied": "代码已复制",
+      "codeCopiedBody": "将其粘贴到游戏的导入或加载框中。",
+      "copyCodeFailed": "无法复制代码",
+      "copiedForAi_one": "已复制 {{count}} 个数值用于 AI 对话",
+      "copiedForAi_other": "已复制 {{count}} 个数值用于 AI 对话",
+      "copiedForAiBody": "将其粘贴到 ChatGPT、Gemini 或任意 AI 对话中提问，然后在此处修改数值。",
+      "copyAiFailed": "无法复制到剪贴板",
+      "setupCopied": "配置已复制。请粘贴到 AI 应用的 MCP 设置中。",
+      "copySetupFailed": "无法复制配置",
+      "copyReport": "复制文件报告",
+      "reportCopied": "报告已复制",
+      "reportCopiedBody": "粘贴到附带游戏名称的新 issue 中。",
+      "reportFailed": "无法复制报告",
+      "addFailed": "无法添加条目",
+      "removeFailed": "无法移除条目",
+      "dataFolderFailed": "无法读取数据文件夹"
+    },
+    "errors": {
+      "codes": {
+        "SP-APP-001": {
+          "reason": "SavePrism 无法启动",
+          "fix": "请重启 SavePrism。如果问题持续出现，请在 issue 追踪器中报告此错误代码。"
+        },
+        "SP-APP-002": {
+          "reason": "未打开任何文件",
+          "fix": "请先打开一个存档文件。"
+        },
+        "SP-APP-003": {
+          "reason": "此文件为只读，因此无法保存",
+          "fix": "打开文件的副本，或等待对此格式的支持。"
+        },
+        "SP-APP-004": {
+          "reason": "\"{{value}}\" 对该字段无效",
+          "reasonPlain": "该数值对该字段无效",
+          "fix": "请输入符合该字段类型的值。"
+        },
+        "SP-APP-005": {
+          "reason": "{{value}} 超出了该字段的允许范围",
+          "reasonPlain": "数字超出了该字段的允许范围",
+          "fix": "请输入字段显示范围内的数字。"
+        },
+        "SP-APP-006": {
+          "reason": "已存在同名文件",
+          "fix": "请选择其他名称或其他文件夹。"
+        },
+        "SP-APP-007": {
+          "reason": "此数值无法编辑",
+          "fix": "展开容器并选择其中的一个数值。"
+        },
+        "SP-APP-008": {
+          "reason": "导出的 JSON 需要使用其他名称",
+          "fix": "选择以 .json 结尾且不是当前打开存档文件的名称。"
+        },
+        "SP-APP-009": {
+          "reason": "SavePrism 无法读取自身状态",
+          "fix": "请重启 SavePrism。"
+        },
+        "SP-APP-010": {
+          "reason": "JSON 文本无效",
+          "fix": "修正高亮位置并重试应用。"
+        },
+        "SP-APP-011": {
+          "reason": "JSON 文本修改的内容超出了数值范围",
+          "fix": "仅修改数值；字段名、列表项及占位符需保持原样。"
+        },
+        "SP-APP-012": {
+          "reason": "无法打开第三方声明",
+          "fix": "请在 SavePrism 安装文件夹中查看。"
+        },
+        "SP-APP-013": {
+          "reason": "不存在此文件的备份 \"{{name}}\"",
+          "reasonPlain": "该备份已不存在",
+          "fix": "请重新打开备份列表。"
+        },
+        "SP-APP-014": {
+          "reason": "该备份无法作为存档打开",
+          "fix": "未写入任何内容。请选择其他备份。"
+        },
+        "SP-APP-015": {
+          "reason": "单次更改的数值过多",
+          "fix": "请分批修改更少的数值。"
+        },
+        "SP-APP-016": {
+          "reason": "存档代码为空",
+          "fix": "请粘贴游戏提供的完整代码。"
+        },
+        "SP-APP-017": {
+          "reason": "此存档没有可复制的代码",
+          "fix": "请使用“另存为”来保留编辑后的文件。"
+        },
+        "SP-APP-018": {
+          "reason": "该文件夹不包含游戏数据",
+          "fix": "请选择游戏的数据文件夹或其游戏文件夹。"
+        },
+        "SP-APP-019": {
+          "reason": "此存档没有从数据文件夹获取名称的小节",
+          "fix": "打开 RPG Maker 存档以使用游戏名称。"
+        },
+        "SP-APP-020": {
+          "reason": "\"{{value}}\" 已存在",
+          "reasonPlain": "该条目已存在",
+          "fix": "选择其他名称，或更改现有的数值。"
+        },
+        "SP-APP-021": {
+          "reason": "此处无法添加任何内容",
+          "fix": "在 JSON、Easy Save 3、SugarCube 或 RPG Maker 列表中添加数值。"
+        },
+        "SP-APP-022": {
+          "reason": "无法移除此条目",
+          "fix": "请将其设为 0、清空或关闭。"
+        },
+        "SP-APP-023": {
+          "reason": "文件在打开后在磁盘上被修改",
+          "fix": "重新打开文件，或使用“另存为”保留您的编辑。"
+        },
+        "SP-APP-024": {
+          "reason": "AI 工具发送了 SavePrism 无法使用的值",
+          "fix": "检查工具参数并重试。"
+        },
+        "SP-APP-025": {
+          "reason": "用于对比的文件已加密，无法读取",
+          "fix": "请改用未加密的存档副本进行对比。"
+        },
+        "SP-APP-026": {
+          "reason": "无法打开文件夹",
+          "fix": "在文件资源管理器中手动打开。"
+        },
+        "SP-APP-027": {
+          "reason": "只能为常规文件生成文件报告",
+          "fix": "选择存档文件本身，而不是文件夹或快捷方式。"
+        },
+        "SP-DET-001": {
+          "reason": "SavePrism 尚不认识此文件",
+          "fix": "在 issue 中附带样本文件，以便添加支持。"
+        },
+        "SP-DET-002": {
+          "reason": "SavePrism 无法解析此文件",
+          "fix": "请使用更小或未加密的副本重试。"
+        },
+        "SP-ES3-001": {
+          "reason": "这不是 Easy Save 3 文件",
+          "fix": "请检查您选择的是否是游戏的存档文件。"
+        },
+        "SP-ES3-002": {
+          "reason": "此 Easy Save 3 文件包含 SavePrism 无法写入的内容",
+          "fix": "以只读方式打开，或在 issue 追踪器中反馈样本。"
+        },
+        "SP-ES3-003": {
+          "reason": "此加密的 Easy Save 3 文件已损坏",
+          "fix": "从备份或游戏中恢复并重试。"
+        },
+        "SP-ES3-004": {
+          "reason": "该密码无法打开文件",
+          "fix": "检查游戏 Easy Save 设置中的密码并重试。"
+        },
+        "SP-ES3-005": {
+          "reason": "此文件已加密，需要密码",
+          "fix": "输入游戏所用的密码并重新打开文件。"
+        },
+        "SP-CORE-006": {
+          "reason": "文件过大",
+          "fix": "打开较小的文件。"
+        },
+        "SP-CORE-007": {
+          "reason": "文件解压后的数据量过大",
+          "fix": "文件可能已损坏；请尝试其他副本。"
+        },
+        "SP-CORE-008": {
+          "reason": "文件嵌套层级过深",
+          "fix": "文件可能已损坏；请尝试其他副本。"
+        },
+        "SP-CORE-009": {
+          "reason": "文件包含过多数值",
+          "fix": "请尝试文件的其他副本。"
+        },
+        "SP-CORE-010": {
+          "reason": "文件层数过多",
+          "fix": "请尝试文件的其他副本。"
+        },
+        "SP-CORE-011": {
+          "reason": "该数值已不在文件中",
+          "fix": "从树中重新选择该值；路径可能已改变。"
+        },
+        "SP-CORE-012": {
+          "reason": "无法应用更改",
+          "fix": "请重试；如果持续失败，请在 issue 追踪器中报告此错误代码。"
+        },
+        "SP-CORE-013": {
+          "reason": "此数值为只读",
+          "fix": "此数值不可修改。"
+        },
+        "SP-IO-001": {
+          "reason": "无法创建备份",
+          "fix": "请检查可用磁盘空间和备份文件夹权限。未写入任何内容。"
+        },
+        "SP-IO-002": {
+          "reason": "无法写入临时文件",
+          "fix": "关闭游戏以及正在使用该文件的其他程序，然后重试。"
+        },
+        "SP-IO-003": {
+          "reason": "无法替换文件",
+          "fix": "关闭游戏以及使用该文件的其他程序，检查文件是否非只读，然后重试。"
+        },
+        "SP-IO-004": {
+          "reason": "保存的文件验证未通过，已恢复备份",
+          "fix": "您的存档未发生变化。"
+        },
+        "SP-IO-005": {
+          "reason": "保存的文件验证未通过且无法恢复备份",
+          "fix": "请从备份文件夹手动恢复文件，并在 issue 追踪器中报告此错误代码。"
+        },
+        "SP-IO-006": {
+          "reason": "未找到备份文件夹",
+          "fix": "检查您的用户个人资料文件夹是否可用，然后重试。"
+        },
+        "SP-IO-007": {
+          "reason": "无法读取文件",
+          "fix": "检查文件是否存在且可读，然后重试。"
+        },
+        "SP-RENPY-001": {
+          "reason": "此 Ren'Py 存档不是 SavePrism 能读取的文件",
+          "fix": "打开游戏生成的存档，而非从其他游戏复制的副本。"
+        },
+        "SP-RENPY-002": {
+          "reason": "此 Ren'Py 存档包含 SavePrism 无法写入的内容",
+          "fix": "以只读方式打开，或在 issue 追踪器中反馈样本。"
+        },
+        "SP-RENPY-003": {
+          "reason": "无法写入此 Ren'Py 存档",
+          "fix": "以只读方式打开并保留该文件的副本。"
+        },
+        "SP-RENPY-004": {
+          "reason": "无法读取 Ren'Py 密钥文件",
+          "fix": "检查 security_keys.txt 是否存在且包含签名密钥行，然后重新打开存档。"
+        },
+        "SP-APP-030": {
+          "reason": "无法使用该主题文件",
+          "fix": "选择不超过 64 KB 的 SavePrism 主题文件。"
+        }
+      }
+    },
+    "bell": {
+      "title": "本次会话",
+      "empty": "尚无任何活动。",
+      "opened": "已打开 {{name}}",
+      "saved": "已保存 {{name}}",
+      "backup": "备份：{{path}}",
+      "undone": "已撤销全部更改",
+      "setAll_one": "将 {{count}} 个数值设为 {{value}}",
+      "setAll_other": "将 {{count}} 个数值设为 {{value}}",
+      "clear": "清除",
+      "openedCode": "已打开粘贴的代码"
+    },
+    "settings": {
+      "title": "设置",
+      "appearance": "外观",
+      "theme": "主题",
+      "pattern": "纹理",
+      "patternInfo": "应用背景的微弱格纹。关闭可使用纯色背景。",
+      "patternStrength": "纹理强度",
+      "textSize": "文字大小",
+      "textSizes": {
+        "small": "小",
+        "normal": "标准",
+        "large": "大"
+      },
+      "appColor": "应用颜色",
+      "appColorHint": "为整个应用着色：背景、按钮和高亮。",
+      "appColorPresets": {
+        "blue": "蓝色",
+        "violet": "紫罗兰",
+        "teal": "青色",
+        "green": "绿色",
+        "amber": "琥珀色",
+        "rose": "玫瑰色"
+      },
+      "appColorSystem": "Windows 强调色",
+      "appColorMono": "黑白单色",
+      "appColorCustom": "自定义应用颜色",
+      "colors": "色彩",
+      "changedColor": "修改的数值",
+      "accentColor": "强调色",
+      "errorColor": "错误",
+      "colorPresets": {
+        "changed": {
+          "violet": "紫罗兰",
+          "rose": "玫瑰色",
+          "indigo": "靛蓝",
+          "amber": "琥珀色"
+        },
+        "accent": {
+          "cyan": "青色",
+          "blue": "蓝色",
+          "green": "绿色",
+          "amber": "琥珀色"
+        },
+        "error": {
+          "red": "红色",
+          "orange": "橙色",
+          "pink": "粉色",
+          "purple": "丁香紫"
+        }
+      },
+      "language": "语言",
+      "saving": "保存",
+      "defaultAction": "默认保存操作",
+      "defaultActionInfo": "选择主“保存”按钮的行为。另一选项仍保留在其菜单中。",
+      "saveAsNew": "另存为新文件",
+      "overwriteOriginal": "覆盖原文件",
+      "keepBackups": "保留的备份数量",
+      "keepBackupsInfo": "保存文件时保留的备份数量（1 到 50），最长保留 30 天。下次保存时会清除该文件的更早备份；始终保留最新一份。",
+      "aiChatTitle": "复制给聊天机器人",
+      "aiChatTag": "无需配置",
+      "aiChatInfo": "适用于 ChatGPT、Claude、Gemini 或浏览器中的任意 AI 对话。",
+      "aiChatStep1": "打开存档",
+      "aiChatStep1Info": "拖放到起始界面中。",
+      "aiChatStep2": "在列表上点击“询问 AI”",
+      "aiChatStep2Info": "其数值将被复制。",
+      "aiChatStep3": "粘贴到对话中",
+      "aiChatStep3Info": "向 AI 提问，然后在此处修改数值。",
+      "mcpStep1": "选择您的 AI 应用",
+      "mcpStep2": "复制配置",
+      "mcpStep2Info": "一键完成。",
+      "mcpStep3": "粘贴到应用中",
+      "mcpStep3Info": "然后保存。",
+      "mcpStep4": "重启并提问",
+      "mcpStep4Info": "“给我 9999 金币。”",
+      "mcpYourApp": "您的应用：",
+      "mcpClients": {
+        "claudeDesktop": "Claude Desktop",
+        "claudeCode": "Claude Code",
+        "cursor": "Cursor",
+        "vscode": "VS Code",
+        "other": "其他"
+      },
+      "mcpHowTo": {
+        "claudeDesktop": "在 Claude Desktop 中：设置 → 开发者 → 编辑配置，粘贴到 mcpServers 中，保存后重启 Claude。",
+        "claudeCode": "在终端中运行它，然后重启 Claude Code。",
+        "cursor": "在 Cursor 中：Customize → MCP，或粘贴到 %USERPROFILE%\\.cursor\\mcp.json。",
+        "vscode": "添加到 .vscode/mcp.json（或 VS Code 文档中说明的用户 MCP 配置）。",
+        "other": "粘贴到您应用的 MCP 设置中，保存并重启应用。"
+      },
+      "aiPrivacyNote": "SavePrism 从不主动发送任何数据；AI 应用可能会将读取的数值发送给其在线模型。",
+      "aiWriteNote": "仅保存和恢复备份会写入文件，AI 应用在执行前会先征得您的同意。",
+      "copySetup": "复制配置",
+      "notificationsSection": "通知",
+      "showNotifications": "显示通知",
+      "showNotificationsInfo": "显示包含本次会话事件的铃铛图标。",
+      "checkUpdatesAtStart": "启动时检查更新",
+      "checkUpdatesAtStartInfo": "向 GitHub 查询新版本。绝不会发送您的存档。",
+      "about": "关于 SavePrism",
+      "back": "返回",
+      "searchPlaceholder": "查找设置",
+      "searchEmpty": "未找到匹配的设置。",
+      "communityThemes": "社区主题",
+      "version": "SavePrism {{version}}",
+      "sourceCode": "GitHub 源代码",
+      "reportProblem": "反馈问题",
+      "folderChanged": "文件夹已更改",
+      "folderFailed": "无法更改文件夹",
+      "backupFolderTitle": "选择备份文件夹",
+      "appFolderTitle": "选择应用文件夹",
+      "openFolderFailed": "无法打开文件夹",
+      "chooseImage": "选择图片…",
+      "changeImage": "更改图片…",
+      "noImage": "暂无图片",
+      "dropHint": "点击或拖入图片",
+      "dropActive": "松开以使用此图片",
+      "imageCopied": "图片已复制到应用文件夹",
+      "imageCopiedHint": "已复制到应用文件夹中。",
+      "imageFailed": "无法使用该图片",
+      "customColor": "自定义颜色",
+      "resetColors": "恢复默认",
+      "text": "文字",
+      "textSizeHint": "调整 SavePrism 中所有文字的大小。",
+      "changedHint": "已修改但尚未保存的数值。",
+      "accentHint": "金币等数字、链接以及高亮显示。",
+      "errorHint": "无法保存的数值。",
+      "background": "背景",
+      "photo": "照片",
+      "grid": "网格",
+      "defaultPattern": "默认",
+      "dots": "圆点",
+      "strength": "强度",
+      "photoFit": "照片贴合",
+      "fit": "适应",
+      "fill": "填充",
+      "blur": "模糊",
+      "darken": "淡化",
+      "glass": "卡片不透明度",
+      "preview": "预览",
+      "previewTip": "在关闭设置前查看效果。彩色行上的文字会自动调整以保持易读。",
+      "backupsSection": "备份",
+      "keepBackupsHint": "针对每个存档。较早的备份将优先删除。",
+      "onlyLatest": "仅保留最新一份",
+      "keepDays": "备份保留天数",
+      "keepDaysHint": "超过此时限的备份将被删除。",
+      "days": "天",
+      "latestKeptNote": "每个存档的最新一份备份始终保留，确保您可以随时恢复。",
+      "backupFolder": "备份文件夹",
+      "appFolderSection": "应用文件夹",
+      "appFolder": "应用文件夹",
+      "appFolderHint": "备份、粘贴的代码和设置均保存在此处。",
+      "openFolder": "打开文件夹",
+      "change": "更改…",
+      "action": "操作",
+      "shortcutsColumn": "快捷键",
+      "resetAllShortcuts": "全部恢复默认",
+      "resetShortcut": "恢复 {{action}} 为默认",
+      "addShortcut": "添加快捷键",
+      "removeShortcut": "移除 {{keys}}",
+      "editShortcut": "修改此快捷键",
+      "shortcutNotSet": "未设置",
+      "shortcutsNote": "带有 Windows 键的快捷键以及系统按键（如 Alt+F4 或 Ctrl+Alt+Del）已被 Windows 保留。Windows 会在 SavePrism 捕获之前对其进行处理，因此无法在此使用。",
+      "shortcutDialog": {
+        "title": "按下 {{action}} 的新按键组合",
+        "hint": "按 Enter 保存，按 Esc 取消。",
+        "waiting": "请按下按键…",
+        "threeKeys": "最多 3 个按键：Ctrl、Shift 和 Alt 中最多两个，外加一个其他按键。",
+        "needCtrlOrAlt": "请加入 Ctrl 或 Alt，或使用功能键 (F1–F12)。",
+        "ctrlAlt": "无法使用 Ctrl+Alt：在许多键盘布局中它相当于 AltGr，用于输入字符。",
+        "system": "{{keys}} 已被 Windows 保留。",
+        "reserved": "Enter 和 Esc 无法使用。",
+        "unknown": "无法使用该按键。",
+        "windows": "Windows 保留了 Windows 键：Win 组合键在 SavePrism 获取前已被系统捕获，因此无法在此录制。",
+        "conflict": "{{keys}} 已被 {{action}} 使用。按 Enter 转移至此处。"
+      },
+      "mcpTitle": "连接 AI 代理 (MCP)",
+      "mcpHint": "Claude Desktop、Claude Code、Cursor 以及其他 MCP 应用可代您打开和编辑存档。保存时始终会先创建备份。",
+      "tabs": {
+        "general": "常规",
+        "appearance": "外观",
+        "backups": "保存与备份",
+        "ai": "AI 连接",
+        "shortcuts": "快捷键",
+        "about": "关于"
+      },
+      "sub": {
+        "general": "语言与主题。",
+        "appearance": "文字大小、色彩与背景。",
+        "backups": "保存的行为以及 SavePrism 保留的备份数量。",
+        "ai": "借助 AI 提供协助的两种方式。SavePrism 从不主动发送任何数据。",
+        "shortcuts": "点击快捷键，然后按下新按键组合。每个操作最多设置 2 个快捷键。",
+        "about": "版本与许可协议。"
+      },
+      "themeFile": {
+        "title": "主题文件",
+        "filterName": "SavePrism 主题",
+        "label": "分享您的外观",
+        "hint": "导出可将您的色彩、文字大小和背景保存为文件。导入可应用他人制作的文件。",
+        "export": "导出主题…",
+        "import": "导入主题…",
+        "share": "在社区主题中分享",
+        "exportTitle": "导出主题",
+        "importTitle": "导入主题",
+        "exported": "主题已导出",
+        "imported": "主题“{{name}}”已导入",
+        "invalid": "主题文件无效",
+        "exportFailed": "无法导出主题",
+        "importFailed": "无法导入主题",
+        "reasons": {
+          "tooBig": "文件大于 64 KB。",
+          "json": "不是有效的 JSON。",
+          "format": "不是 SavePrism 主题文件。",
+          "version": "不支持该版本。",
+          "name": "名称缺失或过长。",
+          "colors": "其中一个色彩不是预设 ID 或 #rrggbb 格式的值。",
+          "appColor": "其应用颜色不是有效的预设、系统、单色或 #rrggbb 格式的值。",
+          "textSize": "文字大小超出 80–140% 范围。",
+          "background": "背景设置无效。"
+        }
+      },
+      "sample": {
+        "name": "名称",
+        "value": "值",
+        "gold": "金币",
+        "level": "等级",
+        "health": "生命值",
+        "heroName": "英雄名称",
+        "map": "地图"
+      }
+    },
+    "shortcuts": {
+      "title": "快捷键",
+      "open": "打开文件",
+      "pasteCode": "粘贴代码",
+      "save": "保存",
+      "saveAs": "另存为…",
+      "closeFile": "关闭文件",
+      "undo": "撤销",
+      "redo": "重做",
+      "find": "在首个列表中搜索",
+      "undoAll": "撤销全部更改",
+      "openSettings": "打开设置",
+      "whereSaves": "我的存档在哪里？",
+      "groups": {
+        "file": "文件",
+        "editing": "编辑",
+        "app": "应用"
+      }
+    },
+    "about": {
+      "title": "关于 SavePrism",
+      "version": "版本",
+      "core": "核心",
+      "license": "许可协议",
+      "licenseValue": "MIT 协议",
+      "privacy": "文件保留在此电脑上。备份保存在 %LOCALAPPDATA%\\SavePrism\\backups。",
+      "notices": "第三方声明",
+      "noticesFailed": "无法读取声明",
+      "versionLine": "版本 {{version}}",
+      "licenseShort": "MIT",
+      "licenseBody": "SavePrism 基于 MIT 许可证发布。完整文本如下。",
+      "tagline": "在您的电脑本地运行的存档编辑器。无需账号，无需上传。",
+      "whatsNew": "{{version}} 更新内容",
+      "showTour": "再次显示引导",
+      "copyright": "© 2026 SavePrism 贡献者",
+      "noticesSubtitle": "SavePrism 使用这些开源软件包构建。非常感谢！",
+      "searchPackages": "搜索软件包",
+      "searchEmpty": "未找到匹配的软件包。",
+      "noticesCount": "{{total}} 个软件包",
+      "noticesCountFiltered": "{{shown}} / {{total}} 个软件包",
+      "licenseUnknown": "未知",
+      "noticeNoText": "声明文件中未包含许可文本。"
+    },
+    "update": {
+      "ready": "SavePrism {{version}} 已准备就绪，可以安装",
+      "update": "更新",
+      "check": "检查更新",
+      "checking": "正在检查…",
+      "current": "已是最新版本。",
+      "available": "{{version}} 现已发布",
+      "checkFailed": "无法检查更新。",
+      "dialogTitle": "正在更新至 SavePrism {{version}}",
+      "downloading": "正在下载更新…",
+      "installing": "正在安装。SavePrism 将自动重启。",
+      "failed": "无法安装更新。"
+    },
+    "whatsNew": {
+      "title": "{{version}} 更新内容",
+      "subtitle": "以下是本版本的更新内容。",
+      "gotIt": "知道了"
+    },
+    "tour": {
+      "step": "第 {{current}} / {{total}} 步",
+      "back": "上一步",
+      "next": "下一步",
+      "skip": "跳过",
+      "done": "完成",
+      "drop": {
+        "title": "打开存档",
+        "body": "将存档文件拖放到此处，或使用“打开文件”和“粘贴代码”开始。"
+      },
+      "where": {
+        "title": "不确定存档在哪里？",
+        "body": "此链接列出了各类游戏的常用存档文件夹。"
+      },
+      "language": {
+        "title": "语言",
+        "body": "在此处切换英语和土耳其语。"
+      },
+      "bell": {
+        "title": "通知",
+        "body": "本次会话的事件会显示在此处。"
+      },
+      "settings": {
+        "title": "设置",
+        "body": "主题、备份和 SavePrism 的其余设置都在这里。"
+      }
+    },
+    "crash": {
+      "title": "出错了",
+      "body": "SavePrism 遇到了意外错误。您尚未保存的更改已丢失。",
+      "copy": "复制报告",
+      "reload": "重新加载",
+      "copied": "报告已复制。",
+      "copyFailed": "无法复制。请选中下方文本并手动复制。"
+    }
+  },
+  "editor": {
+    "bool": {
+      "true": "真",
+      "false": "假"
+    },
+    "loading": "正在加载数值…",
+    "loadFailed": "无法读取数值。{{message}} {{hint}}",
+    "sections": {
+      "gold": "金币",
+      "characters": "角色",
+      "items": "物品",
+      "weapons": "武器",
+      "armors": "防具",
+      "variables": "变量",
+      "switches": "开关",
+      "values": "数值",
+      "character": "角色",
+      "story": "故事",
+      "storyVariables": "故事变量"
+    },
+    "info": {
+      "gold": "队伍拥有的金币。必须保持在输入框下方显示的范围内。",
+      "characters": "选择要编辑的角色。属性加成会加到游戏数据库中的角色属性上，并非最终属性值。",
+      "namesFrom": "名称来自 {{folder}}。",
+      "noNames": "未找到游戏数据文件夹，因此名称显示为编号。",
+      "variables": "游戏变量。仅在了解其作用时才进行更改。",
+      "switches": "游戏开关（真或假）。",
+      "values": "在此文件中找到的所有可编辑数值。",
+      "moment": "SugarCube 存档会保留历史时刻记录，每个游玩的段落对应一条。游戏将在此时显示的时刻恢复，您的修改也应用于该时刻。其他时刻保留各自的数值。",
+      "storyVariables": "故事变量（故事中的 $name）以及游戏将加载的值。带有锁形图标表示无法在此修改的值：在游玩过程中部分修改的值，以及诸如 Map、Set 或 Date 等特殊值。请在 JSON 编辑器中修改这些内容。"
+    },
+    "fallback": {
+      "item": "物品 #{{id}}",
+      "weapon": "武器 #{{id}}",
+      "armor": "防具 #{{id}}",
+      "variable": "变量 #{{id}}",
+      "switch": "开关 #{{id}}"
+    },
+    "ownName": {
+      "action": "命名 {{name}}",
+      "rename": "重命名 {{name}}",
+      "actionTip": "为此条目添加自定义名称。仅在此游戏中保留。",
+      "label": "{{name}} 的名称"
+    },
+    "actor": {
+      "level": "等级",
+      "hp": "HP",
+      "mp": "MP",
+      "exp": "EXP",
+      "lv": "Lv {{level}}",
+      "bonusHeading": "加成（加到职业数值上）",
+      "levelExpHint": "EXP 未更改：未找到游戏的 Classes.json。"
+    },
+    "field": {
+      "undo": "撤销（原为 {{value}}）",
+      "increase": "增加",
+      "decrease": "减少",
+      "new": "新",
+      "removeAdded": "移除（新增项）",
+      "readOnly": "在此文件中只读",
+      "readOnlyIndex": "只读：数据库索引保留了此数值的副本，修改会破坏索引"
+    },
+    "search": {
+      "list": "搜索名称、#id 或数值",
+      "values": "搜索数值",
+      "empty": "未找到匹配的内容。"
+    },
+    "pager": {
+      "previous": "上一页",
+      "next": "下一页"
+    },
+    "bulk": {
+      "trigger": "全部设置",
+      "triggerTip": "将此列表显示的所有数值设置为相同的值",
+      "titleNumber": "全部设置为…",
+      "titleSwitch": "全部开启或关闭",
+      "scope_one": "更改此列表在每一页上显示的 {{shown}} 个数值。单次撤销即可恢复。",
+      "scope_other": "更改此列表在每一页上显示的 {{shown}} 个数值。单次撤销即可全部恢复。",
+      "scopeSearch_one": "更改每一页上与搜索匹配的 {{shown}} 个数值。单次撤销即可恢复。",
+      "scopeSearch_other": "更改每一页上与搜索匹配的 {{shown}} 个数值。单次撤销即可全部恢复。",
+      "valueLabel": "新数值",
+      "apply_one": "设置 {{changed}} 个数值",
+      "apply_other": "设置 {{changed}} 个数值",
+      "applyIdle": "应用",
+      "nothing": "没有可更改的内容",
+      "allOn": "全部开启",
+      "allOff": "全部关闭",
+      "turnOn_one": "开启 {{changed}} 个开关",
+      "turnOn_other": "开启 {{changed}} 个开关",
+      "turnOff_one": "关闭 {{changed}} 个开关",
+      "turnOff_other": "关闭 {{changed}} 个开关"
+    },
+    "values": {
+      "more": "显示更多",
+      "items_one": "{{count}} 项",
+      "items_other": "{{count}} 项",
+      "found_one": "找到 {{shown}} 项",
+      "found_other": "找到 {{shown}} 项",
+      "details": "文件详情",
+      "detailsTip": "描述文件本身而非游戏的信息（引擎版本、存档类型）。只读：游戏需要保持其原样。"
+    },
+    "problem": {
+      "empty": "请输入数值。",
+      "notNumber": "不是有效数字。",
+      "notWhole": "请使用整数，不要带小数。",
+      "aboveMax": "最大 {{max}}",
+      "belowMin": "最小 {{min}}"
+    },
+    "errors": {
+      "unknown": "未应用更改。请重试。"
+    },
+    "type": {
+      "int": "整数",
+      "float": "小数",
+      "bool": "真/假",
+      "string": "文本",
+      "source": "文件类型：{{name}}"
+    },
+    "range": {
+      "between": "{{min}} 到 {{max}}",
+      "atLeast": "{{min}} 或更高",
+      "atMost": "{{max}} 或更低"
+    },
+    "stat": {
+      "maxHp": "最大 HP",
+      "maxMp": "最大 MP",
+      "attack": "攻击",
+      "defense": "防御",
+      "magicAttack": "魔攻",
+      "magicDefense": "魔防",
+      "agility": "敏捷",
+      "luck": "幸运",
+      "strength": "力量",
+      "dexterity": "灵巧",
+      "intelligence": "智力",
+      "spirit": "精神"
+    },
+    "empty": {
+      "item": "此存档中没有物品。",
+      "weapon": "此存档中没有武器。",
+      "armor": "此存档中没有防具。",
+      "variable": "此存档中没有变量。",
+      "switch": "此存档中没有开关。",
+      "values": "此文件中没有数值。",
+      "characters": "此存档中没有角色。"
+    },
+    "count": {
+      "changed_one": "已更改 {{changed}} 项",
+      "changed_other": "已更改 {{changed}} 项"
+    },
+    "askAi": {
+      "label": "询问 AI",
+      "tip": "复制这些数值并附带简短说明，以便粘贴到 AI 对话中",
+      "intro": "我正在使用 SavePrism 编辑游戏存档。",
+      "file": "文件：{{name}} ({{format}})",
+      "filePlain": "文件：{{name}}",
+      "list": "列表：{{list}}",
+      "listSearch": "列表：{{list}}，搜索“{{query}}”",
+      "values": "数值（{{count}}）：",
+      "valuesFirst": "数值（前 {{shown}} 项，共 {{total}} 项）：",
+      "valuesSome": "数值（前 {{shown}} 项；文件中还有更多）：",
+      "row": "- {{subject}} = {{value}}{{detail}}",
+      "subjectName": "{{name}} #{{id}}",
+      "subjectId": "#{{id}}",
+      "subjectValue": "此数值",
+      "ask": "请按名称告诉我需要更改哪些数值以及改成什么。请确保每个数值都在其限制范围内。"
+    },
+    "story": {
+      "title": "存档",
+      "passage": "段落",
+      "saved": "保存时间",
+      "moment": "时刻",
+      "momentOf": "{{current}} / {{total}}",
+      "unknown": "未知"
+    },
+    "note": {
+      "changed": "游玩过程中已修改",
+      "changedTip": "此数值在游玩过程中被部分修改，因此列表无法显示。请在 JSON 编辑器中修改。",
+      "map_one": "Map · {{shown}} 项",
+      "map_other": "Map · {{shown}} 项",
+      "set_one": "Set · {{shown}} 项",
+      "set_other": "Set · {{shown}} 项",
+      "date": "日期 · {{date}}",
+      "code": "特殊值",
+      "specialTip": "游戏通过自带代码重建此数值。请在 JSON 编辑器中修改。",
+      "empty": "空",
+      "emptyTip": "此数值为空（null 或空列表）。"
+    },
+    "addEntry": {
+      "trigger": "添加",
+      "triggerTip": "将 {{label}} 添加到此列表",
+      "title": "添加 {{label}}",
+      "label": {
+        "item": "物品",
+        "weapon": "武器",
+        "armor": "防具"
+      },
+      "search": "搜索名称或 #id",
+      "noMatch": "游戏数据库中无匹配项。",
+      "typedId": "添加 #{{id}}",
+      "clear": "清除",
+      "id": "数据库 ID",
+      "idPlaceholder": "例如 12",
+      "noCatalog": "未找到游戏数据文件夹，请输入 ID。",
+      "missingFile": "游戏数据文件夹中缺少 {{file}}，请输入 ID。",
+      "count": "数量",
+      "submit": "添加"
+    },
+    "addValue": {
+      "action": "添加数值",
+      "title": "添加数值",
+      "hint": "保存时将写入文件中。",
+      "key": "名称",
+      "keyPlaceholder": "例如 score",
+      "type": "类型",
+      "kind": {
+        "int": "数字",
+        "string": "文本",
+        "bool": "开/关"
+      },
+      "value": "数值",
+      "submit": "添加数值"
+    },
+    "remove": {
+      "action": "移除 {{name}}",
+      "title": "移除 {{name}}？",
+      "body": "保存时将从文件中移除。撤销可恢复。",
+      "confirm": "移除"
+    },
+    "dataFolder": {
+      "title": "选择游戏数据文件夹",
+      "none": "未找到游戏数据文件夹",
+      "namesFrom": "名称来自游戏数据文件夹",
+      "choose": "选择数据文件夹…",
+      "change": "更改…",
+      "picking": "正在打开…"
+    },
+    "gwent": {
+      "title": "Gwent 收藏",
+      "info": "此存档包含的 Gwent 卡牌及其牌组。只能修改拥有的卡牌数量。牌组为只读（修改会重写牌组列表），且无法在此添加存档中未拥有的卡牌。",
+      "cards_one": "{{n}} 张卡牌",
+      "cards_other": "{{n}} 张卡牌",
+      "leaders_one": "{{n}} 位领袖",
+      "leaders_other": "{{n}} 位领袖",
+      "cardsOf": "{{owned}} / {{total}} 张卡牌",
+      "leadersOf": "{{owned}} / {{total}} 位领袖",
+      "show": "显示",
+      "showAll": "全部",
+      "showOwned": "已拥有",
+      "showMissing": "未拥有",
+      "factions": "阵营",
+      "allFactions": "全部",
+      "faction": {
+        "northern": "北方领域",
+        "nilfgaard": "尼弗迦德",
+        "scoiatael": "松鼠党",
+        "monsters": "怪兽",
+        "skellige": "史凯利格",
+        "neutral": "中立",
+        "other": "其他"
+      },
+      "leader": "领袖",
+      "missing": "未拥有",
+      "copies": "{{name}} 的数量",
+      "fallback": "卡牌 {{index}}",
+      "search": "搜索名称或 #index",
+      "was": "原为 {{value}}",
+      "pickFolder": "选择游戏文件夹",
+      "pickFolderTip": "卡牌名称和未拥有的卡牌来自游戏本身的文件。",
+      "pickTitle": "选择 The Witcher 3 游戏文件夹",
+      "pickFailed": "该文件夹中未找到 Gwent 卡牌。",
+      "picking": "正在打开…",
+      "empty": "没有匹配的卡牌。",
+      "view": "收藏或牌组",
+      "collection": "收藏",
+      "deck": "牌组 {{number}}",
+      "inDeck": "牌组中已有 {{n}} 张",
+      "deckEmpty": "此牌组中没有卡牌。",
+      "deckLocked": "此牌组已锁定且没有卡牌。",
+      "locked": "已锁定",
+      "selected": "已选择"
+    },
+    "satisfactory": {
+      "title": "物品栏",
+      "info": "只能修改堆叠数量。500 为最大堆叠数量。",
+      "playerInventory": "玩家物品栏",
+      "playerNInventory": "玩家 {{n}} 物品栏",
+      "pick": "物品栏",
+      "kinds": "物品栏类型",
+      "kind": {
+        "player": "玩家",
+        "storage": "储存箱",
+        "other": "其他"
+      },
+      "empty": "此存档中没有非空的物品栏。"
+    }
+  },
+  "whatsNew": [
+    "## 0.9.1",
+    "",
+    "新增四种语言支持，以及针对 Linux 和 macOS 的修复。",
+    "",
+    "### 语言",
+    "- SavePrism 现已支持西班牙语、俄语、日语和简体中文：可在顶栏的语言菜单或“设置”中选择。",
+    "- 想让 SavePrism 支持你的语言？一种语言只需一个文件：请在 GitHub 上查看 “Add a language”。",
+    "",
+    "### 修复",
+    "- Linux：SavePrism 关闭了在某些显卡驱动和虚拟机中会导致窗口白屏的 WebKitGTK 渲染器。",
+    "",
+    "### 我的存档在哪里？",
+    "- 常用存档文件夹现在也会在 macOS 和 Linux 上列出，包括 Steam Proton 文件夹（也包含 Steam Deck）。感谢 EfeHasNoLuck 带来的首个外部贡献。"
+  ]
+}

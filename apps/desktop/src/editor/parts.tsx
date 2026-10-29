@@ -57,7 +57,9 @@ export function Section({
           ) : null}
           {info ? <InfoTip text={info} /> : null}
         </div>
-        {aside ? <div className="ml-auto flex min-w-0 items-center gap-1.5">{aside}</div> : null}
+        {aside ? (
+          <div className="ml-auto flex min-w-0 flex-wrap items-center justify-end gap-1.5">{aside}</div>
+        ) : null}
       </div>
       {children}
     </section>
