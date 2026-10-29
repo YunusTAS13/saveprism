@@ -9,5 +9,19 @@ fn main() {
     {
         std::process::exit(saveprism_desktop_lib::mcp::run_stdio());
     }
+    #[cfg(target_os = "linux")]
+    disable_webkit_dmabuf();
     saveprism_desktop_lib::run()
+}
+
+/// WebKitGTK's DMABUF renderer shows only a white window on many Linux setups (some GPU
+/// drivers, virtual machines). Turn it off unless the user has set the variable themselves.
+#[cfg(target_os = "linux")]
+#[allow(unsafe_code)]
+fn disable_webkit_dmabuf() {
+    const KEY: &str = "WEBKIT_DISABLE_DMABUF_RENDERER";
+    if std::env::var_os(KEY).is_none() {
+        // SAFETY: runs at the start of `main`, before the app starts any other thread.
+        unsafe { std::env::set_var(KEY, "1") };
+    }
 }
