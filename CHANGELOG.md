@@ -2,6 +2,16 @@
 
 Player-facing notes for each release. The app shows the section of the running version.
 
+## 0.9.1
+
+A small update for Linux and macOS.
+
+### Fixes
+- Linux: SavePrism turns off the WebKitGTK renderer that left the window white with some graphics drivers and in virtual machines.
+
+### Where is my save?
+- The usual save folders are listed on macOS and Linux too, including Steam Proton folders (Steam Deck as well). Thanks to EfeHasNoLuck for the first outside contribution.
+
 ## 0.9.0
 
 SavePrism 0.9.0 is the first public release: Windows, plus the first Linux and macOS builds.

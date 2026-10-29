@@ -2,6 +2,16 @@
 
 Her sürüm için oyunculara yönelik notlar. Uygulama, çalışan sürümün bölümünü gösterir.
 
+## 0.9.1
+
+Linux ve macOS için küçük bir güncelleme.
+
+### Düzeltmeler
+- Linux: SavePrism, bazı ekran kartı sürücülerinde ve sanal makinelerde pencereyi beyaz bırakan WebKitGTK çiziciyi kapatır.
+
+### Kaydım nerede?
+- Olağan kayıt klasörleri artık macOS ve Linux'ta da listelenir; Steam Proton klasörleri de dahil (Steam Deck'te de). İlk dış katkı için EfeHasNoLuck'a teşekkürler.
+
 ## 0.9.0
 
 SavePrism 0.9.0 ilk herkese açık sürümdür: Windows ve ilk Linux ve macOS derlemeleri.
