@@ -1279,6 +1279,7 @@
     "",
     "### Correcciones",
     "- Linux: SavePrism desactiva el renderizador WebKitGTK que dejaba la ventana en blanco con algunos controladores gráficos y en máquinas virtuales.",
+    "- Elegir un color de la app o un color predefinido ahora cambia los colores de la app; antes, la app instalada ignoraba la elección.",
     "",
     "### ¿Dónde está mi partida guardada?",
     "- Las carpetas de guardado habituales también se muestran en macOS y Linux, incluidas las carpetas de Steam Proton (también en Steam Deck). Gracias a EfeHasNoLuck por la primera contribución externa."

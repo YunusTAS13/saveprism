@@ -1279,6 +1279,7 @@
     "",
     "### Düzeltmeler",
     "- Linux: SavePrism, bazı ekran kartı sürücülerinde ve sanal makinelerde pencereyi beyaz bırakan WebKitGTK çiziciyi kapatır.",
+    "- Uygulama rengi ya da bir renk seçimi artık uygulamayı yeniden renklendiriyor; önceden kurulu uygulama seçimi yok sayıyordu.",
     "",
     "### Kaydım nerede?",
     "- Olağan kayıt klasörleri artık macOS ve Linux'ta da listelenir; Steam Proton klasörleri de dahil (Steam Deck'te de). İlk dış katkı için EfeHasNoLuck'a teşekkürler.",

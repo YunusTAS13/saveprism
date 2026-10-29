@@ -6,6 +6,8 @@ Four new languages, and fixes for Linux and macOS.
   [Add a language](https://github.com/huseyincancalti/saveprism/blob/main/CONTRIBUTING.md#add-a-language).
 - **Linux:** SavePrism turns off the WebKitGTK renderer that left the window white with some graphics drivers and in
   virtual machines. You no longer need to set `WEBKIT_DISABLE_DMABUF_RENDERER=1` yourself (a value you set is kept).
+- **App color:** picking an app color or a color preset now recolors the app; before, the installed app ignored the
+  choice.
 - **"Where is my save?"** lists the usual save folders on macOS and Linux too, including Steam Proton folders (Steam
   Deck as well). Thanks to @EfeHasNoLuck for the first outside contribution (#10)!
 

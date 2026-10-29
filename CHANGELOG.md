@@ -12,6 +12,7 @@ Four new languages, and fixes for Linux and macOS.
 
 ### Fixes
 - Linux: SavePrism turns off the WebKitGTK renderer that left the window white with some graphics drivers and in virtual machines.
+- Picking an app color or a color preset now recolors the app; before, the installed app ignored the choice.
 
 ### Where is my save?
 - The usual save folders are listed on macOS and Linux too, including Steam Proton folders (Steam Deck as well). Thanks to EfeHasNoLuck for the first outside contribution.
